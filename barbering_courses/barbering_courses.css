@@ -1,0 +1,155 @@
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+	background-image: url("bg.jpg");
+	background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+	color: white;
+}
+h1{
+	font-size: 3.5em;
+	font-weight: 500;
+	margin: 0.1em;
+	letter-spacing: 0.03em;
+}
+h2 {
+	border: 4px solid #fee800;
+	float: left;
+	width: calc( 100% - 1em);
+	padding: 0.4em 0;
+	font-size: 1.45em;
+	letter-spacing: -0.03em;
+	font-weight: 700;
+	margin: auto;
+}
+h6{
+	font-size: 0.6em;
+	font-weight: 300;
+	margin: 0.8em;
+	opacity: 0.6;
+}
+a {
+	color: white;
+	text-decoration: none;
+	outline: none;
+	margin: auto;
+}
+a:hover {
+	text-decoration: underline;
+}
+#new_carrer{
+	margin: 0.3em 0 0.8em 0;
+}
+.effect{
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(133,120,110,.5);
+}
+.header{
+	width: 100vw;
+	height: 20vh;
+	float: left;
+	display: flex;
+}
+.header > * {
+	margin: auto;
+	width: calc(100vw / 3);
+	height: inherit;
+}
+.header > #left, .header > #right {
+	font-size: 0.9em;
+	display: flex;
+}
+.header > #center {
+	display: flex;
+	text-align: center;
+}
+.wrapper {
+	margin: auto;
+}
+.header > #center p{
+	float: left;
+	width: 100%;
+	font-weight: 700;
+	font-size: 0.9em;
+	text-align: center;
+}
+.header > #right{
+	font-weight: 700;
+}
+.content{
+	width: 100vw;
+	height: 60vh;
+	display: flex;
+}
+.main-info{
+	text-align: center;
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 60%;
+}
+.content p{
+	font-size: 1.3em;
+}
+#callback{
+	display: block;
+	width: 60%;
+	margin: auto;
+}
+#tel_no{
+	width: calc( 50% - 4.4em);
+	height: 1.4em;
+	padding: 0.8em 0.8em 0.8em 0.5em;
+	margin-right: 0.1em;
+	font-size: 1.2em;
+	float: left;
+	border: none;
+	border-radius: 0 0.5em 0.5em 0;
+	outline: none;
+}
+#tel_no::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bbb;
+    opacity: 1; /* Firefox */
+}
+#tel_no:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #bbb;
+}
+#tel_no::-ms-input-placeholder { /* Microsoft Edge */
+    color: #bbb;
+}
+#bfr{
+	width: 1.4em;
+	height: 1.4em;
+	float: left;
+	font-size: 1.2em;
+	padding: 0.8em 0 0.8em 0.8em;
+	background-color: white;
+	border-radius: 0.5em 0 0 0.5em;
+}
+#btn{
+	width: calc( 50% - 1.7em);
+	height: 3em;
+	float: left;
+	border-radius: 0.5em;
+	padding: 0.8em;
+	margin-left: 0.1em;
+	font-size: 1.2em;
+	outline: none;
+	border: none;
+	background-color: #fee800;
+	font-weight: 700;
+}
+@media screen and (max-width: 1024px){
+	#callback{
+		width: 100%;
+	}
+}
