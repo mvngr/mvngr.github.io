@@ -4,19 +4,27 @@
 	<meta charset="UTF-8">
 	<title>Boy</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="my_script.js?1"></script>
+	<script src="my_script.js?11"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
+	@font-face {
+	    font-family: lego;
+	    src: url(Legothick.ttf);
+   }
 	body{
 		display: flex;
 		width: 100vw;
 		height: 100vh;
 		margin: 0;
+		font-family: lego;
+		font-size: 1.25em;
 	}
 	body *{
 		float: left;
 	}
 	p{
 		margin: 1em 0.25em;
+
 	}
 	input{
 		margin: 1em 0.25em;
@@ -24,20 +32,24 @@
 	.boy{
 		margin: auto;
 		width: 60vh;
-		height: 60vh;
 	}
 	.control{
 		width: 200px;
+		height: auto;
 		margin: auto;
+		padding: 1em;
+	}
+	.control > div{
+		display: flex;
 	}
 	</style>
 </head>
 <body>
 	<div class="control">
-		<div class=""><p>head:</p><input type="number" id="head" value="140" min="0" max="800"></div>
-		<div class=""><p>body:</p><input type="number" id="body" value="400" min="0" max="800"></div>
-		<div class=""><p>arms:</p><input type="number" id="arms" value="350" min="0" max="800"></div>
-		<div class=""><p>legs:</p><input type="number" id="legs" value="700" min="0" max="800"></div>
+		<div class=""><p>HEAD:</p><input type="number" id="head" value="140" min="0" max="800"></div><br>
+		<div class=""><p>BODY:</p><input type="number" id="body" value="400" min="0" max="800"></div><br>
+		<div class=""><p>HANDS:</p><input type="number" id="arms" value="350" min="0" max="800"></div><br>
+		<div class=""><p>LEGS:</p><input type="number" id="legs" value="700" min="0" max="800"></div><br>
 		<button id="rn">Random numbers</button>
 	</div>
 	<div class="boy">
@@ -57,7 +69,7 @@
 		    	<rect id="legscpr" x="0" y="0" width="800" height="700" />
 		    </clipPath>
 			</defs>
-				<title>Boy</title>
+				<title>Boy</title>					
 				<g id="boy">
 					<g id="head">
 						<rect class="cls-1" x="343.65" y="206.49" width="126.84" height="54.96" rx="12" ry="12"/>
@@ -67,13 +79,29 @@
 						<circle class="cls-2" cx="443.01" cy="119.81" r="11.63"/>
 						<path class="cls-3" d="M454.64,175.83s-5.29,19-47.57,19-52.85-19-52.85-19"/>
 					</g>
-						<g id="legs">
-							<rect class="cls-4" x="272.84" y="478.13" width="266.36" height="44.39"/>
+					<g id="head-2" data-name="head" clip-path="url(#headcp)">
+						<rect class="cls-6" x="343.65" y="206.49" width="126.84" height="54.96" rx="12" ry="12"/>
+						<rect class="cls-6" x="354.22" y="12" width="100.41" height="81.39" rx="12" ry="12"/>
+						<rect class="cls-6" x="311.42" y="54.81" width="194.49" height="162.78" rx="31" ry="31"/>
+						<circle class="cls-2" cx="365.85" cy="119.81" r="11.63"/>
+						<circle class="cls-2" cx="443.01" cy="119.81" r="11.63"/>
+						<path class="cls-3" d="M454.64,175.83s-5.29,19-47.57,19-52.85-19-52.85-19"/>
+					</g>
+					<g id="legs">
+						<rect class="cls-4" x="272.84" y="478.13" width="266.36" height="44.39"/>
 						<rect class="cls-4" x="415.53" y="729.69" width="123.67" height="61.31"/>
 						<polygon class="cls-4" points="415.53 522.52 415.53 729.7 539.2 729.7 539.2 640.91 539.2 522.52 415.53 522.52"/>
 						<rect class="cls-4" x="272.84" y="729.69" width="123.67" height="61.31"/>
 						<polygon class="cls-4" points="272.84 522.52 272.84 729.7 396.5 729.7 396.5 640.91 396.5 522.52 272.84 522.52"/>
 						<path class="cls-4" d="M387.87,522.53V628.22S394.39,642,406,642s18-5.28,18-14.79-.53-104.64-.53-104.64Z"/>
+					</g>
+					<g id="legs-2" data-name="legs" clip-path="url(#legscp)">
+						<rect class="cls-6" x="272.84" y="478.13" width="266.36" height="44.39"/>
+						<rect class="cls-6" x="415.53" y="729.69" width="123.67" height="61.31"/>
+						<polygon class="cls-6" points="415.53 522.52 415.53 729.7 539.2 729.7 539.2 640.91 539.2 522.52 415.53 522.52"/>
+						<rect class="cls-6" x="272.84" y="729.69" width="123.67" height="61.31"/>
+						<polygon class="cls-6" points="272.84 522.52 272.84 729.7 396.5 729.7 396.5 640.91 396.5 522.52 272.84 522.52"/>
+						<path class="cls-6" d="M387.87,522.53V628.22S394.39,642,406,642s18-5.28,18-14.79-.53-104.64-.53-104.64Z"/>
 					</g>
 						<g id="larm">
 							<path class="cls-1" d="M199.29,435.82l-3.2,18.75s-61.42,20.62-33.49,76.86c0,0,19.49-51.37,40.33-47.81s33.44,23.93,13.47,65.56c0,0,34.23.48,37.33-36.52s-9.76-37-10.63-38.27,7-22.39,7-22.39S234.43,424.66,199.29,435.82Z"/>
@@ -83,33 +111,15 @@
 							<path class="cls-1" d="M619.09,435.82l3.2,18.75s61.42,20.62,33.48,76.86c0,0-19.48-51.37-40.32-47.81S582,507.55,602,549.18c0,0-34.23.48-37.32-36.52s9.76-37,10.62-38.27-7-22.39-7-22.39S583.94,424.66,619.09,435.82Z"/>
 						<path class="cls-5" d="M531.94,335.85s16.77,37.64,18.88,54.55,7.4,71.88,7.4,71.88l72.93-19-10.57-64.48c-3.17-20.08-15.85-45.45-21.13-55s-24.32-41.22-31.71-49.68-22.2-20.08-35.94-19-32.77,0-32.77,0l8.46,75Z"/>
 					</g>
-						<path id="body" class="cls-5" d="M550.82,483.42H260.15l41.22-231.48s4.23-11.63,16.92-11.63H489.52s20.08-3.17,25.37,21.14S550.82,483.42,550.82,483.42Z"/>
-					</g>
-				<g id="bw_boy">
-					<g id="head-2" data-name="head" clip-path="url(#headcp)">
-					<rect class="cls-6" x="343.65" y="206.49" width="126.84" height="54.96" rx="12" ry="12"/>
-					<rect class="cls-6" x="354.22" y="12" width="100.41" height="81.39" rx="12" ry="12"/>
-					<rect class="cls-6" x="311.42" y="54.81" width="194.49" height="162.78" rx="31" ry="31"/>
-					<circle class="cls-2" cx="365.85" cy="119.81" r="11.63"/>
-					<circle class="cls-2" cx="443.01" cy="119.81" r="11.63"/>
-					<path class="cls-3" d="M454.64,175.83s-5.29,19-47.57,19-52.85-19-52.85-19"/>
-				</g>
-					<g id="legs-2" data-name="legs" clip-path="url(#legscp)">
-						<rect class="cls-6" x="272.84" y="478.13" width="266.36" height="44.39"/>
-					<rect class="cls-6" x="415.53" y="729.69" width="123.67" height="61.31"/>
-					<polygon class="cls-6" points="415.53 522.52 415.53 729.7 539.2 729.7 539.2 640.91 539.2 522.52 415.53 522.52"/>
-					<rect class="cls-6" x="272.84" y="729.69" width="123.67" height="61.31"/>
-					<polygon class="cls-6" points="272.84 522.52 272.84 729.7 396.5 729.7 396.5 640.91 396.5 522.52 272.84 522.52"/>
-					<path class="cls-6" d="M387.87,522.53V628.22S394.39,642,406,642s18-5.28,18-14.79-.53-104.64-.53-104.64Z"/>
-				</g>
 					<g id="larm-2" data-name="larm" clip-path="url(#armscp)">
 						<path class="cls-6" d="M199.29,435.82l-3.2,18.75s-61.42,20.62-33.49,76.86c0,0,19.49-51.37,40.33-47.81s33.44,23.93,13.47,65.56c0,0,34.23.48,37.33-36.52s-9.76-37-10.63-38.27,7-22.39,7-22.39S234.43,424.66,199.29,435.82Z"/>
-					<path class="cls-6" d="M286.43,335.85s-16.76,37.64-18.88,54.55-7.4,71.88-7.4,71.88l-72.93-19,10.57-64.48c3.17-20.08,15.85-45.45,21.14-55s24.31-41.22,31.71-49.68,22.2-20.08,35.94-19,32.76,0,32.76,0l-8.45,75Z"/>
-				</g>
-					<g id="rarm-2" data-name="rarm" clip-path="url(#armscp)">
-						<path class="cls-6" d="M619.09,435.82l3.2,18.75s61.42,20.62,33.48,76.86c0,0-19.48-51.37-40.32-47.81S582,507.55,602,549.18c0,0-34.23.48-37.32-36.52s9.76-37,10.62-38.27-7-22.39-7-22.39S583.94,424.66,619.09,435.82Z"/>
-					<path class="cls-6" d="M531.94,335.85s16.77,37.64,18.88,54.55,7.4,71.88,7.4,71.88l72.93-19-10.57-64.48c-3.17-20.08-15.85-45.45-21.13-55s-24.32-41.22-31.71-49.68-22.2-20.08-35.94-19-32.77,0-32.77,0l8.46,75Z"/>
-				</g>
+						<path class="cls-6" d="M286.43,335.85s-16.76,37.64-18.88,54.55-7.4,71.88-7.4,71.88l-72.93-19,10.57-64.48c3.17-20.08,15.85-45.45,21.14-55s24.31-41.22,31.71-49.68,22.2-20.08,35.94-19,32.76,0,32.76,0l-8.45,75Z"/>
+					</g>
+						<g id="rarm-2" data-name="rarm" clip-path="url(#armscp)">
+							<path class="cls-6" d="M619.09,435.82l3.2,18.75s61.42,20.62,33.48,76.86c0,0-19.48-51.37-40.32-47.81S582,507.55,602,549.18c0,0-34.23.48-37.32-36.52s9.76-37,10.62-38.27-7-22.39-7-22.39S583.94,424.66,619.09,435.82Z"/>
+						<path class="cls-6" d="M531.94,335.85s16.77,37.64,18.88,54.55,7.4,71.88,7.4,71.88l72.93-19-10.57-64.48c-3.17-20.08-15.85-45.45-21.13-55s-24.32-41.22-31.71-49.68-22.2-20.08-35.94-19-32.77,0-32.77,0l8.46,75Z"/>
+					</g>
+					<path id="body" class="cls-5" d="M550.82,483.42H260.15l41.22-231.48s4.23-11.63,16.92-11.63H489.52s20.08-3.17,25.37,21.14S550.82,483.42,550.82,483.42Z"/>
 					<path id="body-2" data-name="body" class="cls-6" clip-path="url(#bodycp)" d="M550.82,483.42H260.15l41.22-231.48s4.23-11.63,16.92-11.63H489.52s20.08-3.17,25.37,21.14S550.82,483.42,550.82,483.42Z"/>
 			</g>
 		</svg>
