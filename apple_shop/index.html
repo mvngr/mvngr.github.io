@@ -4,60 +4,73 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Бутстрап</title>
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 	<style type="text/css">
-		.parallax {
-		    /* The image used */
-		    background-image: url("https://cnet2.cbsistatic.com/img/HS_bht3Mdc3LpUqE2YygRKOdnp0=/2016/09/12/a85c64f6-7003-41c4-820a-955007f87646/septus-28.jpg");
+	.parallax {
+		/* The image used */
+		background-image: url("https://cnet2.cbsistatic.com/img/HS_bht3Mdc3LpUqE2YygRKOdnp0=/2016/09/12/a85c64f6-7003-41c4-820a-955007f87646/septus-28.jpg");
 
-		    /* Set a specific height */
-		    min-height: 500px; 
-		    overflow: hidden;
+		/* Set a specific height */
+		min-height: 500px; 
+		overflow: hidden;
 
-		    /* Create the parallax scrolling effect */
-		    background-attachment: fixed;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		}
-		.parallax::before{
-			content: "";
-			background-color: rgba(255,255,255,0.3);
-			width: 100%;
-			min-height: 500px;
-			position: absolute;
-			top: 0;
-		}
-		#you-can-do-it-now::before{
-			content: "";
-			position: absolute;
-			width: 1em;
-			height: 100%;
-			background-color: rgba(0,128,0,0.6);
-		}
-		#about-shop{
-			margin-top: 70px;
-		}
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.parallax::before{
+		content: "";
+		background-color: rgba(255,255,255,0.3);
+		width: 100%;
+		min-height: 500px;
+		position: absolute;
+		top: 0;
+	}
+	#you-can-do-it-now::before{
+		content: "";
+		position: absolute;
+		width: 1em;
+		height: 100%;
+		background-color: rgba(0,128,0,0.6);
+	}
+	#about-shop{
+		margin: 50px 0;
+	}
 
-		#about-shop h2 {
-			height: 1.2em;
-		}
+	#about-shop h2 {
+		height: 1.2em;
+	}
 
-		#about-shop .col-md-3:hover {
-			color: #666;
-		}
-		#about-shop .col-md-3:hover > h2 {
-			color: #000;
-		}
+	#about-shop .col-md-3:hover {
+		color: #666;
+	}
+	#about-shop .col-md-3:hover > h2 {
+		color: #e33;
+	}
+
+	footer .col-md-4{
+		padding: 1em 5%;
+	}
+	#myCarousel{
+		margin: 50px 0;
+	}
+	ol.carousel-indicators > li{
+		box-shadow: 1px 1px 5px rgba(128,128,128,1);
+	}
+	ol.carousel-indicators > li.active{
+		border: 1px solid #fff;
+	}
+
+	.raffle{
+
+	}
 
 		/*.nav > li.dropdown.open {
 		    position: static;
@@ -67,115 +80,183 @@
 		}
 		.dropdown-menu>li {
 		    display: table-cell;
-		}*/
+		    }*/
 
-	</style>
-</head>
-<body>
-	<nav class="navbar navbar-fixed-top navbar-default">
-	  	<div class="container">
-		    <div class="navbar-header">
-		    	
-		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-mini" aria-expanded="false">
-			        <span class="sr-only">Навигация</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-		      	</button>
-	      		<a class="navbar-brand" href="#"><i class="glyphicon glyphicon-apple"></i>АФОНЫ</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="nav-mini">
-		      	<ul class="nav navbar-nav">
-		        	<li class="dropdown">
-		          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Меню<span class="caret"></span></a>
-			          	<ul class="dropdown-menu">
-				          	<li class="dropdown-header">Афоны</li>
-				            <li><a href="#">Афон ИКС</a></li>
-				            <li><a href="#">Афон 8</a></li>
-				            <li><a href="#">Аефон 7</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li class="dropdown-header">Планшеты</li>
-				            <li><a href="#">Отпад про</a></li>
-				            <li><a href="#">Отпад</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Шонить исчо</a></li>
-			          	</ul>
-			        </li>
-		      	</ul>
-		      	<form class="navbar-form navbar-right">
-		        	<div class="form-group">
-		          		<input type="text" class="form-control" placeholder="Поиск по сайту...">
-		        	</div>
-		        	<button type="submit" class="btn btn-default">Найти</button>
-		      	</form>
-	      		<ul class="nav navbar-nav navbar-right">
-	        		<li><a href="#">О нас</a></li>
-	        		<li class="dropdown">
-		          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-shopping-cart"></i> <span class="badge">4</span></a>
-			          	<ul class="dropdown-menu">
-				          	<li class="dropdown-header">Ваша корзина</li>
-				            <li><a href="#">Афон ИКС</a></li>
-				            <li><a href="#">Афон 8</a></li>
-				            <li><a href="#">Аефон 7 <span class="badge">2</span></a></li>
-			          	</ul>
-			        </li>
-	     		</ul>
-	    	</div>
-	  	</div>
-	</nav>
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top navbar-default">
+			<div class="container">
+				<div class="navbar-header">
 
-	<div class="parallax">
-		<div class="row" style="padding-top: 200px;">
-			<div class="col-md-8 col-sm-11" id="you-can-do-it-now">
-			<h1 class="text-center text-uppercase" style="margin: auto; font-size: 2.8em; font-weight: 900; background-color: rgba(255,255,255,0.7); padding: 0.5em; border-radius: 0 0.5em 0.5em 0;">Ты можешь держать его в руках уже сегодня!</h1>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-mini" aria-expanded="false">
+						<span class="sr-only">Навигация</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="glyphicon glyphicon-apple"></i>АФОНЫ</a>
+				</div>
+				<div class="collapse navbar-collapse" id="nav-mini">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Меню<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">Афоны</li>
+								<li><a href="#">Афон ИКС</a></li>
+								<li><a href="#">Афон 8</a></li>
+								<li><a href="#">Аефон 7</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Планшеты</li>
+								<li><a href="#">Отпад про</a></li>
+								<li><a href="#">Отпад</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Шонить исчо</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Поиск по сайту...">
+						</div>
+						<button type="submit" class="btn btn-default">Найти</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">О нас</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-shopping-cart"></i> <span class="badge">4</span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">Ваша корзина</li>
+								<li><a href="#">Афон ИКС</a></li>
+								<li><a href="#">Афон 8</a></li>
+								<li><a href="#">Аефон 7 <span class="badge">2</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="parallax">
+			<div class="row" style="padding-top: 200px;">
+				<div class="col-md-8 col-sm-11" id="you-can-do-it-now">
+					<h1 class="text-center text-uppercase" style="margin: auto; font-size: 2.8em; font-weight: 900; background-color: rgba(255,255,255,0.7); padding: 0.5em; border-radius: 0 0.5em 0.5em 0;">Ты можешь держать его в руках уже сегодня!</h1>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!--
-	<ol class="breadcrumb container">
-	  <li><a href="#">Главная</a></li>
-	  <li><a href="#">Техника</a></li>
-	  <li><a href="#">IPhone</a></li>
-	  <li class="active">IPhone 6s</li>
-	</ol>
-	-->
-	<div class="container">
+		<div class="container">
 
-		<div id="about-shop">
-			<h1 class="text-center">Почему именно мы?</h1>
-			<div class="row text-center">
-				<div class="col-md-3 col-sm-6">
-					<h2><i class="glyphicon glyphicon-sort"></i></h2>
-					<h4>Прозрачность</h4>
-					<p>Мы официально зарегистрированны и бла-бла</p>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<h2><i class="glyphicon glyphicon-piggy-bank"></i></h2>
-					<h4>Ценовая политика</h4>
-					<p>Мы - интернет магазин. Нам не нужны офисы, за которые нужно платить деньги. У нас минимум работников и оптимизированные процессы</p>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<h2><i class="glyphicon glyphicon-phone"></i></h2>
-					<h4>Узконаправленность</h4>
-					<p>Наша компания занимается только тем-то. Это позволяет нам уделять больше времени нахождению новых поставщиков с низкими ценами</p>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<h2><i class="glyphicon glyphicon-send"></i></h2>
-					<h4>Ответственность</h4>
-					<p>Мы заботимся о своих клиентах. Поэтому им доступны все гарантии и сервис</p>
+			<div id="about-shop">
+				<h1 class="text-center">Почему именно мы?</h1>
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6">
+						<h2><i class="glyphicon glyphicon-sort"></i></h2>
+						<h4>Прозрачность</h4>
+						<p>Мы официально зарегистрированны и бла-бла</p>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2><i class="glyphicon glyphicon-piggy-bank"></i></h2>
+						<h4>Ценовая политика</h4>
+						<p>Мы - интернет магазин. Нам не нужны офисы, за которые нужно платить деньги. У нас минимум работников и оптимизированные процессы</p>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2><i class="glyphicon glyphicon-phone"></i></h2>
+						<h4>Узконаправленность</h4>
+						<p>Наша компания занимается только тем-то. Это позволяет нам уделять больше времени нахождению новых поставщиков с низкими ценами</p>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2><i class="glyphicon glyphicon-send"></i></h2>
+						<h4>Ответственность</h4>
+						<p>Мы заботимся о своих клиентах. Поэтому им доступны все гарантии и сервис</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		
-		
-	</div>
+
+		<div class="container-fluid">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="1.jpg" alt="">
+					</div>
+
+					<div class="item">
+						<img src="3.jpg" alt="">
+					</div>
+
+					<div class="item">
+						<img src="1.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="3.jpg" alt="">
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Предыдущий</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Следующий</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="raffle ">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card h-100 item">
+							<div class="card-title">Розыгрыш в ВК</div>
+							<div class="card-text">
+								<img src="" alt="">
+								<p>Объявляем победителей и дополнительный бонус всем учавствовавшим</p>
+							</div>
+							<div class="card-footer">
+								<p class="text-right">Читать дальше<i class="glyphicon glyphicon-chevron-right"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<img src="" alt="">
+							<h4>Итоги розыгрыша</h4>
+							<p></p>
+							<p class="text-right"></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<img src="" alt="">
+							<h4></h4>
+							<p></p>
+							<p class="text-right"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<hr class="hr">
+				<div class="row">
+					<div class="col-md-4">Первое</div>
+					<div class="col-md-4">Второе</div>
+					<div class="col-md-4">Третье</div>
+				</div>
+			</div>
+		</footer>
 
 
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-</body>
-</html>
+	</body>
+	</html>
