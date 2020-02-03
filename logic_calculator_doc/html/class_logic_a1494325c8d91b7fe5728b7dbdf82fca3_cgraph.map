@@ -1,0 +1,10 @@
+<map id="Logic::makeSDNF" name="Logic::makeSDNF">
+<area shape="rect" id="node2" href="$class_logic.html#a17bd98c66121d7739f11af12affdb64b" title="Logic::compute Инициирует вычисления " alt="" coords="215,123,325,149"/>
+<area shape="rect" id="node3" href="$class_logic.html#a7eae2f1ccdc24932e795b33906b501b7" title="Logic::computeLogicalAction Инициирует вычисление таблицы истинности " alt="" coords="404,5,593,32"/>
+<area shape="rect" id="node4" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название " alt="" coords="641,115,772,141"/>
+<area shape="rect" id="node8" href="$class_content_editor.html#a929362122ef024a5b4ddc180f8af3423" title="ContentEditor::printSDNF выводит Совершенную Дизъюнктивную Нормальную Форму " alt="" coords="184,275,356,301"/>
+<area shape="rect" id="node9" href="$class_logic.html#af592736369fd989be41c59b4e7315ab5" title="Logic::setVars Добавляет массив логических переменных в внутренний массив " alt="" coords="217,325,323,352"/>
+<area shape="rect" id="node5" href="$class_content_editor.html#a4244e9ccd627ab8146d74637837872e9" title="ContentEditor::printTruthTable Инициирует вывод таблицы истинности " alt="" coords="416,57,581,98"/>
+<area shape="rect" id="node6" href="$class_logic.html#a0887d38c17058d50c4d8a3b7a8fc44ac" title="Logic::getVarsTitle Отдает массив имен логических переменных " alt="" coords="433,123,564,149"/>
+<area shape="rect" id="node7" href="$class_logic.html#a42630bbe8bded25027014e9f0b2a085e" title="Logic::getVarsData Отдает массив всех данных из логических переменных " alt="" coords="431,173,566,200"/>
+</map>

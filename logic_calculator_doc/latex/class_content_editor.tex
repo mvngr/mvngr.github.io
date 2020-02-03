@@ -1,0 +1,134 @@
+\hypertarget{class_content_editor}{}\section{Класс Content\+Editor}
+\label{class_content_editor}\index{Content\+Editor@{Content\+Editor}}
+
+
+\hyperlink{class_content_editor}{Content\+Editor} -\/ Класс отвечает за корректный и удобный вывод чего-\/либо в поле для вывода  
+
+
+
+
+{\ttfamily \#include $<$contenteditor.\+h$>$}
+
+
+
+Граф связей класса Content\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_content_editor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_content_editor_a7254201f7630aa7c3048f5ff5f7b8bd1}{Content\+Editor} (Q\+Plain\+Text\+Edit $\ast$plain\+Text\+Edit)
+\item 
+void \hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{print\+Truth\+Table} (const Q\+List$<$ Q\+String $>$ \&title, const Q\+List$<$ Q\+List$<$ bool $>$$>$ \&data)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{Content\+Editor\+::print\+Truth\+Table} Инициирует вывод таблицы истинности \end{DoxyCompactList}\item 
+void \hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{print\+S\+K\+NF} (const Q\+String \&sknf) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{Content\+Editor\+::print\+S\+K\+NF} выводит Совершенную Конъюнктивную Нормальную Форму \end{DoxyCompactList}\item 
+void \hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{print\+S\+D\+NF} (const Q\+String \&sdnf) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{Content\+Editor\+::print\+S\+D\+NF} выводит Совершенную Дизъюнктивную Нормальную Форму \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{class_content_editor_a20a8d18e264777aee600ee638f08eb99}{minimum\+Column\+Char\+Size} = 5
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\hyperlink{class_content_editor}{Content\+Editor} -\/ Класс отвечает за корректный и удобный вывод чего-\/либо в поле для вывода 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_content_editor_a7254201f7630aa7c3048f5ff5f7b8bd1}\label{class_content_editor_a7254201f7630aa7c3048f5ff5f7b8bd1}} 
+\index{Content\+Editor@{Content\+Editor}!Content\+Editor@{Content\+Editor}}
+\index{Content\+Editor@{Content\+Editor}!Content\+Editor@{Content\+Editor}}
+\subsubsection{\texorpdfstring{Content\+Editor()}{ContentEditor()}}
+{\footnotesize\ttfamily Content\+Editor\+::\+Content\+Editor (\begin{DoxyParamCaption}\item[{Q\+Plain\+Text\+Edit $\ast$}]{plain\+Text\+Edit }\end{DoxyParamCaption})}
+
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_content_editor_a929362122ef024a5b4ddc180f8af3423}\label{class_content_editor_a929362122ef024a5b4ddc180f8af3423}} 
+\index{Content\+Editor@{Content\+Editor}!print\+S\+D\+NF@{print\+S\+D\+NF}}
+\index{print\+S\+D\+NF@{print\+S\+D\+NF}!Content\+Editor@{Content\+Editor}}
+\subsubsection{\texorpdfstring{print\+S\+D\+N\+F()}{printSDNF()}}
+{\footnotesize\ttfamily void Content\+Editor\+::print\+S\+D\+NF (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{sdnf }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{Content\+Editor\+::print\+S\+D\+NF} выводит Совершенную Дизъюнктивную Нормальную Форму 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sdnf} & Строка СДНФ \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a929362122ef024a5b4ddc180f8af3423_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}\label{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}} 
+\index{Content\+Editor@{Content\+Editor}!print\+S\+K\+NF@{print\+S\+K\+NF}}
+\index{print\+S\+K\+NF@{print\+S\+K\+NF}!Content\+Editor@{Content\+Editor}}
+\subsubsection{\texorpdfstring{print\+S\+K\+N\+F()}{printSKNF()}}
+{\footnotesize\ttfamily void Content\+Editor\+::print\+S\+K\+NF (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{sknf }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{Content\+Editor\+::print\+S\+K\+NF} выводит Совершенную Конъюнктивную Нормальную Форму 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em sknf} & Строка СКНФ \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_content_editor_a4244e9ccd627ab8146d74637837872e9}\label{class_content_editor_a4244e9ccd627ab8146d74637837872e9}} 
+\index{Content\+Editor@{Content\+Editor}!print\+Truth\+Table@{print\+Truth\+Table}}
+\index{print\+Truth\+Table@{print\+Truth\+Table}!Content\+Editor@{Content\+Editor}}
+\subsubsection{\texorpdfstring{print\+Truth\+Table()}{printTruthTable()}}
+{\footnotesize\ttfamily void Content\+Editor\+::print\+Truth\+Table (\begin{DoxyParamCaption}\item[{const Q\+List$<$ Q\+String $>$ \&}]{title,  }\item[{const Q\+List$<$ Q\+List$<$ bool $>$$>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{Content\+Editor\+::print\+Truth\+Table} Инициирует вывод таблицы истинности 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em title} & заголовок таблицы истинности \\
+\hline
+{\em data} & данные таблицы истинности \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a4244e9ccd627ab8146d74637837872e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Данные класса}
+\mbox{\Hypertarget{class_content_editor_a20a8d18e264777aee600ee638f08eb99}\label{class_content_editor_a20a8d18e264777aee600ee638f08eb99}} 
+\index{Content\+Editor@{Content\+Editor}!minimum\+Column\+Char\+Size@{minimum\+Column\+Char\+Size}}
+\index{minimum\+Column\+Char\+Size@{minimum\+Column\+Char\+Size}!Content\+Editor@{Content\+Editor}}
+\subsubsection{\texorpdfstring{minimum\+Column\+Char\+Size}{minimumColumnCharSize}}
+{\footnotesize\ttfamily const int Content\+Editor\+::minimum\+Column\+Char\+Size = 5}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{contenteditor_8h}{contenteditor.\+h}\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{contenteditor_8cpp}{contenteditor.\+cpp}\end{DoxyCompactItemize}

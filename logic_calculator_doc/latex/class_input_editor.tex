@@ -1,0 +1,214 @@
+\hypertarget{class_input_editor}{}\section{Класс Input\+Editor}
+\label{class_input_editor}\index{Input\+Editor@{Input\+Editor}}
+
+
+\hyperlink{class_input_editor}{Input\+Editor} -\/ Класс отвечает за обработку данных, вводимых в поле ввода данных  
+
+
+
+
+{\ttfamily \#include $<$inputeditor.\+h$>$}
+
+
+
+Граф связей класса Input\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_input_editor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_input_editor_ac9aae2a915a58eae586aa373c1b1f635}{Input\+Editor} (Q\+Line\+Edit $\ast$input)
+\item 
+\hyperlink{class_input_editor_aec1a586153ea14380867eff2c7605bec}{$\sim$\+Input\+Editor} ()
+\item 
+void \hyperlink{class_input_editor_a4b357e281c2d9cf669ed4a03c8de5190}{push\+Back} (const Q\+String \&str)
+\begin{DoxyCompactList}\small\item\em словарь доступных действий \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}{to\+String} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}{Input\+Editor\+::to\+String} Преобразует внутренний массив в строку \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814}{parse} (const Q\+String \&str)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814}{Input\+Editor\+::parse} Парсит введенную строку \end{DoxyCompactList}\item 
+Q\+List$<$ Q\+String $>$ $\ast$ \hyperlink{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e}{get\+Vars} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e}{Input\+Editor\+::get\+Vars} Выдает указатель на внутренний массив данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+const Q\+List$<$ Q\+String $>$ \hyperlink{class_input_editor_a2c1e4bffaceced12c4f13e3f19a80fb7}{A\+V\+I\+A\+B\+L\+E\+\_\+\+W\+O\+R\+DS}
+\item 
+const Q\+Map$<$ Q\+String, Q\+String $>$ \hyperlink{class_input_editor_a328642e3ae078e059dc95bb4f945451c}{A\+V\+I\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+O\+NS}
+\begin{DoxyCompactList}\small\item\em Словарь доступных символов \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\hyperlink{class_input_editor}{Input\+Editor} -\/ Класс отвечает за обработку данных, вводимых в поле ввода данных 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_input_editor_ac9aae2a915a58eae586aa373c1b1f635}\label{class_input_editor_ac9aae2a915a58eae586aa373c1b1f635}} 
+\index{Input\+Editor@{Input\+Editor}!Input\+Editor@{Input\+Editor}}
+\index{Input\+Editor@{Input\+Editor}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{Input\+Editor()}{InputEditor()}}
+{\footnotesize\ttfamily Input\+Editor\+::\+Input\+Editor (\begin{DoxyParamCaption}\item[{Q\+Line\+Edit $\ast$}]{input }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_editor_aec1a586153ea14380867eff2c7605bec}\label{class_input_editor_aec1a586153ea14380867eff2c7605bec}} 
+\index{Input\+Editor@{Input\+Editor}!````~Input\+Editor@{$\sim$\+Input\+Editor}}
+\index{````~Input\+Editor@{$\sim$\+Input\+Editor}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{$\sim$\+Input\+Editor()}{~InputEditor()}}
+{\footnotesize\ttfamily Input\+Editor\+::$\sim$\+Input\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e}\label{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e}} 
+\index{Input\+Editor@{Input\+Editor}!get\+Vars@{get\+Vars}}
+\index{get\+Vars@{get\+Vars}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{get\+Vars()}{getVars()}}
+{\footnotesize\ttfamily Q\+List$<$ Q\+String $>$ $\ast$ Input\+Editor\+::get\+Vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e}{Input\+Editor\+::get\+Vars} Выдает указатель на внутренний массив данных 
+
+\begin{DoxyReturn}{Возвращает}
+Указатель на внутренний массив данных 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814}\label{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814}} 
+\index{Input\+Editor@{Input\+Editor}!parse@{parse}}
+\index{parse@{parse}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily bool Input\+Editor\+::parse (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{str }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814}{Input\+Editor\+::parse} Парсит введенную строку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & строка для парсинга \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+смогло ли произойти чтение 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_input_editor_a4b357e281c2d9cf669ed4a03c8de5190}\label{class_input_editor_a4b357e281c2d9cf669ed4a03c8de5190}} 
+\index{Input\+Editor@{Input\+Editor}!push\+Back@{push\+Back}}
+\index{push\+Back@{push\+Back}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{push\+Back()}{pushBack()}}
+{\footnotesize\ttfamily void Input\+Editor\+::push\+Back (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{str }\end{DoxyParamCaption})}
+
+
+
+словарь доступных действий 
+
+\hyperlink{class_input_editor_a4b357e281c2d9cf669ed4a03c8de5190}{Input\+Editor\+::push\+Back} Добавляет определенные данные в конец внутреннего массива
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & данные \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_input_editor_a4b357e281c2d9cf669ed4a03c8de5190_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_editor_a4b357e281c2d9cf669ed4a03c8de5190_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}\label{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}} 
+\index{Input\+Editor@{Input\+Editor}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily Q\+String Input\+Editor\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}{Input\+Editor\+::to\+String} Преобразует внутренний массив в строку 
+
+\begin{DoxyReturn}{Возвращает}
+сгенерированная строка 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Данные класса}
+\mbox{\Hypertarget{class_input_editor_a328642e3ae078e059dc95bb4f945451c}\label{class_input_editor_a328642e3ae078e059dc95bb4f945451c}} 
+\index{Input\+Editor@{Input\+Editor}!A\+V\+I\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+O\+NS@{A\+V\+I\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+O\+NS}}
+\index{A\+V\+I\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+O\+NS@{A\+V\+I\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+O\+NS}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{A\+V\+I\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+O\+NS}{AVIABLE\_TRANSFORMATIONS}}
+{\footnotesize\ttfamily const Q\+Map$<$Q\+String,Q\+String$>$ Input\+Editor\+::\+A\+V\+I\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+F\+O\+R\+M\+A\+T\+I\+O\+NS}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+\{
+        \{\textcolor{stringliteral}{"conjunction"}, \textcolor{stringliteral}{"*"}\},
+        \{\textcolor{stringliteral}{"disjunction"}, \textcolor{stringliteral}{"+"}\},
+        \{\textcolor{stringliteral}{"exclusive\_disjunction"}, \textcolor{stringliteral}{"^"}\},
+        \{\textcolor{stringliteral}{"not\_and"}, \textcolor{stringliteral}{"|"}\},
+        \{\textcolor{stringliteral}{"not\_or"}, \textcolor{stringliteral}{"#"}\},
+        \{\textcolor{stringliteral}{"implication"}, \textcolor{stringliteral}{"->"}\},
+        \{\textcolor{stringliteral}{"converse"}, \textcolor{stringliteral}{"<-"}\},
+        \{\textcolor{stringliteral}{"equivalent"}, \textcolor{stringliteral}{"~"}\},
+        \{\textcolor{stringliteral}{"negation"}, \textcolor{stringliteral}{"!"}\}
+    \}
+\end{DoxyCode}
+
+
+Словарь доступных символов 
+
+\mbox{\Hypertarget{class_input_editor_a2c1e4bffaceced12c4f13e3f19a80fb7}\label{class_input_editor_a2c1e4bffaceced12c4f13e3f19a80fb7}} 
+\index{Input\+Editor@{Input\+Editor}!A\+V\+I\+A\+B\+L\+E\+\_\+\+W\+O\+R\+DS@{A\+V\+I\+A\+B\+L\+E\+\_\+\+W\+O\+R\+DS}}
+\index{A\+V\+I\+A\+B\+L\+E\+\_\+\+W\+O\+R\+DS@{A\+V\+I\+A\+B\+L\+E\+\_\+\+W\+O\+R\+DS}!Input\+Editor@{Input\+Editor}}
+\subsubsection{\texorpdfstring{A\+V\+I\+A\+B\+L\+E\+\_\+\+W\+O\+R\+DS}{AVIABLE\_WORDS}}
+{\footnotesize\ttfamily const Q\+List$<$Q\+String$>$ Input\+Editor\+::\+A\+V\+I\+A\+B\+L\+E\+\_\+\+W\+O\+R\+DS}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+\{
+        \textcolor{stringliteral}{"*"} , \textcolor{stringliteral}{"+"} , \textcolor{stringliteral}{"!"} , \textcolor{stringliteral}{"^"} , \textcolor{stringliteral}{"->"} , \textcolor{stringliteral}{"<-"} , \textcolor{stringliteral}{"~"} , \textcolor{stringliteral}{"|"} , \textcolor{stringliteral}{"#"},
+        \textcolor{stringliteral}{"A"} , \textcolor{stringliteral}{"B"} , \textcolor{stringliteral}{"C"} , \textcolor{stringliteral}{"D"} , \textcolor{stringliteral}{"E"} , \textcolor{stringliteral}{"F"} , \textcolor{stringliteral}{"G"} , \textcolor{stringliteral}{"X"} , \textcolor{stringliteral}{"Y"} , \textcolor{stringliteral}{"Z"},
+        \textcolor{stringliteral}{"a"} , \textcolor{stringliteral}{"b"} , \textcolor{stringliteral}{"c"} , \textcolor{stringliteral}{"d"} , \textcolor{stringliteral}{"e"} , \textcolor{stringliteral}{"f"} , \textcolor{stringliteral}{"g"} , \textcolor{stringliteral}{"x"} , \textcolor{stringliteral}{"y"} , \textcolor{stringliteral}{"z"},
+        \textcolor{stringliteral}{"("} , \textcolor{stringliteral}{")"}
+    \}
+\end{DoxyCode}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{inputeditor_8h}{inputeditor.\+h}\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{inputeditor_8cpp}{inputeditor.\+cpp}\end{DoxyCompactItemize}

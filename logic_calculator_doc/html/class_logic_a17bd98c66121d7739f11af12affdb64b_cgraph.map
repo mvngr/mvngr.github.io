@@ -1,0 +1,7 @@
+<map id="Logic::compute" name="Logic::compute">
+<area shape="rect" id="node2" href="$class_logic.html#a7eae2f1ccdc24932e795b33906b501b7" title="Logic::computeLogicalAction Инициирует вычисление таблицы истинности " alt="" coords="164,5,353,32"/>
+<area shape="rect" id="node4" href="$class_content_editor.html#a4244e9ccd627ab8146d74637837872e9" title="ContentEditor::printTruthTable Инициирует вывод таблицы истинности " alt="" coords="176,57,341,98"/>
+<area shape="rect" id="node5" href="$class_logic.html#a0887d38c17058d50c4d8a3b7a8fc44ac" title="Logic::getVarsTitle Отдает массив имен логических переменных " alt="" coords="193,123,324,149"/>
+<area shape="rect" id="node6" href="$class_logic.html#a42630bbe8bded25027014e9f0b2a085e" title="Logic::getVarsData Отдает массив всех данных из логических переменных " alt="" coords="191,173,326,200"/>
+<area shape="rect" id="node3" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название " alt="" coords="401,5,532,32"/>
+</map>

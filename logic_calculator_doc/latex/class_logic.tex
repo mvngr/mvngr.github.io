@@ -1,0 +1,306 @@
+\hypertarget{class_logic}{}\section{Класс Logic}
+\label{class_logic}\index{Logic@{Logic}}
+
+
+\hyperlink{class_logic}{Logic} -\/ Класс отвечает за логику выполнения действий  
+
+
+
+
+{\ttfamily \#include $<$logic.\+h$>$}
+
+
+
+Граф связей класса Logic\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_logic__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_logic_a9fb0198e941a32f25cb110875751f78e}{Logic} (Q\+Plain\+Text\+Edit $\ast$output)
+\item 
+\hyperlink{class_logic_a406131db5b87e8d4b396aec37f3c1f69}{$\sim$\+Logic} ()
+\item 
+void \hyperlink{class_logic_af592736369fd989be41c59b4e7315ab5}{set\+Vars} (Q\+List$<$ Q\+String $>$ $\ast$v)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_logic_af592736369fd989be41c59b4e7315ab5}{Logic\+::set\+Vars} Добавляет массив логических переменных в внутренний массив \end{DoxyCompactList}\item 
+void \hyperlink{class_logic_a17bd98c66121d7739f11af12affdb64b}{compute} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_logic_a17bd98c66121d7739f11af12affdb64b}{Logic\+::compute} Инициирует вычисления \end{DoxyCompactList}\item 
+void \hyperlink{class_logic_a7eae2f1ccdc24932e795b33906b501b7}{compute\+Logical\+Action} (Q\+List$<$ Q\+String $>$ $\ast$v)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_logic_a7eae2f1ccdc24932e795b33906b501b7}{Logic\+::compute\+Logical\+Action} Инициирует вычисление таблицы истинности \end{DoxyCompactList}\item 
+Q\+List$<$ Q\+String $>$ \hyperlink{class_logic_a0887d38c17058d50c4d8a3b7a8fc44ac}{get\+Vars\+Title} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_logic_a0887d38c17058d50c4d8a3b7a8fc44ac}{Logic\+::get\+Vars\+Title} Отдает массив имен логических переменных \end{DoxyCompactList}\item 
+Q\+List$<$ Q\+List$<$ bool $>$ $>$ \hyperlink{class_logic_a42630bbe8bded25027014e9f0b2a085e}{get\+Vars\+Data} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_logic_a42630bbe8bded25027014e9f0b2a085e}{Logic\+::get\+Vars\+Data} Отдает массив всех данных из логических переменных \end{DoxyCompactList}\item 
+void \hyperlink{class_logic_a008dd758dde00f1f5940558f275ec216}{make\+S\+K\+NF} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_logic_a008dd758dde00f1f5940558f275ec216}{Logic\+::make\+S\+K\+NF} создает Совершенную Конъюнктивную Нормальную Форму \end{DoxyCompactList}\item 
+void \hyperlink{class_logic_a1494325c8d91b7fe5728b7dbdf82fca3}{make\+S\+D\+NF} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_logic_a1494325c8d91b7fe5728b7dbdf82fca3}{Logic\+::make\+S\+D\+NF} создает Совершенную Дизъюнктивную Нормальную Форму \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+const Q\+Map$<$ Q\+String, Q\+String $>$ \hyperlink{class_logic_a87779b9da5a43f388cbb26982502e989}{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+}
+\begin{DoxyCompactList}\small\item\em Используется для управление полем вывода \end{DoxyCompactList}\item 
+const Q\+Map$<$ Q\+String, int $>$ \hyperlink{class_logic_a80a5ac2ef983887c55d5b64e941b9dbe}{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+}
+\begin{DoxyCompactList}\small\item\em Словарь бинарных операций \end{DoxyCompactList}\item 
+const Q\+List$<$ Q\+String $>$ \hyperlink{class_logic_a5d00b20d2c2a531f8796581f49fa7d5a}{A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+}
+\begin{DoxyCompactList}\small\item\em Сопоставление бинарной операции с её внутренним номером (нужно для удобства) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\hyperlink{class_logic}{Logic} -\/ Класс отвечает за логику выполнения действий 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_logic_a9fb0198e941a32f25cb110875751f78e}\label{class_logic_a9fb0198e941a32f25cb110875751f78e}} 
+\index{Logic@{Logic}!Logic@{Logic}}
+\index{Logic@{Logic}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{Logic()}{Logic()}}
+{\footnotesize\ttfamily Logic\+::\+Logic (\begin{DoxyParamCaption}\item[{Q\+Plain\+Text\+Edit $\ast$}]{output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_logic_a406131db5b87e8d4b396aec37f3c1f69}\label{class_logic_a406131db5b87e8d4b396aec37f3c1f69}} 
+\index{Logic@{Logic}!````~Logic@{$\sim$\+Logic}}
+\index{````~Logic@{$\sim$\+Logic}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{$\sim$\+Logic()}{~Logic()}}
+{\footnotesize\ttfamily Logic\+::$\sim$\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_logic_a17bd98c66121d7739f11af12affdb64b}\label{class_logic_a17bd98c66121d7739f11af12affdb64b}} 
+\index{Logic@{Logic}!compute@{compute}}
+\index{compute@{compute}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily void Logic\+::compute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_logic_a17bd98c66121d7739f11af12affdb64b}{Logic\+::compute} Инициирует вычисления 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a17bd98c66121d7739f11af12affdb64b_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a17bd98c66121d7739f11af12affdb64b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_logic_a7eae2f1ccdc24932e795b33906b501b7}\label{class_logic_a7eae2f1ccdc24932e795b33906b501b7}} 
+\index{Logic@{Logic}!compute\+Logical\+Action@{compute\+Logical\+Action}}
+\index{compute\+Logical\+Action@{compute\+Logical\+Action}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{compute\+Logical\+Action()}{computeLogicalAction()}}
+{\footnotesize\ttfamily void Logic\+::compute\+Logical\+Action (\begin{DoxyParamCaption}\item[{Q\+List$<$ Q\+String $>$ $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_logic_a7eae2f1ccdc24932e795b33906b501b7}{Logic\+::compute\+Logical\+Action} Инициирует вычисление таблицы истинности 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em v} & указатель на строки с логическими действиями \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a7eae2f1ccdc24932e795b33906b501b7_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a7eae2f1ccdc24932e795b33906b501b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_logic_a42630bbe8bded25027014e9f0b2a085e}\label{class_logic_a42630bbe8bded25027014e9f0b2a085e}} 
+\index{Logic@{Logic}!get\+Vars\+Data@{get\+Vars\+Data}}
+\index{get\+Vars\+Data@{get\+Vars\+Data}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{get\+Vars\+Data()}{getVarsData()}}
+{\footnotesize\ttfamily Q\+List$<$ Q\+List$<$ bool $>$ $>$ Logic\+::get\+Vars\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_logic_a42630bbe8bded25027014e9f0b2a085e}{Logic\+::get\+Vars\+Data} Отдает массив всех данных из логических переменных 
+
+\begin{DoxyReturn}{Возвращает}
+все данные из логических переменных 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a42630bbe8bded25027014e9f0b2a085e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_logic_a0887d38c17058d50c4d8a3b7a8fc44ac}\label{class_logic_a0887d38c17058d50c4d8a3b7a8fc44ac}} 
+\index{Logic@{Logic}!get\+Vars\+Title@{get\+Vars\+Title}}
+\index{get\+Vars\+Title@{get\+Vars\+Title}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{get\+Vars\+Title()}{getVarsTitle()}}
+{\footnotesize\ttfamily Q\+List$<$ Q\+String $>$ Logic\+::get\+Vars\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_logic_a0887d38c17058d50c4d8a3b7a8fc44ac}{Logic\+::get\+Vars\+Title} Отдает массив имен логических переменных 
+
+\begin{DoxyReturn}{Возвращает}
+массив имен логических переменных 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a0887d38c17058d50c4d8a3b7a8fc44ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_logic_a1494325c8d91b7fe5728b7dbdf82fca3}\label{class_logic_a1494325c8d91b7fe5728b7dbdf82fca3}} 
+\index{Logic@{Logic}!make\+S\+D\+NF@{make\+S\+D\+NF}}
+\index{make\+S\+D\+NF@{make\+S\+D\+NF}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{make\+S\+D\+N\+F()}{makeSDNF()}}
+{\footnotesize\ttfamily void Logic\+::make\+S\+D\+NF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_logic_a1494325c8d91b7fe5728b7dbdf82fca3}{Logic\+::make\+S\+D\+NF} создает Совершенную Дизъюнктивную Нормальную Форму 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a1494325c8d91b7fe5728b7dbdf82fca3_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a1494325c8d91b7fe5728b7dbdf82fca3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_logic_a008dd758dde00f1f5940558f275ec216}\label{class_logic_a008dd758dde00f1f5940558f275ec216}} 
+\index{Logic@{Logic}!make\+S\+K\+NF@{make\+S\+K\+NF}}
+\index{make\+S\+K\+NF@{make\+S\+K\+NF}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{make\+S\+K\+N\+F()}{makeSKNF()}}
+{\footnotesize\ttfamily void Logic\+::make\+S\+K\+NF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_logic_a008dd758dde00f1f5940558f275ec216}{Logic\+::make\+S\+K\+NF} создает Совершенную Конъюнктивную Нормальную Форму 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a008dd758dde00f1f5940558f275ec216_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_a008dd758dde00f1f5940558f275ec216_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_logic_af592736369fd989be41c59b4e7315ab5}\label{class_logic_af592736369fd989be41c59b4e7315ab5}} 
+\index{Logic@{Logic}!set\+Vars@{set\+Vars}}
+\index{set\+Vars@{set\+Vars}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{set\+Vars()}{setVars()}}
+{\footnotesize\ttfamily void Logic\+::set\+Vars (\begin{DoxyParamCaption}\item[{Q\+List$<$ Q\+String $>$ $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_logic_af592736369fd989be41c59b4e7315ab5}{Logic\+::set\+Vars} Добавляет массив логических переменных в внутренний массив 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em v} & массив логических переменных \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_logic_af592736369fd989be41c59b4e7315ab5_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Данные класса}
+\mbox{\Hypertarget{class_logic_a5d00b20d2c2a531f8796581f49fa7d5a}\label{class_logic_a5d00b20d2c2a531f8796581f49fa7d5a}} 
+\index{Logic@{Logic}!A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+@{A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+}}
+\index{A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+@{A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+}{AVIABLE\_NAME\_OF\_VARS\_}}
+{\footnotesize\ttfamily const Q\+List$<$Q\+String$>$ Logic\+::\+A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+\{
+        \textcolor{stringliteral}{"A"}, \textcolor{stringliteral}{"B"}, \textcolor{stringliteral}{"C"}, \textcolor{stringliteral}{"D"}, \textcolor{stringliteral}{"E"}, \textcolor{stringliteral}{"F"}, \textcolor{stringliteral}{"G"}, \textcolor{stringliteral}{"X"}, \textcolor{stringliteral}{"Y"}, \textcolor{stringliteral}{"Z"},
+        \textcolor{stringliteral}{"a"}, \textcolor{stringliteral}{"b"}, \textcolor{stringliteral}{"c"}, \textcolor{stringliteral}{"d"}, \textcolor{stringliteral}{"e"}, \textcolor{stringliteral}{"f"}, \textcolor{stringliteral}{"g"}, \textcolor{stringliteral}{"x"}, \textcolor{stringliteral}{"y"}, \textcolor{stringliteral}{"z"}
+    \}
+\end{DoxyCode}
+
+
+Сопоставление бинарной операции с её внутренним номером (нужно для удобства) 
+
+\mbox{\Hypertarget{class_logic_a87779b9da5a43f388cbb26982502e989}\label{class_logic_a87779b9da5a43f388cbb26982502e989}} 
+\index{Logic@{Logic}!B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+@{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+}}
+\index{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+@{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+}{BINARY\_OPERATIONS\_}}
+{\footnotesize\ttfamily const Q\+Map$<$Q\+String, Q\+String$>$ Logic\+::\+B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+\{
+        \{\textcolor{stringliteral}{"*"}, \textcolor{stringliteral}{"conjunction"}\},
+        \{\textcolor{stringliteral}{"+"}, \textcolor{stringliteral}{"disjunction"}\},
+        \{\textcolor{stringliteral}{"^"}, \textcolor{stringliteral}{"exclusiveDisjunction"}\},
+        \{\textcolor{stringliteral}{"|"}, \textcolor{stringliteral}{"notAnd"}\},
+        \{\textcolor{stringliteral}{"#"}, \textcolor{stringliteral}{"notOr"}\},
+        \{\textcolor{stringliteral}{"->"}, \textcolor{stringliteral}{"implication"}\},
+        \{\textcolor{stringliteral}{"<-"}, \textcolor{stringliteral}{"converse"}\},
+        \{\textcolor{stringliteral}{"~"}, \textcolor{stringliteral}{"equivalent"}\}
+    \}
+\end{DoxyCode}
+
+
+Используется для управление полем вывода 
+
+\mbox{\Hypertarget{class_logic_a80a5ac2ef983887c55d5b64e941b9dbe}\label{class_logic_a80a5ac2ef983887c55d5b64e941b9dbe}} 
+\index{Logic@{Logic}!B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+@{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+}}
+\index{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+@{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+}!Logic@{Logic}}
+\subsubsection{\texorpdfstring{B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+}{BINARY\_OPERATIONS\_TO\_NUM\_}}
+{\footnotesize\ttfamily const Q\+Map$<$Q\+String, int$>$ Logic\+::\+B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+\{
+        \{\textcolor{stringliteral}{"conjunction"}, 1\},
+        \{\textcolor{stringliteral}{"disjunction"}, 2\},
+        \{\textcolor{stringliteral}{"implication"}, 3\},
+        \{\textcolor{stringliteral}{"converse"}, 4\},
+        \{\textcolor{stringliteral}{"equivalent"}, 5\},
+        \{\textcolor{stringliteral}{"exclusiveDisjunction"}, 6\},
+        \{\textcolor{stringliteral}{"notAnd"}, 7\},
+        \{\textcolor{stringliteral}{"notOr"}, 8\}
+    \}
+\end{DoxyCode}
+
+
+Словарь бинарных операций 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{logic_8h}{logic.\+h}\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{logic_8cpp}{logic.\+cpp}\end{DoxyCompactItemize}

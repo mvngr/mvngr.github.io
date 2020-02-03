@@ -1,0 +1,17 @@
+<map id="MainWindow::~MainWindow" name="MainWindow::~MainWindow">
+<area shape="rect" id="node2" href="$class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190" title="словарь доступных действий " alt="" coords="241,5,392,32"/>
+<area shape="rect" id="node3" href="$class_input_editor.html#ad9a9e03d439e909c6d72775ef78d9814" title="InputEditor::parse Парсит введенную строку " alt="" coords="463,5,589,32"/>
+<area shape="rect" id="node4" href="$class_logic.html#af592736369fd989be41c59b4e7315ab5" title="Logic::setVars Добавляет массив логических переменных в внутренний массив " alt="" coords="473,56,579,83"/>
+<area shape="rect" id="node5" href="$class_input_editor.html#a3f69e5b7fe43e31f2a4f783fbdc8072e" title="InputEditor::getVars Выдает указатель на внутренний массив данных " alt="" coords="247,335,386,361"/>
+<area shape="rect" id="node7" href="$class_logic.html#a17bd98c66121d7739f11af12affdb64b" title="Logic::compute Инициирует вычисления " alt="" coords="471,259,581,285"/>
+<area shape="rect" id="node13" href="$class_logic.html#a008dd758dde00f1f5940558f275ec216" title="Logic::makeSKNF создает Совершенную Конъюнктивную Нормальную Форму " alt="" coords="252,259,381,285"/>
+<area shape="rect" id="node15" href="$class_logic.html#a1494325c8d91b7fe5728b7dbdf82fca3" title="Logic::makeSDNF создает Совершенную Дизъюнктивную Нормальную Форму " alt="" coords="251,157,382,184"/>
+<area shape="rect" id="node6" href="$class_input_editor.html#ab65dc1f4a87be3abf8bfff14c1a54532" title="InputEditor::toString Преобразует внутренний массив в строку " alt="" coords="457,360,595,387"/>
+<area shape="rect" id="node8" href="$class_logic.html#a7eae2f1ccdc24932e795b33906b501b7" title="Logic::computeLogicalAction Инициирует вычисление таблицы истинности " alt="" coords="660,157,849,184"/>
+<area shape="rect" id="node10" href="$class_content_editor.html#a4244e9ccd627ab8146d74637837872e9" title="ContentEditor::printTruthTable Инициирует вывод таблицы истинности " alt="" coords="672,310,837,351"/>
+<area shape="rect" id="node11" href="$class_logic.html#a0887d38c17058d50c4d8a3b7a8fc44ac" title="Logic::getVarsTitle Отдает массив имен логических переменных " alt="" coords="689,208,820,235"/>
+<area shape="rect" id="node12" href="$class_logic.html#a42630bbe8bded25027014e9f0b2a085e" title="Logic::getVarsData Отдает массив всех данных из логических переменных " alt="" coords="687,259,822,285"/>
+<area shape="rect" id="node9" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название " alt="" coords="897,132,1028,159"/>
+<area shape="rect" id="node14" href="$class_content_editor.html#a5492b3c4a67484e9b01322fd6b82870a" title="ContentEditor::printSKNF выводит Совершенную Конъюнктивную Нормальную Форму " alt="" coords="441,309,611,336"/>
+<area shape="rect" id="node16" href="$class_content_editor.html#a929362122ef024a5b4ddc180f8af3423" title="ContentEditor::printSDNF выводит Совершенную Дизъюнктивную Нормальную Форму " alt="" coords="440,208,612,235"/>
+</map>

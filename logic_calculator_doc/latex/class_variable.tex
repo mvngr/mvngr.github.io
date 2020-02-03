@@ -1,0 +1,486 @@
+\hypertarget{class_variable}{}\section{Класс Variable}
+\label{class_variable}\index{Variable@{Variable}}
+
+
+\hyperlink{class_variable}{Variable} -\/ Класс логических переменных  
+
+
+
+
+{\ttfamily \#include $<$variable.\+h$>$}
+
+
+
+Граф связей класса Variable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_variable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_variable_abef86be74e8dfb025fdeaf18048e9922}{Variable} (const Q\+Char name)
+\item 
+\hyperlink{class_variable_ae347cff8c66e1fb58b5fd90b9f19956a}{Variable} (const Q\+String \&name)
+\item 
+\hyperlink{class_variable_af3512a97c66e98c40a4aa69c9d65e22a}{Variable} (const Q\+Char name, const Q\+List$<$ bool $>$ $\ast$vars)
+\item 
+\hyperlink{class_variable_af55f1231f40b8fc1bb6fbca091a43c83}{Variable} (Q\+Char name, int number\+Variables, int position\+Variable)
+\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_a3072441748b17a105aea1485911bb489}{conjunction} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a3072441748b17a105aea1485911bb489}{Variable\+::conjunction} Конъюнкция \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_a2e4849eea01ce6e2ec9ba143164e7d57}{disjunction} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a2e4849eea01ce6e2ec9ba143164e7d57}{Variable\+::disjunction} Дизъюнкция \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_a82a20d70ad58a132b487a7bc822b47d1}{implication} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a82a20d70ad58a132b487a7bc822b47d1}{Variable\+::implication} Импликация \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_adb62912a5e9433289191879e6bb7d580}{converse} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_adb62912a5e9433289191879e6bb7d580}{Variable\+::converse} Обратная импликация \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_a5b1b5220dae873cc4bf6d0700eba703e}{not\+And} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a5b1b5220dae873cc4bf6d0700eba703e}{Variable\+::not\+And} Штрих Шеффера \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_aa71e11142a257fa6676257843879148c}{not\+Or} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_aa71e11142a257fa6676257843879148c}{Variable\+::not\+Or} Стрелка Пирса \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_a768fb534653ecc15e72f5d1201963705}{exclusive\+Disjunction} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a768fb534653ecc15e72f5d1201963705}{Variable\+::exclusive\+Disjunction} Исключающее ИЛИ \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_a104b427ab0f43e9eb24f049ec6b524b0}{equivalent} (const \hyperlink{class_variable}{Variable} \&other) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a104b427ab0f43e9eb24f049ec6b524b0}{Variable\+::equivalent} Эквиваленция \end{DoxyCompactList}\item 
+\hyperlink{class_variable}{Variable} \hyperlink{class_variable_a7f2a3b1b8540781703f5435253171978}{negation} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a7f2a3b1b8540781703f5435253171978}{Variable\+::negation} Отрицание самой переменной \end{DoxyCompactList}\item 
+void \hyperlink{class_variable_ab58f8291d67e633fd1ad76148fad9e1a}{set\+Name} (const Q\+String \&name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_ab58f8291d67e633fd1ad76148fad9e1a}{Variable\+::set\+Name} Задает имя \end{DoxyCompactList}\item 
+void \hyperlink{class_variable_ae6ac554c0382b43f9a3e37c6382d4471}{set\+Vars} (const Q\+List$<$ bool $>$ \&vars)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_ae6ac554c0382b43f9a3e37c6382d4471}{Variable\+::set\+Vars} Задает принимаемые значения \end{DoxyCompactList}\item 
+void \hyperlink{class_variable_a1f2f14a77dc0dbe91e6bd285afa67fc4}{set\+Vars} (const int index, const int size)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_ae6ac554c0382b43f9a3e37c6382d4471}{Variable\+::set\+Vars} Генерирует значения \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_variable_a7e2bd08aff707fb67d67ce1914e9bb48}{get\+Name} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a7e2bd08aff707fb67d67ce1914e9bb48}{Variable\+::get\+Name} Отдает название \end{DoxyCompactList}\item 
+Q\+List$<$ bool $>$ \hyperlink{class_variable_a43a45b7c410b176f3240ac1630495c8d}{get\+Vars} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a43a45b7c410b176f3240ac1630495c8d}{Variable\+::get\+Vars} Отдает значения переменной \end{DoxyCompactList}\item 
+bool \hyperlink{class_variable_a94991de2c5fd8fd5a66b74f726f0c645}{operator$>$} (const \hyperlink{class_variable}{Variable} \&other)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_a94991de2c5fd8fd5a66b74f726f0c645}{Variable\+::operator $>$} оператор больше \end{DoxyCompactList}\item 
+bool \hyperlink{class_variable_ac0aa608ee2a38525351a6a5d902a466f}{operator$<$} (const \hyperlink{class_variable}{Variable} \&other)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_variable_ac0aa608ee2a38525351a6a5d902a466f}{Variable\+::operator $<$} оператор меньше \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\hyperlink{class_variable}{Variable} -\/ Класс логических переменных 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_variable_abef86be74e8dfb025fdeaf18048e9922}\label{class_variable_abef86be74e8dfb025fdeaf18048e9922}} 
+\index{Variable@{Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const Q\+Char}]{name }\end{DoxyParamCaption})}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_variable_abef86be74e8dfb025fdeaf18048e9922_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_ae347cff8c66e1fb58b5fd90b9f19956a}\label{class_variable_ae347cff8c66e1fb58b5fd90b9f19956a}} 
+\index{Variable@{Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_variable_ae347cff8c66e1fb58b5fd90b9f19956a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_af3512a97c66e98c40a4aa69c9d65e22a}\label{class_variable_af3512a97c66e98c40a4aa69c9d65e22a}} 
+\index{Variable@{Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const Q\+Char}]{name,  }\item[{const Q\+List$<$ bool $>$ $\ast$}]{vars }\end{DoxyParamCaption})}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_variable_af3512a97c66e98c40a4aa69c9d65e22a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_af55f1231f40b8fc1bb6fbca091a43c83}\label{class_variable_af55f1231f40b8fc1bb6fbca091a43c83}} 
+\index{Variable@{Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{Q\+Char}]{name,  }\item[{int}]{number\+Variables,  }\item[{int}]{position\+Variable }\end{DoxyParamCaption})}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_variable_af55f1231f40b8fc1bb6fbca091a43c83_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_variable_a3072441748b17a105aea1485911bb489}\label{class_variable_a3072441748b17a105aea1485911bb489}} 
+\index{Variable@{Variable}!conjunction@{conjunction}}
+\index{conjunction@{conjunction}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{conjunction()}{conjunction()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::conjunction (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a3072441748b17a105aea1485911bb489}{Variable\+::conjunction} Конъюнкция 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_variable_a3072441748b17a105aea1485911bb489_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_adb62912a5e9433289191879e6bb7d580}\label{class_variable_adb62912a5e9433289191879e6bb7d580}} 
+\index{Variable@{Variable}!converse@{converse}}
+\index{converse@{converse}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{converse()}{converse()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::converse (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_adb62912a5e9433289191879e6bb7d580}{Variable\+::converse} Обратная импликация 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_variable_adb62912a5e9433289191879e6bb7d580_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a2e4849eea01ce6e2ec9ba143164e7d57}\label{class_variable_a2e4849eea01ce6e2ec9ba143164e7d57}} 
+\index{Variable@{Variable}!disjunction@{disjunction}}
+\index{disjunction@{disjunction}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{disjunction()}{disjunction()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::disjunction (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a2e4849eea01ce6e2ec9ba143164e7d57}{Variable\+::disjunction} Дизъюнкция 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_variable_a2e4849eea01ce6e2ec9ba143164e7d57_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a104b427ab0f43e9eb24f049ec6b524b0}\label{class_variable_a104b427ab0f43e9eb24f049ec6b524b0}} 
+\index{Variable@{Variable}!equivalent@{equivalent}}
+\index{equivalent@{equivalent}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{equivalent()}{equivalent()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::equivalent (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a104b427ab0f43e9eb24f049ec6b524b0}{Variable\+::equivalent} Эквиваленция 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_variable_a104b427ab0f43e9eb24f049ec6b524b0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a768fb534653ecc15e72f5d1201963705}\label{class_variable_a768fb534653ecc15e72f5d1201963705}} 
+\index{Variable@{Variable}!exclusive\+Disjunction@{exclusive\+Disjunction}}
+\index{exclusive\+Disjunction@{exclusive\+Disjunction}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{exclusive\+Disjunction()}{exclusiveDisjunction()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::exclusive\+Disjunction (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a768fb534653ecc15e72f5d1201963705}{Variable\+::exclusive\+Disjunction} Исключающее ИЛИ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_variable_a768fb534653ecc15e72f5d1201963705_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a7e2bd08aff707fb67d67ce1914e9bb48}\label{class_variable_a7e2bd08aff707fb67d67ce1914e9bb48}} 
+\index{Variable@{Variable}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily Q\+String Variable\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a7e2bd08aff707fb67d67ce1914e9bb48}{Variable\+::get\+Name} Отдает название 
+
+\begin{DoxyReturn}{Возвращает}
+название переменной 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_variable_a7e2bd08aff707fb67d67ce1914e9bb48_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a43a45b7c410b176f3240ac1630495c8d}\label{class_variable_a43a45b7c410b176f3240ac1630495c8d}} 
+\index{Variable@{Variable}!get\+Vars@{get\+Vars}}
+\index{get\+Vars@{get\+Vars}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{get\+Vars()}{getVars()}}
+{\footnotesize\ttfamily Q\+List$<$ bool $>$ Variable\+::get\+Vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a43a45b7c410b176f3240ac1630495c8d}{Variable\+::get\+Vars} Отдает значения переменной 
+
+\begin{DoxyReturn}{Возвращает}
+Значения переменной 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_variable_a82a20d70ad58a132b487a7bc822b47d1}\label{class_variable_a82a20d70ad58a132b487a7bc822b47d1}} 
+\index{Variable@{Variable}!implication@{implication}}
+\index{implication@{implication}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{implication()}{implication()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::implication (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a82a20d70ad58a132b487a7bc822b47d1}{Variable\+::implication} Импликация 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_variable_a82a20d70ad58a132b487a7bc822b47d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a7f2a3b1b8540781703f5435253171978}\label{class_variable_a7f2a3b1b8540781703f5435253171978}} 
+\index{Variable@{Variable}!negation@{negation}}
+\index{negation@{negation}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{negation()}{negation()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::negation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_variable_a7f2a3b1b8540781703f5435253171978}{Variable\+::negation} Отрицание самой переменной 
+
+\begin{DoxyReturn}{Возвращает}
+получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_variable_a7f2a3b1b8540781703f5435253171978_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a5b1b5220dae873cc4bf6d0700eba703e}\label{class_variable_a5b1b5220dae873cc4bf6d0700eba703e}} 
+\index{Variable@{Variable}!not\+And@{not\+And}}
+\index{not\+And@{not\+And}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{not\+And()}{notAnd()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::not\+And (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_a5b1b5220dae873cc4bf6d0700eba703e}{Variable\+::not\+And} Штрих Шеффера 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_variable_a5b1b5220dae873cc4bf6d0700eba703e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_aa71e11142a257fa6676257843879148c}\label{class_variable_aa71e11142a257fa6676257843879148c}} 
+\index{Variable@{Variable}!not\+Or@{not\+Or}}
+\index{not\+Or@{not\+Or}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{not\+Or()}{notOr()}}
+{\footnotesize\ttfamily \hyperlink{class_variable}{Variable} Variable\+::not\+Or (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\hyperlink{class_variable_aa71e11142a257fa6676257843879148c}{Variable\+::not\+Or} Стрелка Пирса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & с данной переменной \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Получившееся значение 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_variable_aa71e11142a257fa6676257843879148c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_ac0aa608ee2a38525351a6a5d902a466f}\label{class_variable_ac0aa608ee2a38525351a6a5d902a466f}} 
+\index{Variable@{Variable}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Variable\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_variable_ac0aa608ee2a38525351a6a5d902a466f}{Variable\+::operator $<$} оператор меньше 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & другая переменная \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+меньше ли данная перменная
+\end{DoxyReturn}
+\begin{DoxyWarning}{Предупреждения}
+Используется только для сортировки, не является логическим действием в понимании самого калькулятора! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_variable_a94991de2c5fd8fd5a66b74f726f0c645}\label{class_variable_a94991de2c5fd8fd5a66b74f726f0c645}} 
+\index{Variable@{Variable}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Variable\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_variable}{Variable} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_variable_a94991de2c5fd8fd5a66b74f726f0c645}{Variable\+::operator $>$} оператор больше 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em other} & другая переменная \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+больше ли данная перменная
+\end{DoxyReturn}
+\begin{DoxyWarning}{Предупреждения}
+Используется только для сортировки, не является логическим действием в понимании самого калькулятора! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_variable_ab58f8291d67e633fd1ad76148fad9e1a}\label{class_variable_ab58f8291d67e633fd1ad76148fad9e1a}} 
+\index{Variable@{Variable}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Variable\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_variable_ab58f8291d67e633fd1ad76148fad9e1a}{Variable\+::set\+Name} Задает имя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & задаваемое имя \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_variable_ab58f8291d67e633fd1ad76148fad9e1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_ae6ac554c0382b43f9a3e37c6382d4471}\label{class_variable_ae6ac554c0382b43f9a3e37c6382d4471}} 
+\index{Variable@{Variable}!set\+Vars@{set\+Vars}}
+\index{set\+Vars@{set\+Vars}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{set\+Vars()}{setVars()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Variable\+::set\+Vars (\begin{DoxyParamCaption}\item[{const Q\+List$<$ bool $>$ \&}]{vars }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_variable_ae6ac554c0382b43f9a3e37c6382d4471}{Variable\+::set\+Vars} Задает принимаемые значения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em vars} & задаваемые значения \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_variable_ae6ac554c0382b43f9a3e37c6382d4471_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_variable_a1f2f14a77dc0dbe91e6bd285afa67fc4}\label{class_variable_a1f2f14a77dc0dbe91e6bd285afa67fc4}} 
+\index{Variable@{Variable}!set\+Vars@{set\+Vars}}
+\index{set\+Vars@{set\+Vars}!Variable@{Variable}}
+\subsubsection{\texorpdfstring{set\+Vars()}{setVars()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Variable\+::set\+Vars (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{const int}]{size }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_variable_ae6ac554c0382b43f9a3e37c6382d4471}{Variable\+::set\+Vars} Генерирует значения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em index} & индекс элемента \\
+\hline
+{\em size} & количество элементов \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{variable_8h}{variable.\+h}\item 
+/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{variable_8cpp}{variable.\+cpp}\end{DoxyCompactItemize}

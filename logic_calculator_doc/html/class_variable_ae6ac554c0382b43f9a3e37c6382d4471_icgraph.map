@@ -1,0 +1,11 @@
+<map id="Variable::setVars" name="Variable::setVars">
+<area shape="rect" id="node2" href="$class_variable.html#af3512a97c66e98c40a4aa69c9d65e22a" title="Variable::Variable" alt="" coords="213,5,337,32"/>
+<area shape="rect" id="node3" href="$class_variable.html#a3072441748b17a105aea1485911bb489" title="Variable::conjunction Конъюнкция " alt="" coords="203,56,346,83"/>
+<area shape="rect" id="node4" href="$class_variable.html#a2e4849eea01ce6e2ec9ba143164e7d57" title="Variable::disjunction Дизъюнкция " alt="" coords="205,107,344,133"/>
+<area shape="rect" id="node5" href="$class_variable.html#a82a20d70ad58a132b487a7bc822b47d1" title="Variable::implication Импликация " alt="" coords="205,157,344,184"/>
+<area shape="rect" id="node6" href="$class_variable.html#adb62912a5e9433289191879e6bb7d580" title="Variable::converse Обратная импликация " alt="" coords="209,208,340,235"/>
+<area shape="rect" id="node7" href="$class_variable.html#a5b1b5220dae873cc4bf6d0700eba703e" title="Variable::notAnd Штрих Шеффера " alt="" coords="215,259,334,285"/>
+<area shape="rect" id="node8" href="$class_variable.html#aa71e11142a257fa6676257843879148c" title="Variable::notOr Стрелка Пирса " alt="" coords="220,309,329,336"/>
+<area shape="rect" id="node9" href="$class_variable.html#a768fb534653ecc15e72f5d1201963705" title="Variable::exclusiveDisjunction Исключающее ИЛИ " alt="" coords="176,360,373,387"/>
+<area shape="rect" id="node10" href="$class_variable.html#a104b427ab0f43e9eb24f049ec6b524b0" title="Variable::equivalent Эквиваленция " alt="" coords="207,411,343,437"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Logic::computeLogicalAction" name="Logic::computeLogicalAction">
+<area shape="rect" id="node2" href="$class_logic.html#a17bd98c66121d7739f11af12affdb64b" title="Logic::compute Инициирует вычисления " alt="" coords="243,56,353,83"/>
+<area shape="rect" id="node5" href="$class_logic.html#a1494325c8d91b7fe5728b7dbdf82fca3" title="Logic::makeSDNF создает Совершенную Дизъюнктивную Нормальную Форму " alt="" coords="401,107,532,133"/>
+<area shape="rect" id="node3" href="$class_logic.html#a008dd758dde00f1f5940558f275ec216" title="Logic::makeSKNF создает Совершенную Конъюнктивную Нормальную Форму " alt="" coords="402,5,531,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7" title="MainWindow::~MainWindow" alt="" coords="580,56,768,83"/>
+</map>

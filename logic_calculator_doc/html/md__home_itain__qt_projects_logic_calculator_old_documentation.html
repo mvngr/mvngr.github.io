@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Logic Calculator: Старая версия документации</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Logic Calculator
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Старая версия документации </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Классы, методы и переменные, которые использует калькулятор</p>
+<h3><a class="el" href="class_main_window.html" title="MainWindow - Класс отвечает за взаимодействие с пользовательским интерфейсом ">MainWindow</a></h3>
+<p>Класс отвечает за взаимодействие с пользовательским интерфейсом</p>
+<table class="doxtable">
+<tr>
+<th>Метод </th><th>Описание  </th></tr>
+<tr>
+<td>inputPressed </td><td>Обработчик для поля ввода данных, вызывается при нажатии на <code>enter</code> </td></tr>
+<tr>
+<td>onClicked </td><td>Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответствующий символ </td></tr>
+<tr>
+<td>bindConnect </td><td>Создаёт связи между обработчиком события <code>onClicked</code> и нажатой кнопкой </td></tr>
+<tr>
+<td>on_compute_clicked </td><td>Обработчик нажатия на кнопку <code>Вычислить</code> </td></tr>
+<tr>
+<td>connectQss </td><td>Отвечает за подключение стилей </td></tr>
+<tr>
+<td>on_f4_clicked </td><td>Обработчик для кнопки <code>СДНФ</code> </td></tr>
+<tr>
+<td>on_f5_clicked </td><td>Обработчик для кнопки <code>СКНФ</code> </td></tr>
+</table>
+<h3><a class="el" href="class_input_editor.html" title="InputEditor - Класс отвечает за обработку данных, вводимых в поле ввода данных ">InputEditor</a></h3>
+<p>Класс отвечает за обработку данных, вводимых в поле ввода данных</p>
+<table class="doxtable">
+<tr>
+<th>Переменная </th><th>Описание  </th></tr>
+<tr>
+<td>input_ </td><td>Используется для управления полем ввода данных </td></tr>
+<tr>
+<td>v_ </td><td>Внутренний массив для хранения данных из поля ввода данных </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th>Метод </th><th>Описание  </th></tr>
+<tr>
+<td>PushBack </td><td>Добавляет определенные данные в конец внутреннего массива </td></tr>
+<tr>
+<td>toString </td><td>Преобразует внутренний массив в строку </td></tr>
+<tr>
+<td>parse </td><td>Парсит введенную строку, возвращает в виде переменной ответ, смогло ли произойти чтение </td></tr>
+<tr>
+<td>getVars </td><td>Добавление в внутренний массив внешние данные </td></tr>
+<tr>
+<td>updateInput </td><td>Обновляет поле для ввода данных </td></tr>
+<tr>
+<td>fillConsts </td><td>Заполняет словари заранее подготовленными данными </td></tr>
+<tr>
+<td>isValidity </td><td>Определяет корректность данных в внутреннем массиве относительно поля ввода данных </td></tr>
+</table>
+<h3><a class="el" href="class_logic.html" title="Logic - Класс отвечает за логику выполнения действий ">Logic</a></h3>
+<p>Класс отвечает за логику выполнения действий</p>
+<table class="doxtable">
+<tr>
+<th>Переменная </th><th>Описание  </th></tr>
+<tr>
+<td>BINARY_OPERATIONS_ </td><td>Словарь бинарных операций </td></tr>
+<tr>
+<td>BINARY_OPERATIONS_TO_NUM_ </td><td>Сопоставление бинарной операции с её внутренним номером (нужно для удобства) </td></tr>
+<tr>
+<td>AVIABLE_NAME_OF_VARS_ </td><td>Словарь разрешенных имен для логических переменных </td></tr>
+<tr>
+<td>vars_ </td><td>Массив логических переменных </td></tr>
+<tr>
+<td>v_ </td><td>Массив строк, разделенных при помощи пробела. Пример: <code>{"A", "*", "B", "+", "!", "C"}</code> </td></tr>
+<tr>
+<td>map_ </td><td>Используется для сопоставления строковых переменных и их аналогов из vars_. <code>&lt;Название переменной&gt; =&gt; &lt;Индекс в массиве объекта&gt;</code> </td></tr>
+<tr>
+<td>ce_ </td><td>Используется для управление полем вывода </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th>Метод </th><th>Описание  </th></tr>
+<tr>
+<td>setVars </td><td>Добавляет массив логических переменных в внутренний массив </td></tr>
+<tr>
+<td>compute </td><td>Инициирует вычисления </td></tr>
+<tr>
+<td>computeLogicalAction </td><td>Инициирует вычисление таблицы истинности </td></tr>
+<tr>
+<td>getVarsTitle </td><td>Отдает массив имен логических переменных </td></tr>
+<tr>
+<td>getVarsData </td><td>Отдает массив всех данных из логических переменных </td></tr>
+<tr>
+<td>negation </td><td>Используется для выполнения отрицания у всей входной строки </td></tr>
+<tr>
+<td>negationFunc </td><td>Используется для выполнения отрицания у выражений со скобками во входной строке </td></tr>
+<tr>
+<td>binaryOperation </td><td>Используется для выполнения входной операции у всей входной строки </td></tr>
+<tr>
+<td>fillOperations </td><td>Используется для заполнения словарей </td></tr>
+<tr>
+<td>showError </td><td>Выводит в пользовательский интерфейс сообщения с ошибками </td></tr>
+<tr>
+<td>insertWithReplace </td><td>Выполняет внедрение логической операции в внутренние массивы взамен переменным(ой) и оператора </td></tr>
+<tr>
+<td>fillVars </td><td>Добавляет логические переменные в vars_ из строк <code>v_</code> </td></tr>
+<tr>
+<td>fillMap </td><td>Заполняет карту <code>map_</code> </td></tr>
+<tr>
+<td>isRepeat </td><td>Проверяет на повторение названия имен в <code>vars_</code> </td></tr>
+<tr>
+<td>sortVars </td><td>Сортирует массив <code>vars_</code> по названиям </td></tr>
+<tr>
+<td>makeBoolArrays </td><td>Создает массив начальных данных у переменных </td></tr>
+<tr>
+<td>findBrackets </td><td>Находит выражения в скобках и высчитывает их </td></tr>
+<tr>
+<td>subString </td><td>Возвращает подстроку из строки </td></tr>
+<tr>
+<td>makeSKNF </td><td>создает Совершенную Конъюнктивную Нормальную Форму </td></tr>
+<tr>
+<td>makeSDNF </td><td>создает Совершенную Дизъюнктивную Нормальную Форму </td></tr>
+</table>
+<h3><a class="el" href="class_content_editor.html" title="ContentEditor - Класс отвечает за корректный и удобный вывод чего-либо в поле для вывода ...">ContentEditor</a></h3>
+<p>Класс отвечает за корректный и удобный вывод чего-либо в поле для вывода</p>
+<table class="doxtable">
+<tr>
+<th>Переменная </th><th>Описание  </th></tr>
+<tr>
+<td>pte_ </td><td>Управление полем вывода </td></tr>
+<tr>
+<td>cellSize_ </td><td>Размеры ячеек в таблице истинности </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th>Метод </th><th>Описание  </th></tr>
+<tr>
+<td>printTruthTable </td><td>Инициирует вывод таблицы истинности </td></tr>
+<tr>
+<td>getSize </td><td>Заполняет значения размеров ячеек в таблице истинности <code>cellSize_</code> </td></tr>
+<tr>
+<td>makeString </td><td>Создает строку из повторяющихся amount раз символов segment </td></tr>
+<tr>
+<td>makeLine </td><td>Создает линию под заголовком </td></tr>
+<tr>
+<td>makeTitle </td><td>Создает заголовок </td></tr>
+<tr>
+<td>makeData </td><td>Создает двумерный массив данных <code>&lt;0/1&gt;</code> </td></tr>
+<tr>
+<td>centerAlign </td><td>выравнивает все элементы по центру своей ячейки </td></tr>
+<tr>
+<td>printSKNF </td><td>выводит Совершенную Конъюнктивную Нормальную Форму </td></tr>
+<tr>
+<td>printSDNF </td><td>выводит Совершенную Дизъюнктивную Нормальную Форму </td></tr>
+</table>
+<h3><a class="el" href="class_variable.html" title="Variable - Класс логических переменных ">Variable</a></h3>
+<p>Класс логических переменных</p>
+<table class="doxtable">
+<tr>
+<th>Переменная </th><th>Описание  </th></tr>
+<tr>
+<td>name_ </td><td>Имя логической переменной </td></tr>
+<tr>
+<td>vars_ </td><td>Принимаемые значения </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th>Метод </th><th>Описание  </th></tr>
+<tr>
+<td>conjunction </td><td>Конъюнкция с переменной <code>other</code> </td></tr>
+<tr>
+<td>disjunction </td><td>Дизъюнкция с переменной <code>other</code> </td></tr>
+<tr>
+<td>implication </td><td>Импликация с переменной <code>other</code> </td></tr>
+<tr>
+<td>converse </td><td>Обратная импликация с переменной <code>other</code> </td></tr>
+<tr>
+<td>notAnd </td><td>Штрих Шеффера с переменной <code>other</code> </td></tr>
+<tr>
+<td>notOr </td><td>Стрелка Пирса с переменной <code>other</code> </td></tr>
+<tr>
+<td>exclusiveDisjunction </td><td>Исключающее ИЛИ с переменной <code>other</code> </td></tr>
+<tr>
+<td>equivalent </td><td>Эквиваленция с переменной <code>other</code> </td></tr>
+<tr>
+<td>negation </td><td>Отрицание самой переменной </td></tr>
+<tr>
+<td>setName </td><td>Задает имя <code>name_</code> как у переменной <code>name</code> </td></tr>
+<tr>
+<td>setVars </td><td>Задает принимаемые значения <code>vars_</code> как у массива <code>vars</code>, либо генерирует их, основываясь на индексе элемента и количестве элементов </td></tr>
+<tr>
+<td>getName </td><td>Отдает значение <code>name_</code> </td></tr>
+<tr>
+<td>getVars </td><td>Отдает значение <code>vars_</code> </td></tr>
+<tr>
+<td>debugVars </td><td>Выводит значения <code>vars_</code> в консоль (Не используется) </td></tr>
+<tr>
+<td>pow2 </td><td>Возвращает степень числа два </td></tr>
+<tr>
+<td>makeName </td><td>Создает строку из двух названий переменных и операции между ними </td></tr>
+</table>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
