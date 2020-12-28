@@ -1,2 +1,7 @@
 <map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node1" title="MainWindow &#45; Класс отвечает за взаимодействие с пользовательским интерфейсом" alt="" coords="139,184,246,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,121,121"/>
+<area shape="rect" id="node3" href="$class_input_editor.html" title="InputEditor &#45; Класс отвечает за обработку данных, вводимых в поле ввода данных" alt="" coords="146,95,239,121"/>
+<area shape="rect" id="node4" href="$class_logic.html" title="Logic &#45; Класс отвечает за логику выполнения действий" alt="" coords="263,95,319,121"/>
+<area shape="rect" id="node5" href="$class_content_editor.html" title="ContentEditor &#45; Класс отвечает за корректный и удобный вывод чего&#45;либо в поле для вывода" alt="" coords="236,5,347,32"/>
 </map>

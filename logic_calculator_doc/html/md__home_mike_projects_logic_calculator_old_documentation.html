@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Логический калькулятор: Старая версия документации</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Логический калькулятор
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Старая версия документации </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Классы, методы и переменные, которые использует калькулятор</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+MainWindow</h2>
+<p>Класс отвечает за взаимодействие с пользовательским интерфейсом</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Метод </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">inputPressed </td><td class="markdownTableBodyNone">Обработчик для поля ввода данных, вызывается при нажатии на <code>enter</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">onClicked </td><td class="markdownTableBodyNone">Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответствующий символ  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">bindConnect </td><td class="markdownTableBodyNone">Создаёт связи между обработчиком события <code>onClicked</code> и нажатой кнопкой  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">on_compute_clicked </td><td class="markdownTableBodyNone">Обработчик нажатия на кнопку <code>Вычислить</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">connectQss </td><td class="markdownTableBodyNone">Отвечает за подключение стилей  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">on_f4_clicked </td><td class="markdownTableBodyNone">Обработчик для кнопки <code>СДНФ</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">on_f5_clicked </td><td class="markdownTableBodyNone">Обработчик для кнопки <code>СКНФ</code>  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md2"></a>
+InputEditor</h2>
+<p>Класс отвечает за обработку данных, вводимых в поле ввода данных</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Переменная </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">input_ </td><td class="markdownTableBodyNone">Используется для управления полем ввода данных  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">v_ </td><td class="markdownTableBodyNone">Внутренний массив для хранения данных из поля ввода данных  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Метод </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">PushBack </td><td class="markdownTableBodyNone">Добавляет определенные данные в конец внутреннего массива  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">toString </td><td class="markdownTableBodyNone">Преобразует внутренний массив в строку  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">parse </td><td class="markdownTableBodyNone">Парсит введенную строку, возвращает в виде переменной ответ, смогло ли произойти чтение  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">getVars </td><td class="markdownTableBodyNone">Добавление в внутренний массив внешние данные  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">updateInput </td><td class="markdownTableBodyNone">Обновляет поле для ввода данных  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fillConsts </td><td class="markdownTableBodyNone">Заполняет словари заранее подготовленными данными  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">isValidity </td><td class="markdownTableBodyNone">Определяет корректность данных в внутреннем массиве относительно поля ввода данных  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Logic</h2>
+<p>Класс отвечает за логику выполнения действий</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Переменная </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">BINARY_OPERATIONS_ </td><td class="markdownTableBodyNone">Словарь бинарных операций  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">BINARY_OPERATIONS_TO_NUM_ </td><td class="markdownTableBodyNone">Сопоставление бинарной операции с её внутренним номером (нужно для удобства)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">AVIABLE_NAME_OF_VARS_ </td><td class="markdownTableBodyNone">Словарь разрешенных имен для логических переменных  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vars_ </td><td class="markdownTableBodyNone">Массив логических переменных  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">v_ </td><td class="markdownTableBodyNone">Массив строк, разделенных при помощи пробела. Пример: <code>{"A", "*", "B", "+", "!", "C"}</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">map_ </td><td class="markdownTableBodyNone">Используется для сопоставления строковых переменных и их аналогов из vars_. <code>&lt;Название переменной&gt; =&gt; &lt;Индекс в массиве объекта&gt;</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ce_ </td><td class="markdownTableBodyNone">Используется для управление полем вывода  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Метод </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">setVars </td><td class="markdownTableBodyNone">Добавляет массив логических переменных в внутренний массив  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">compute </td><td class="markdownTableBodyNone">Инициирует вычисления  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">computeLogicalAction </td><td class="markdownTableBodyNone">Инициирует вычисление таблицы истинности  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">getVarsTitle </td><td class="markdownTableBodyNone">Отдает массив имен логических переменных  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">getVarsData </td><td class="markdownTableBodyNone">Отдает массив всех данных из логических переменных  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">negation </td><td class="markdownTableBodyNone">Используется для выполнения отрицания у всей входной строки  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">negationFunc </td><td class="markdownTableBodyNone">Используется для выполнения отрицания у выражений со скобками во входной строке  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">binaryOperation </td><td class="markdownTableBodyNone">Используется для выполнения входной операции у всей входной строки  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fillOperations </td><td class="markdownTableBodyNone">Используется для заполнения словарей  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">showError </td><td class="markdownTableBodyNone">Выводит в пользовательский интерфейс сообщения с ошибками  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">insertWithReplace </td><td class="markdownTableBodyNone">Выполняет внедрение логической операции в внутренние массивы взамен переменным(ой) и оператора  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fillVars </td><td class="markdownTableBodyNone">Добавляет логические переменные в vars_ из строк <code>v_</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fillMap </td><td class="markdownTableBodyNone">Заполняет карту <code>map_</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">isRepeat </td><td class="markdownTableBodyNone">Проверяет на повторение названия имен в <code>vars_</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">sortVars </td><td class="markdownTableBodyNone">Сортирует массив <code>vars_</code> по названиям  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">makeBoolArrays </td><td class="markdownTableBodyNone">Создает массив начальных данных у переменных  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">findBrackets </td><td class="markdownTableBodyNone">Находит выражения в скобках и высчитывает их  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">subString </td><td class="markdownTableBodyNone">Возвращает подстроку из строки  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">makeSKNF </td><td class="markdownTableBodyNone">создает Совершенную Конъюнктивную Нормальную Форму  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">makeSDNF </td><td class="markdownTableBodyNone">создает Совершенную Дизъюнктивную Нормальную Форму  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md4"></a>
+ContentEditor</h2>
+<p>Класс отвечает за корректный и удобный вывод чего-либо в поле для вывода</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Переменная </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pte_ </td><td class="markdownTableBodyNone">Управление полем вывода  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cellSize_ </td><td class="markdownTableBodyNone">Размеры ячеек в таблице истинности  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Метод </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">printTruthTable </td><td class="markdownTableBodyNone">Инициирует вывод таблицы истинности  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">getSize </td><td class="markdownTableBodyNone">Заполняет значения размеров ячеек в таблице истинности <code>cellSize_</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">makeString </td><td class="markdownTableBodyNone">Создает строку из повторяющихся amount раз символов segment  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">makeLine </td><td class="markdownTableBodyNone">Создает линию под заголовком  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">makeTitle </td><td class="markdownTableBodyNone">Создает заголовок  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">makeData </td><td class="markdownTableBodyNone">Создает двумерный массив данных <code>&lt;0/1&gt;</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">centerAlign </td><td class="markdownTableBodyNone">выравнивает все элементы по центру своей ячейки  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">printSKNF </td><td class="markdownTableBodyNone">выводит Совершенную Конъюнктивную Нормальную Форму  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">printSDNF </td><td class="markdownTableBodyNone">выводит Совершенную Дизъюнктивную Нормальную Форму  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Variable</h2>
+<p>Класс логических переменных</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Переменная </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">name_ </td><td class="markdownTableBodyNone">Имя логической переменной  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">vars_ </td><td class="markdownTableBodyNone">Принимаемые значения  </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Метод </th><th class="markdownTableHeadNone">Описание  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">conjunction </td><td class="markdownTableBodyNone">Конъюнкция с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">disjunction </td><td class="markdownTableBodyNone">Дизъюнкция с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">implication </td><td class="markdownTableBodyNone">Импликация с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">converse </td><td class="markdownTableBodyNone">Обратная импликация с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">notAnd </td><td class="markdownTableBodyNone">Штрих Шеффера с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">notOr </td><td class="markdownTableBodyNone">Стрелка Пирса с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">exclusiveDisjunction </td><td class="markdownTableBodyNone">Исключающее ИЛИ с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">equivalent </td><td class="markdownTableBodyNone">Эквиваленция с переменной <code>other</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">negation </td><td class="markdownTableBodyNone">Отрицание самой переменной  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">setName </td><td class="markdownTableBodyNone">Задает имя <code>name_</code> как у переменной <code>name</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">setVars </td><td class="markdownTableBodyNone">Задает принимаемые значения <code>vars_</code> как у массива <code>vars</code>, либо генерирует их, основываясь на индексе элемента и количестве элементов  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">getName </td><td class="markdownTableBodyNone">Отдает значение <code>name_</code>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">getVars </td><td class="markdownTableBodyNone">Отдает значение <code>vars_</code>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">debugVars </td><td class="markdownTableBodyNone">Выводит значения <code>vars_</code> в консоль (Не используется)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pow2 </td><td class="markdownTableBodyNone">Возвращает степень числа два  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">makeName </td><td class="markdownTableBodyNone">Создает строку из двух названий переменных и операции между ними  </td></tr>
+</table>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

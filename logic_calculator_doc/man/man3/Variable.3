@@ -1,0 +1,420 @@
+.TH "Variable" 3 "Пн 28 Дек 2020" "Version 1.4" "Логический калькулятор" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Variable \- \fBVariable\fP - Класс логических переменных  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <variable\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBVariable\fP (const QChar name)"
+.br
+.ti -1c
+.RI "\fBVariable\fP (const QString &name)"
+.br
+.ti -1c
+.RI "\fBVariable\fP (const QChar name, const QList< bool > *vars)"
+.br
+.ti -1c
+.RI "\fBVariable\fP (QChar name, int numberVariables, int positionVariable)"
+.br
+.ti -1c
+.RI "\fBVariable\fP \fBconjunction\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::conjunction\fP Конъюнкция "
+.ti -1c
+.RI "\fBVariable\fP \fBdisjunction\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::disjunction\fP Дизъюнкция "
+.ti -1c
+.RI "\fBVariable\fP \fBimplication\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::implication\fP Импликация "
+.ti -1c
+.RI "\fBVariable\fP \fBconverse\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::converse\fP Обратная импликация "
+.ti -1c
+.RI "\fBVariable\fP \fBnotAnd\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::notAnd\fP Штрих Шеффера "
+.ti -1c
+.RI "\fBVariable\fP \fBnotOr\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::notOr\fP Стрелка Пирса "
+.ti -1c
+.RI "\fBVariable\fP \fBexclusiveDisjunction\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::exclusiveDisjunction\fP Исключающее ИЛИ "
+.ti -1c
+.RI "\fBVariable\fP \fBequivalent\fP (const \fBVariable\fP &other) const"
+.br
+.RI "\fBVariable::equivalent\fP Эквиваленция "
+.ti -1c
+.RI "\fBVariable\fP \fBnegation\fP ()"
+.br
+.RI "\fBVariable::negation\fP Отрицание самой переменной "
+.ti -1c
+.RI "void \fBsetName\fP (const QString &name)"
+.br
+.RI "\fBVariable::setName\fP Задает имя "
+.ti -1c
+.RI "void \fBsetVars\fP (const QList< bool > &vars)"
+.br
+.RI "\fBVariable::setVars\fP Задает принимаемые значения "
+.ti -1c
+.RI "void \fBsetVars\fP (const int index, const int size)"
+.br
+.RI "\fBVariable::setVars\fP Генерирует значения "
+.ti -1c
+.RI "QString \fBgetName\fP () const"
+.br
+.RI "\fBVariable::getName\fP Отдает название "
+.ti -1c
+.RI "QList< bool > \fBgetVars\fP () const"
+.br
+.RI "\fBVariable::getVars\fP Отдает значения переменной "
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBVariable\fP &other)"
+.br
+.RI "\fBVariable::operator >\fP оператор больше "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBVariable\fP &other)"
+.br
+.RI "\fBVariable::operator <\fP оператор меньше "
+.in -1c
+.SS "Закрытые члены"
+
+.in +1c
+.ti -1c
+.RI "void \fBdebugVars\fP ()"
+.br
+.ti -1c
+.RI "int \fBpow2\fP (const int power) const"
+.br
+.RI "\fBVariable::pow2\fP Возвращает степень числа два "
+.ti -1c
+.RI "QString \fBmakeName\fP (const QString &first, const QString &operation, const QString &second) const"
+.br
+.RI "\fBVariable::makeName\fP Создает строку из двух названий переменных и операции между ними "
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "QString \fBname_\fP"
+.br
+.ti -1c
+.RI "QList< bool > \fBvars_\fP"
+.br
+.RI "Имя логической переменной "
+.in -1c
+.SH "Подробное описание"
+.PP 
+\fBVariable\fP - Класс логических переменных 
+.SH "Конструктор(ы)"
+.PP 
+.SS "Variable::Variable (const QChar name)"
+
+.SS "Variable::Variable (const QString & name)"
+
+.SS "Variable::Variable (const QChar name, const QList< bool > * vars)"
+
+.SS "Variable::Variable (QChar name, int numberVariables, int positionVariable)"
+
+.SH "Методы"
+.PP 
+.SS "\fBVariable\fP Variable::conjunction (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::conjunction\fP Конъюнкция 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "\fBVariable\fP Variable::converse (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::converse\fP Обратная импликация 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "void Variable::debugVars ()\fC [private]\fP"
+
+.SS "\fBVariable\fP Variable::disjunction (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::disjunction\fP Дизъюнкция 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "\fBVariable\fP Variable::equivalent (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::equivalent\fP Эквиваленция 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "\fBVariable\fP Variable::exclusiveDisjunction (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::exclusiveDisjunction\fP Исключающее ИЛИ 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "QString Variable::getName () const"
+
+.PP
+\fBVariable::getName\fP Отдает название 
+.PP
+\fBВозвращает\fP
+.RS 4
+название переменной 
+.RE
+.PP
+
+.SS "QList< bool > Variable::getVars () const"
+
+.PP
+\fBVariable::getVars\fP Отдает значения переменной 
+.PP
+\fBВозвращает\fP
+.RS 4
+Значения переменной 
+.RE
+.PP
+
+.SS "\fBVariable\fP Variable::implication (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::implication\fP Импликация 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "QString Variable::makeName (const QString & first, const QString & operation, const QString & second) const\fC [private]\fP"
+
+.PP
+\fBVariable::makeName\fP Создает строку из двух названий переменных и операции между ними 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIfirst\fP Первое значение 
+.br
+\fIoperation\fP Операция между этими значениями 
+.br
+\fIsecond\fP Второе значение 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившаяся строка 
+.RE
+.PP
+
+.SS "\fBVariable\fP Variable::negation ()"
+
+.PP
+\fBVariable::negation\fP Отрицание самой переменной 
+.PP
+\fBВозвращает\fP
+.RS 4
+получившееся значение 
+.RE
+.PP
+
+.SS "\fBVariable\fP Variable::notAnd (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::notAnd\fP Штрих Шеффера 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "\fBVariable\fP Variable::notOr (const \fBVariable\fP & other) const"
+
+.PP
+\fBVariable::notOr\fP Стрелка Пирса 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP с данной переменной 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+Получившееся значение 
+.RE
+.PP
+
+.SS "bool Variable::operator< (const \fBVariable\fP & other)"
+
+.PP
+\fBVariable::operator <\fP оператор меньше 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP другая переменная 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+меньше ли данная перменная
+.RE
+.PP
+\fBПредупреждения\fP
+.RS 4
+Используется только для сортировки, не является логическим действием в понимании самого калькулятора! 
+.RE
+.PP
+
+.SS "bool Variable::operator> (const \fBVariable\fP & other)"
+
+.PP
+\fBVariable::operator >\fP оператор больше 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIother\fP другая переменная 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+больше ли данная перменная
+.RE
+.PP
+\fBПредупреждения\fP
+.RS 4
+Используется только для сортировки, не является логическим действием в понимании самого калькулятора! 
+.RE
+.PP
+
+.SS "int Variable::pow2 (const int power) const\fC [private]\fP"
+
+.PP
+\fBVariable::pow2\fP Возвращает степень числа два 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIpower\fP степень 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+полученное число 
+.RE
+.PP
+
+.SS "void Variable::setName (const QString & name)"
+
+.PP
+\fBVariable::setName\fP Задает имя 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIname\fP задаваемое имя 
+.RE
+.PP
+
+.SS "void Variable::setVars (const int index, const int size)"
+
+.PP
+\fBVariable::setVars\fP Генерирует значения 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIindex\fP индекс элемента 
+.br
+\fIsize\fP количество элементов 
+.RE
+.PP
+
+.SS "void Variable::setVars (const QList< bool > & vars)"
+
+.PP
+\fBVariable::setVars\fP Задает принимаемые значения 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIvars\fP задаваемые значения 
+.RE
+.PP
+
+.SH "Данные класса"
+.PP 
+.SS "QString Variable::name_\fC [private]\fP"
+
+.SS "QList<bool> Variable::vars_\fC [private]\fP"
+
+.PP
+Имя логической переменной 
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Логический калькулятор из исходного текста\&.

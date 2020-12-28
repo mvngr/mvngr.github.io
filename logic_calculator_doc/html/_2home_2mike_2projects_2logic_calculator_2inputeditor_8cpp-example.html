@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Логический калькулятор: /home/mike/projects/logic_calculator/inputeditor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Логический калькулятор
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/home/mike/projects/logic_calculator/inputeditor.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p><a class="el" href="class_input_editor.html#a86f05f35fe5a16552cfd545d106d2585">InputEditor::normalizeString</a> приводит входную строку в вид значение пробел значение пробел </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>входная строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Отформатированная строка</dd></dl>
+<p>Вход: A*B+ C Выход: A * B + C</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="inputeditor_8h.html">inputeditor.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><a name="a0"></a><a class="code" href="class_input_editor.html#ac9aae2a915a58eae586aa373c1b1f635">InputEditor::InputEditor</a>(QLineEdit *input) : input_(input), v_(new QList&lt;QString&gt;){}</div>
+<div class="line"><a name="a1"></a><a class="code" href="class_input_editor.html#aec1a586153ea14380867eff2c7605bec">InputEditor::~InputEditor</a>(){</div>
+<div class="line">    <span class="comment">//delete v_; в соседнем классе чистится v_ (эх, костылики)</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a name="a2"></a><a class="code" href="class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190">InputEditor::pushBack</a>(<span class="keyword">const</span> QString &amp;str){</div>
+<div class="line">    <span class="keywordflow">if</span>(!<a name="a3"></a><a class="code" href="class_input_editor.html#a6e53e6455f8a3948620a61e68a089520">isValidity</a>())</div>
+<div class="line">        <a name="a4"></a><a class="code" href="class_input_editor.html#ad9a9e03d439e909c6d72775ef78d9814">parse</a>(<a name="a5"></a><a class="code" href="class_input_editor.html#abd7448dec9d9badf5a80fb78d8a4ca9b">input_</a>-&gt;text());</div>
+<div class="line">    <a name="a6"></a><a class="code" href="class_input_editor.html#a8ededb30c2f014d27f5432ea29b6da92">v_</a>-&gt;push_back(str);</div>
+<div class="line">    <a name="a7"></a><a class="code" href="class_input_editor.html#a592b851c7b18ab7f0cbfcf64bdff3d9d">updateInput</a>();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">QList&lt;QString&gt; *<a name="a8"></a><a class="code" href="class_input_editor.html#a3f69e5b7fe43e31f2a4f783fbdc8072e">InputEditor::getVars</a>(){</div>
+<div class="line">    <span class="comment">//эх... исправить бы этот метод на более безопасный вариант</span></div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_input_editor.html#a8ededb30c2f014d27f5432ea29b6da92">v_</a>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> <a class="code" href="class_input_editor.html#a592b851c7b18ab7f0cbfcf64bdff3d9d">InputEditor::updateInput</a>(){</div>
+<div class="line">    <a class="code" href="class_input_editor.html#abd7448dec9d9badf5a80fb78d8a4ca9b">input_</a>-&gt;setText(<a name="a9"></a><a class="code" href="class_input_editor.html#ab65dc1f4a87be3abf8bfff14c1a54532">toString</a>());</div>
+<div class="line">}</div>
+<div class="line">QString <a class="code" href="class_input_editor.html#ab65dc1f4a87be3abf8bfff14c1a54532">InputEditor::toString</a>()<span class="keyword"> const </span>{</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_input_editor.html#a8ededb30c2f014d27f5432ea29b6da92">v_</a>-&gt;join(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line">}</div>
+<div class="line"><span class="keywordtype">bool</span> <a class="code" href="class_input_editor.html#a6e53e6455f8a3948620a61e68a089520">InputEditor::isValidity</a>()<span class="keyword"> const </span>{</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="class_input_editor.html#abd7448dec9d9badf5a80fb78d8a4ca9b">input_</a>-&gt;text() == <a class="code" href="class_input_editor.html#ab65dc1f4a87be3abf8bfff14c1a54532">toString</a>();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> <a class="code" href="class_input_editor.html#ad9a9e03d439e909c6d72775ef78d9814">InputEditor::parse</a>(<span class="keyword">const</span> QString &amp;str){</div>
+<div class="line">    QString prettyString = <a name="a10"></a><a class="code" href="class_input_editor.html#a86f05f35fe5a16552cfd545d106d2585">normalizeString</a>(str); <span class="comment">//приводим строку с виду пробел значение пробел значение</span></div>
+<div class="line">    <span class="keywordtype">bool</span> res = <span class="keyword">true</span>;</div>
+<div class="line">    QList&lt;int&gt; errors;</div>
+<div class="line">    QStringList sl = prettyString.trimmed().split(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; sl.count(); i++)</div>
+<div class="line">        <span class="keywordflow">if</span>(<a name="a11"></a><a class="code" href="class_input_editor.html#a2c1e4bffaceced12c4f13e3f19a80fb7">AVIABLE_WORDS</a>.indexOf(sl[i]) == -1)</div>
+<div class="line">        {</div>
+<div class="line">            errors.push_back(i);</div>
+<div class="line">        }</div>
+<div class="line">    <span class="keywordflow">if</span>(errors.length() == 0){</div>
+<div class="line">        <span class="keyword">delete</span> <a class="code" href="class_input_editor.html#a8ededb30c2f014d27f5432ea29b6da92">v_</a>;</div>
+<div class="line">        <a class="code" href="class_input_editor.html#a8ededb30c2f014d27f5432ea29b6da92">v_</a> = <span class="keyword">new</span> QList&lt;QString&gt;(sl);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span>{</div>
+<div class="line">        QString msg(<span class="stringliteral">&quot;Неправильный синтаксис: &quot;</span>);</div>
+<div class="line">        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;error : errors)</div>
+<div class="line">            msg.append(<span class="stringliteral">&quot;\&quot; &quot;</span>).append(sl[error]).append(<span class="stringliteral">&quot; \&quot;, &quot;</span>);</div>
+<div class="line">        QMessageBox::warning(<span class="keyword">nullptr</span>, <span class="stringliteral">&quot;Ошибка&quot;</span>, msg);</div>
+<div class="line">        res = <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> res;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">QString <a class="code" href="class_input_editor.html#a86f05f35fe5a16552cfd545d106d2585">InputEditor::normalizeString</a>(<span class="keyword">const</span> QString &amp;input)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword"></span>{</div>
+<div class="line">    QString res; <span class="comment">//результирующая строка</span></div>
+<div class="line">    QString inStr = input; <span class="comment">//копируем входную строку</span></div>
+<div class="line">    inStr.remove(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; inStr.size(); i++)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">auto</span> foundIterator = std::find_if(<a class="code" href="class_input_editor.html#a2c1e4bffaceced12c4f13e3f19a80fb7">AVIABLE_WORDS</a>.cbegin(), <a class="code" href="class_input_editor.html#a2c1e4bffaceced12c4f13e3f19a80fb7">AVIABLE_WORDS</a>.cend(), [&amp;inStr, &amp;i](<span class="keyword">const</span> QString &amp;value){ return inStr[i] == value.at(0); }); <span class="comment">//ищем совпадение с допустимыми словами</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span>(foundIterator == <a class="code" href="class_input_editor.html#a2c1e4bffaceced12c4f13e3f19a80fb7">AVIABLE_WORDS</a>.cend())</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">//res.push_back(&#39; &#39;); //если ничего не нашли то добавляем пробел</span></div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            res.push_back((*foundIterator) + <span class="charliteral">&#39; &#39;</span>); <span class="comment">//Добавляем доступное слово и пробел</span></div>
+<div class="line">            i += (*foundIterator).size() - 1; <span class="comment">//Добавляем к i сколько надо, если длина доступного слова больше 1</span></div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> res;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
+<div class="ttc" id="aclass_input_editor_html_ac9aae2a915a58eae586aa373c1b1f635"><div class="ttname"><a href="class_input_editor.html#ac9aae2a915a58eae586aa373c1b1f635">InputEditor::InputEditor</a></div><div class="ttdeci">InputEditor(QLineEdit *input)</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:5</div></div>
+<div class="ttc" id="ainputeditor_8h_html"><div class="ttname"><a href="inputeditor_8h.html">inputeditor.h</a></div></div>
+<div class="ttc" id="aclass_input_editor_html_a86f05f35fe5a16552cfd545d106d2585"><div class="ttname"><a href="class_input_editor.html#a86f05f35fe5a16552cfd545d106d2585">InputEditor::normalizeString</a></div><div class="ttdeci">QString normalizeString(const QString &amp;input) const</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:85</div></div>
+<div class="ttc" id="aclass_input_editor_html_aec1a586153ea14380867eff2c7605bec"><div class="ttname"><a href="class_input_editor.html#aec1a586153ea14380867eff2c7605bec">InputEditor::~InputEditor</a></div><div class="ttdeci">~InputEditor()</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:6</div></div>
+<div class="ttc" id="aclass_input_editor_html_ad9a9e03d439e909c6d72775ef78d9814"><div class="ttname"><a href="class_input_editor.html#ad9a9e03d439e909c6d72775ef78d9814">InputEditor::parse</a></div><div class="ttdeci">bool parse(const QString &amp;str)</div><div class="ttdoc">InputEditor::parse Парсит введенную строку</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:52</div></div>
+<div class="ttc" id="aclass_input_editor_html_a4b357e281c2d9cf669ed4a03c8de5190"><div class="ttname"><a href="class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190">InputEditor::pushBack</a></div><div class="ttdeci">void pushBack(const QString &amp;str)</div><div class="ttdoc">словарь доступных действий</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:14</div></div>
+<div class="ttc" id="aclass_input_editor_html_a8ededb30c2f014d27f5432ea29b6da92"><div class="ttname"><a href="class_input_editor.html#a8ededb30c2f014d27f5432ea29b6da92">InputEditor::v_</a></div><div class="ttdeci">QList&lt; QString &gt; * v_</div><div class="ttdoc">Используется для управления полем ввода данных</div><div class="ttdef"><b>Definition:</b> inputeditor.h:43</div></div>
+<div class="ttc" id="aclass_input_editor_html_abd7448dec9d9badf5a80fb78d8a4ca9b"><div class="ttname"><a href="class_input_editor.html#abd7448dec9d9badf5a80fb78d8a4ca9b">InputEditor::input_</a></div><div class="ttdeci">QLineEdit * input_</div><div class="ttdef"><b>Definition:</b> inputeditor.h:42</div></div>
+<div class="ttc" id="aclass_input_editor_html_a2c1e4bffaceced12c4f13e3f19a80fb7"><div class="ttname"><a href="class_input_editor.html#a2c1e4bffaceced12c4f13e3f19a80fb7">InputEditor::AVIABLE_WORDS</a></div><div class="ttdeci">const QList&lt; QString &gt; AVIABLE_WORDS</div><div class="ttdef"><b>Definition:</b> inputeditor.h:18</div></div>
+<div class="ttc" id="aclass_input_editor_html_a6e53e6455f8a3948620a61e68a089520"><div class="ttname"><a href="class_input_editor.html#a6e53e6455f8a3948620a61e68a089520">InputEditor::isValidity</a></div><div class="ttdeci">bool isValidity() const</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:43</div></div>
+<div class="ttc" id="aclass_input_editor_html_a592b851c7b18ab7f0cbfcf64bdff3d9d"><div class="ttname"><a href="class_input_editor.html#a592b851c7b18ab7f0cbfcf64bdff3d9d">InputEditor::updateInput</a></div><div class="ttdeci">void updateInput()</div><div class="ttdoc">Внутренний массив для хранения данных из поля ввода данных</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:33</div></div>
+<div class="ttc" id="aclass_input_editor_html_a3f69e5b7fe43e31f2a4f783fbdc8072e"><div class="ttname"><a href="class_input_editor.html#a3f69e5b7fe43e31f2a4f783fbdc8072e">InputEditor::getVars</a></div><div class="ttdeci">QList&lt; QString &gt; * getVars()</div><div class="ttdoc">InputEditor::getVars Выдает указатель на внутренний массив данных</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:25</div></div>
+<div class="ttc" id="aclass_input_editor_html_ab65dc1f4a87be3abf8bfff14c1a54532"><div class="ttname"><a href="class_input_editor.html#ab65dc1f4a87be3abf8bfff14c1a54532">InputEditor::toString</a></div><div class="ttdeci">QString toString() const</div><div class="ttdoc">InputEditor::toString Преобразует внутренний массив в строку</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:40</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

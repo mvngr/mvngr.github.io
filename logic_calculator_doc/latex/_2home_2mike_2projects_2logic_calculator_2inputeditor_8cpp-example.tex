@@ -1,0 +1,93 @@
+\hypertarget{_2home_2mike_2projects_2logic_calculator_2inputeditor_8cpp-example}{}\doxysection{/home/mike/projects/logic\+\_\+calculator/inputeditor.\+cpp}
+\mbox{\hyperlink{class_input_editor_a86f05f35fe5a16552cfd545d106d2585}{Input\+Editor\+::normalize\+String}} приводит входную строку в вид значение пробел значение пробел 
+\begin{DoxyParams}{Аргументы}
+{\em input} & входная строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Отформатированная строка
+\end{DoxyReturn}
+Вход\+: A$\ast$\+B+ C Выход\+: A $\ast$ B + C
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{inputeditor_8h}{inputeditor.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_input_editor_ac9aae2a915a58eae586aa373c1b1f635}{InputEditor::InputEditor}}(QLineEdit *input) : input\_(input), v\_(new QList<QString>)\{\}}
+\DoxyCodeLine{\mbox{\hyperlink{class_input_editor_aec1a586153ea14380867eff2c7605bec}{InputEditor::\string~InputEditor}}()\{}
+\DoxyCodeLine{    \textcolor{comment}{//delete v\_; в соседнем классе чистится v\_ (эх, костылики)}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_input_editor_a4b357e281c2d9cf669ed4a03c8de5190}{InputEditor::pushBack}}(\textcolor{keyword}{const} QString \&str)\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_input_editor_a6e53e6455f8a3948620a61e68a089520}{isValidity}}())}
+\DoxyCodeLine{        \mbox{\hyperlink{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814}{parse}}(\mbox{\hyperlink{class_input_editor_abd7448dec9d9badf5a80fb78d8a4ca9b}{input\_}}-\/>text());}
+\DoxyCodeLine{    \mbox{\hyperlink{class_input_editor_a8ededb30c2f014d27f5432ea29b6da92}{v\_}}-\/>push\_back(str);}
+\DoxyCodeLine{    \mbox{\hyperlink{class_input_editor_a592b851c7b18ab7f0cbfcf64bdff3d9d}{updateInput}}();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{QList<QString> *\mbox{\hyperlink{class_input_editor_a3f69e5b7fe43e31f2a4f783fbdc8072e}{InputEditor::getVars}}()\{}
+\DoxyCodeLine{    \textcolor{comment}{//эх... исправить бы этот метод на более безопасный вариант}}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{class_input_editor_a8ededb30c2f014d27f5432ea29b6da92}{v\_}};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{class_input_editor_a592b851c7b18ab7f0cbfcf64bdff3d9d}{InputEditor::updateInput}}()\{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_input_editor_abd7448dec9d9badf5a80fb78d8a4ca9b}{input\_}}-\/>setText(\mbox{\hyperlink{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}{toString}}());}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{QString \mbox{\hyperlink{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}{InputEditor::toString}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{class_input_editor_a8ededb30c2f014d27f5432ea29b6da92}{v\_}}-\/>join(\textcolor{stringliteral}{" "});}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keywordtype}{bool} \mbox{\hyperlink{class_input_editor_a6e53e6455f8a3948620a61e68a089520}{InputEditor::isValidity}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{class_input_editor_abd7448dec9d9badf5a80fb78d8a4ca9b}{input\_}}-\/>text() == \mbox{\hyperlink{class_input_editor_ab65dc1f4a87be3abf8bfff14c1a54532}{toString}}();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{bool} \mbox{\hyperlink{class_input_editor_ad9a9e03d439e909c6d72775ef78d9814}{InputEditor::parse}}(\textcolor{keyword}{const} QString \&str)\{}
+\DoxyCodeLine{    QString prettyString = \mbox{\hyperlink{class_input_editor_a86f05f35fe5a16552cfd545d106d2585}{normalizeString}}(str); \textcolor{comment}{//приводим строку с виду пробел значение пробел значение}}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} res = \textcolor{keyword}{true};}
+\DoxyCodeLine{    QList<int> errors;}
+\DoxyCodeLine{    QStringList sl = prettyString.trimmed().split(\textcolor{stringliteral}{" "});}
+\DoxyCodeLine{    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < sl.count(); i++)}
+\DoxyCodeLine{        \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_input_editor_a2c1e4bffaceced12c4f13e3f19a80fb7}{AVIABLE\_WORDS}}.indexOf(sl[i]) == -\/1)}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            errors.push\_back(i);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(errors.length() == 0)\{}
+\DoxyCodeLine{        \textcolor{keyword}{delete} \mbox{\hyperlink{class_input_editor_a8ededb30c2f014d27f5432ea29b6da92}{v\_}};}
+\DoxyCodeLine{        \mbox{\hyperlink{class_input_editor_a8ededb30c2f014d27f5432ea29b6da92}{v\_}} = \textcolor{keyword}{new} QList<QString>(sl);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{        QString msg(\textcolor{stringliteral}{"Неправильный синтаксис: "});}
+\DoxyCodeLine{        \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&error : errors)}
+\DoxyCodeLine{            msg.append(\textcolor{stringliteral}{"\(\backslash\)" "}).append(sl[error]).append(\textcolor{stringliteral}{" \(\backslash\)", "});}
+\DoxyCodeLine{        QMessageBox::warning(\textcolor{keyword}{nullptr}, \textcolor{stringliteral}{"Ошибка"}, msg);}
+\DoxyCodeLine{        res = \textcolor{keyword}{false};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{QString \mbox{\hyperlink{class_input_editor_a86f05f35fe5a16552cfd545d106d2585}{InputEditor::normalizeString}}(\textcolor{keyword}{const} QString \&input)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\textcolor{keyword}{}\{}
+\DoxyCodeLine{    QString res; \textcolor{comment}{//результирующая строка}}
+\DoxyCodeLine{    QString inStr = input; \textcolor{comment}{//копируем входную строку}}
+\DoxyCodeLine{    inStr.remove(\textcolor{stringliteral}{" "});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < inStr.size(); i++)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keyword}{auto} foundIterator = std::find\_if(\mbox{\hyperlink{class_input_editor_a2c1e4bffaceced12c4f13e3f19a80fb7}{AVIABLE\_WORDS}}.cbegin(), \mbox{\hyperlink{class_input_editor_a2c1e4bffaceced12c4f13e3f19a80fb7}{AVIABLE\_WORDS}}.cend(), [\&inStr, \&i](\textcolor{keyword}{const} QString \&value)\{ return inStr[i] == value.at(0); \}); \textcolor{comment}{//ищем совпадение с допустимыми словами}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if}(foundIterator == \mbox{\hyperlink{class_input_editor_a2c1e4bffaceced12c4f13e3f19a80fb7}{AVIABLE\_WORDS}}.cend())}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{comment}{//res.push\_back(' '); //если ничего не нашли то добавляем пробел}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \textcolor{keywordflow}{else}}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            res.push\_back((*foundIterator) + \textcolor{charliteral}{' '}); \textcolor{comment}{//Добавляем доступное слово и пробел}}
+\DoxyCodeLine{            i += (*foundIterator).size() -\/ 1; \textcolor{comment}{//Добавляем к i сколько надо, если длина доступного слова больше 1}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{\}}
+\end{DoxyCodeInclude}
+ 

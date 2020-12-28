@@ -1,63 +1,255 @@
-\hypertarget{class_content_editor}{}\section{Класс Content\+Editor}
-\label{class_content_editor}\index{Content\+Editor@{Content\+Editor}}
+\hypertarget{class_content_editor}{}\doxysection{Класс Content\+Editor}
+\label{class_content_editor}\index{ContentEditor@{ContentEditor}}
 
 
-\hyperlink{class_content_editor}{Content\+Editor} -\/ Класс отвечает за корректный и удобный вывод чего-\/либо в поле для вывода  
+\mbox{\hyperlink{class_content_editor}{Content\+Editor}} -\/ Класс отвечает за корректный и удобный вывод чего-\/либо в поле для вывода  
 
 
 
 
 {\ttfamily \#include $<$contenteditor.\+h$>$}
 
-
-
-Граф связей класса Content\+Editor\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=220pt]{class_content_editor__coll__graph}
-\end{center}
-\end{figure}
-\subsection*{Открытые члены}
+\doxysubsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_content_editor_a7254201f7630aa7c3048f5ff5f7b8bd1}{Content\+Editor} (Q\+Plain\+Text\+Edit $\ast$plain\+Text\+Edit)
+\mbox{\hyperlink{class_content_editor_a7254201f7630aa7c3048f5ff5f7b8bd1}{Content\+Editor}} (Q\+Plain\+Text\+Edit $\ast$plain\+Text\+Edit)
 \item 
-void \hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{print\+Truth\+Table} (const Q\+List$<$ Q\+String $>$ \&title, const Q\+List$<$ Q\+List$<$ bool $>$$>$ \&data)
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{Content\+Editor\+::print\+Truth\+Table} Инициирует вывод таблицы истинности \end{DoxyCompactList}\item 
-void \hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{print\+S\+K\+NF} (const Q\+String \&sknf) const
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{Content\+Editor\+::print\+S\+K\+NF} выводит Совершенную Конъюнктивную Нормальную Форму \end{DoxyCompactList}\item 
-void \hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{print\+S\+D\+NF} (const Q\+String \&sdnf) const
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{Content\+Editor\+::print\+S\+D\+NF} выводит Совершенную Дизъюнктивную Нормальную Форму \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Открытые атрибуты}
+void \mbox{\hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{print\+Truth\+Table}} (const Q\+List$<$ Q\+String $>$ \&title, const Q\+List$<$ Q\+List$<$ bool $>$$>$ \&data)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{Content\+Editor\+::print\+Truth\+Table}} Инициирует вывод таблицы истинности \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{print\+S\+K\+NF}} (const Q\+String \&sknf) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{Content\+Editor\+::print\+S\+K\+NF}} выводит Совершенную Конъюнктивную Нормальную Форму \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{print\+S\+D\+NF}} (const Q\+String \&sdnf) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{Content\+Editor\+::print\+S\+D\+NF}} выводит Совершенную Дизъюнктивную Нормальную Форму \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
 \begin{DoxyCompactItemize}
 \item 
-const int \hyperlink{class_content_editor_a20a8d18e264777aee600ee638f08eb99}{minimum\+Column\+Char\+Size} = 5
+const int \mbox{\hyperlink{class_content_editor_a20a8d18e264777aee600ee638f08eb99}{minimum\+Column\+Char\+Size}} = 5
 \end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ int $>$ \mbox{\hyperlink{class_content_editor_a1d600c6051de4c86fd1d3cca6d90a08b}{get\+Size}} (const Q\+List$<$ Q\+String $>$ \&title) const
+\begin{DoxyCompactList}\small\item\em Размеры ячеек в таблице истинности \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_content_editor_ab5380863084f8631762f7bb02b7feb72}{make\+String}} (char segment, int amount) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_ab5380863084f8631762f7bb02b7feb72}{Content\+Editor\+::make\+String}} Создает строку из повторяющихся amount раз символов segment. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_content_editor_a3566d3baaece3ffdf36372ac20301e68}{make\+Line}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_a3566d3baaece3ffdf36372ac20301e68}{Content\+Editor\+::make\+Line}} Создает линию под заголовком \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_content_editor_af3c82ca694be2af589491fd361a6b7aa}{make\+Title}} (const Q\+List$<$ Q\+String $>$ \&title) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_af3c82ca694be2af589491fd361a6b7aa}{Content\+Editor\+::make\+Title}} Создает заголовок \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_content_editor_af0706d1c1595a8417f3a241f7719ab0a}{make\+Data}} (const Q\+List$<$ Q\+List$<$ bool $>$ $>$ \&data) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_af0706d1c1595a8417f3a241f7719ab0a}{Content\+Editor\+::make\+Data}} Создает двумерный массив данных $<$0/1$>$ \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{class_content_editor_a3c74a024b03eed69ea69ea93d613ffae}{center\+Align}} (const Q\+String \&text, const int cell\+Size) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_content_editor_a3c74a024b03eed69ea69ea93d613ffae}{Content\+Editor\+::center\+Align}} выравнивает все элементы по центру своей ячейки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Plain\+Text\+Edit $\ast$ \mbox{\hyperlink{class_content_editor_a782c55c84a82d8bd2a11b043995ada2b}{pte\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Минимальный размер столбца в символах \end{DoxyCompactList}\item 
+Q\+List$<$ int $>$ \mbox{\hyperlink{class_content_editor_a6bc46e8a608220177a4fbcdee1a50ab9}{cell\+Size\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Управление полем вывода \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Подробное описание}
-\hyperlink{class_content_editor}{Content\+Editor} -\/ Класс отвечает за корректный и удобный вывод чего-\/либо в поле для вывода 
+\doxysubsection{Подробное описание}
+\mbox{\hyperlink{class_content_editor}{Content\+Editor}} -\/ Класс отвечает за корректный и удобный вывод чего-\/либо в поле для вывода 
 
-\subsection{Конструктор(ы)}
+\doxysubsection{Конструктор(ы)}
 \mbox{\Hypertarget{class_content_editor_a7254201f7630aa7c3048f5ff5f7b8bd1}\label{class_content_editor_a7254201f7630aa7c3048f5ff5f7b8bd1}} 
-\index{Content\+Editor@{Content\+Editor}!Content\+Editor@{Content\+Editor}}
-\index{Content\+Editor@{Content\+Editor}!Content\+Editor@{Content\+Editor}}
-\subsubsection{\texorpdfstring{Content\+Editor()}{ContentEditor()}}
+\index{ContentEditor@{ContentEditor}!ContentEditor@{ContentEditor}}
+\index{ContentEditor@{ContentEditor}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{ContentEditor()}{ContentEditor()}}
 {\footnotesize\ttfamily Content\+Editor\+::\+Content\+Editor (\begin{DoxyParamCaption}\item[{Q\+Plain\+Text\+Edit $\ast$}]{plain\+Text\+Edit }\end{DoxyParamCaption})}
 
 
 
-\subsection{Методы}
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_content_editor_a3c74a024b03eed69ea69ea93d613ffae}\label{class_content_editor_a3c74a024b03eed69ea69ea93d613ffae}} 
+\index{ContentEditor@{ContentEditor}!centerAlign@{centerAlign}}
+\index{centerAlign@{centerAlign}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{centerAlign()}{centerAlign()}}
+{\footnotesize\ttfamily Q\+String Content\+Editor\+::center\+Align (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{text,  }\item[{const int}]{cell\+Size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_content_editor_a3c74a024b03eed69ea69ea93d613ffae}{Content\+Editor\+::center\+Align}} выравнивает все элементы по центру своей ячейки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Текст, который необходимо выравнять по центру \\
+\hline
+{\em cell\+Size} & размер столбца (в символах) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+выровненный текст по центру 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a3c74a024b03eed69ea69ea93d613ffae_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a3c74a024b03eed69ea69ea93d613ffae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_content_editor_a1d600c6051de4c86fd1d3cca6d90a08b}\label{class_content_editor_a1d600c6051de4c86fd1d3cca6d90a08b}} 
+\index{ContentEditor@{ContentEditor}!getSize@{getSize}}
+\index{getSize@{getSize}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily Q\+List$<$ int $>$ Content\+Editor\+::get\+Size (\begin{DoxyParamCaption}\item[{const Q\+List$<$ Q\+String $>$ \&}]{title }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Размеры ячеек в таблице истинности 
+
+\mbox{\hyperlink{class_content_editor_a1d600c6051de4c86fd1d3cca6d90a08b}{Content\+Editor\+::get\+Size}} Заполняет значения размеров ячеек в таблице истинности cell\+Size\+\_\+.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em title} & список заголовков \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+размер, необходимый для каждого из столбцов 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a1d600c6051de4c86fd1d3cca6d90a08b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_content_editor_af0706d1c1595a8417f3a241f7719ab0a}\label{class_content_editor_af0706d1c1595a8417f3a241f7719ab0a}} 
+\index{ContentEditor@{ContentEditor}!makeData@{makeData}}
+\index{makeData@{makeData}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{makeData()}{makeData()}}
+{\footnotesize\ttfamily Q\+String Content\+Editor\+::make\+Data (\begin{DoxyParamCaption}\item[{const Q\+List$<$ Q\+List$<$ bool $>$ $>$ \&}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_content_editor_af0706d1c1595a8417f3a241f7719ab0a}{Content\+Editor\+::make\+Data}} Создает двумерный массив данных $<$0/1$>$ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & данные, которые необходимо вывести \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+итоговая строка с данными 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_af0706d1c1595a8417f3a241f7719ab0a_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_af0706d1c1595a8417f3a241f7719ab0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_content_editor_a3566d3baaece3ffdf36372ac20301e68}\label{class_content_editor_a3566d3baaece3ffdf36372ac20301e68}} 
+\index{ContentEditor@{ContentEditor}!makeLine@{makeLine}}
+\index{makeLine@{makeLine}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{makeLine()}{makeLine()}}
+{\footnotesize\ttfamily Q\+String Content\+Editor\+::make\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_content_editor_a3566d3baaece3ffdf36372ac20301e68}{Content\+Editor\+::make\+Line}} Создает линию под заголовком 
+
+\begin{DoxyReturn}{Возвращает}
+получившаяся линия 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a3566d3baaece3ffdf36372ac20301e68_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a3566d3baaece3ffdf36372ac20301e68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_content_editor_ab5380863084f8631762f7bb02b7feb72}\label{class_content_editor_ab5380863084f8631762f7bb02b7feb72}} 
+\index{ContentEditor@{ContentEditor}!makeString@{makeString}}
+\index{makeString@{makeString}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{makeString()}{makeString()}}
+{\footnotesize\ttfamily Q\+String Content\+Editor\+::make\+String (\begin{DoxyParamCaption}\item[{char}]{segment,  }\item[{int}]{amount }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_content_editor_ab5380863084f8631762f7bb02b7feb72}{Content\+Editor\+::make\+String}} Создает строку из повторяющихся amount раз символов segment. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em segment} & повторяющийся символ \\
+\hline
+{\em amount} & сколько раз повторять символ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+получившаяся строка 
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_ab5380863084f8631762f7bb02b7feb72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_content_editor_af3c82ca694be2af589491fd361a6b7aa}\label{class_content_editor_af3c82ca694be2af589491fd361a6b7aa}} 
+\index{ContentEditor@{ContentEditor}!makeTitle@{makeTitle}}
+\index{makeTitle@{makeTitle}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{makeTitle()}{makeTitle()}}
+{\footnotesize\ttfamily Q\+String Content\+Editor\+::make\+Title (\begin{DoxyParamCaption}\item[{const Q\+List$<$ Q\+String $>$ \&}]{title }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_content_editor_af3c82ca694be2af589491fd361a6b7aa}{Content\+Editor\+::make\+Title}} Создает заголовок 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em title} & текст, который нужно вставить в каждую из колонок заголовка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+получившаяся строка 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_af3c82ca694be2af589491fd361a6b7aa_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_af3c82ca694be2af589491fd361a6b7aa_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_content_editor_a929362122ef024a5b4ddc180f8af3423}\label{class_content_editor_a929362122ef024a5b4ddc180f8af3423}} 
-\index{Content\+Editor@{Content\+Editor}!print\+S\+D\+NF@{print\+S\+D\+NF}}
-\index{print\+S\+D\+NF@{print\+S\+D\+NF}!Content\+Editor@{Content\+Editor}}
-\subsubsection{\texorpdfstring{print\+S\+D\+N\+F()}{printSDNF()}}
+\index{ContentEditor@{ContentEditor}!printSDNF@{printSDNF}}
+\index{printSDNF@{printSDNF}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{printSDNF()}{printSDNF()}}
 {\footnotesize\ttfamily void Content\+Editor\+::print\+S\+D\+NF (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{sdnf }\end{DoxyParamCaption}) const}
 
 
 
-\hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{Content\+Editor\+::print\+S\+D\+NF} выводит Совершенную Дизъюнктивную Нормальную Форму 
+\mbox{\hyperlink{class_content_editor_a929362122ef024a5b4ddc180f8af3423}{Content\+Editor\+::print\+S\+D\+NF}} выводит Совершенную Дизъюнктивную Нормальную Форму 
 
 
 \begin{DoxyParams}{Аргументы}
@@ -72,14 +264,14 @@ const int \hyperlink{class_content_editor_a20a8d18e264777aee600ee638f08eb99}{min
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}\label{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}} 
-\index{Content\+Editor@{Content\+Editor}!print\+S\+K\+NF@{print\+S\+K\+NF}}
-\index{print\+S\+K\+NF@{print\+S\+K\+NF}!Content\+Editor@{Content\+Editor}}
-\subsubsection{\texorpdfstring{print\+S\+K\+N\+F()}{printSKNF()}}
+\index{ContentEditor@{ContentEditor}!printSKNF@{printSKNF}}
+\index{printSKNF@{printSKNF}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{printSKNF()}{printSKNF()}}
 {\footnotesize\ttfamily void Content\+Editor\+::print\+S\+K\+NF (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{sknf }\end{DoxyParamCaption}) const}
 
 
 
-\hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{Content\+Editor\+::print\+S\+K\+NF} выводит Совершенную Конъюнктивную Нормальную Форму 
+\mbox{\hyperlink{class_content_editor_a5492b3c4a67484e9b01322fd6b82870a}{Content\+Editor\+::print\+S\+K\+NF}} выводит Совершенную Конъюнктивную Нормальную Форму 
 
 
 \begin{DoxyParams}{Аргументы}
@@ -94,14 +286,14 @@ const int \hyperlink{class_content_editor_a20a8d18e264777aee600ee638f08eb99}{min
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_content_editor_a4244e9ccd627ab8146d74637837872e9}\label{class_content_editor_a4244e9ccd627ab8146d74637837872e9}} 
-\index{Content\+Editor@{Content\+Editor}!print\+Truth\+Table@{print\+Truth\+Table}}
-\index{print\+Truth\+Table@{print\+Truth\+Table}!Content\+Editor@{Content\+Editor}}
-\subsubsection{\texorpdfstring{print\+Truth\+Table()}{printTruthTable()}}
+\index{ContentEditor@{ContentEditor}!printTruthTable@{printTruthTable}}
+\index{printTruthTable@{printTruthTable}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{printTruthTable()}{printTruthTable()}}
 {\footnotesize\ttfamily void Content\+Editor\+::print\+Truth\+Table (\begin{DoxyParamCaption}\item[{const Q\+List$<$ Q\+String $>$ \&}]{title,  }\item[{const Q\+List$<$ Q\+List$<$ bool $>$$>$ \&}]{data }\end{DoxyParamCaption})}
 
 
 
-\hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{Content\+Editor\+::print\+Truth\+Table} Инициирует вывод таблицы истинности 
+\mbox{\hyperlink{class_content_editor_a4244e9ccd627ab8146d74637837872e9}{Content\+Editor\+::print\+Truth\+Table}} Инициирует вывод таблицы истинности 
 
 
 \begin{DoxyParams}{Аргументы}
@@ -110,6 +302,13 @@ const int \hyperlink{class_content_editor_a20a8d18e264777aee600ee638f08eb99}{min
 {\em data} & данные таблицы истинности \\
 \hline
 \end{DoxyParams}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_content_editor_a4244e9ccd627ab8146d74637837872e9_cgraph}
+\end{center}
+\end{figure}
 Граф вызова функции\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -119,16 +318,36 @@ const int \hyperlink{class_content_editor_a20a8d18e264777aee600ee638f08eb99}{min
 \end{figure}
 
 
-\subsection{Данные класса}
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_content_editor_a6bc46e8a608220177a4fbcdee1a50ab9}\label{class_content_editor_a6bc46e8a608220177a4fbcdee1a50ab9}} 
+\index{ContentEditor@{ContentEditor}!cellSize\_@{cellSize\_}}
+\index{cellSize\_@{cellSize\_}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{cellSize\_}{cellSize\_}}
+{\footnotesize\ttfamily Q\+List$<$int$>$ Content\+Editor\+::cell\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Управление полем вывода 
+
 \mbox{\Hypertarget{class_content_editor_a20a8d18e264777aee600ee638f08eb99}\label{class_content_editor_a20a8d18e264777aee600ee638f08eb99}} 
-\index{Content\+Editor@{Content\+Editor}!minimum\+Column\+Char\+Size@{minimum\+Column\+Char\+Size}}
-\index{minimum\+Column\+Char\+Size@{minimum\+Column\+Char\+Size}!Content\+Editor@{Content\+Editor}}
-\subsubsection{\texorpdfstring{minimum\+Column\+Char\+Size}{minimumColumnCharSize}}
+\index{ContentEditor@{ContentEditor}!minimumColumnCharSize@{minimumColumnCharSize}}
+\index{minimumColumnCharSize@{minimumColumnCharSize}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{minimumColumnCharSize}{minimumColumnCharSize}}
 {\footnotesize\ttfamily const int Content\+Editor\+::minimum\+Column\+Char\+Size = 5}
+
+\mbox{\Hypertarget{class_content_editor_a782c55c84a82d8bd2a11b043995ada2b}\label{class_content_editor_a782c55c84a82d8bd2a11b043995ada2b}} 
+\index{ContentEditor@{ContentEditor}!pte\_@{pte\_}}
+\index{pte\_@{pte\_}!ContentEditor@{ContentEditor}}
+\doxysubsubsection{\texorpdfstring{pte\_}{pte\_}}
+{\footnotesize\ttfamily Q\+Plain\+Text\+Edit$\ast$ Content\+Editor\+::pte\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Минимальный размер столбца в символах 
 
 
 
 Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
 \item 
-/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{contenteditor_8h}{contenteditor.\+h}\item 
-/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{contenteditor_8cpp}{contenteditor.\+cpp}\end{DoxyCompactItemize}
+/home/mike/projects/logic\+\_\+calculator/\mbox{\hyperlink{contenteditor_8h}{contenteditor.\+h}}\item 
+/home/mike/projects/logic\+\_\+calculator/\mbox{\hyperlink{contenteditor_8cpp}{contenteditor.\+cpp}}\end{DoxyCompactItemize}

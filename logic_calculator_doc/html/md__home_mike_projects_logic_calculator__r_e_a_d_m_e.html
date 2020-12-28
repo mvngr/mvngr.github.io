@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Логический калькулятор: Логический калькулятор</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Логический калькулятор
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Логический калькулятор </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>На данный момент логический калькулятор умеет выполнять следующее:</p><ul>
+<li>Ввод и проверка переменных на корректность. Под корректностью подразумевается правильное написание букв и операций над ними</li>
+<li>Вывод таблицы истинности для выражения</li>
+<li>СКНФ и СДНФ</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Примеры выражений</h1>
+<pre class="fragment">A * B + C -&gt; A
+A * ( B + ( C -&gt; ! A ) + B * C )
+A * B + C -&gt; ( D | A # B &lt;- C ) ^ ! D ~ A
+</pre><h1><a class="anchor" id="autotoc_md8"></a>
+Скачивание</h1>
+<p>Вы можете скачать <a href="https://github.com/mvngr/logic_calculator/releases/download/1.3/LogicCalc_bin_win_amd64.zip">бинарные файлы для Windows 7-10 x64</a></p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Описание классов</h1>
+<p>Полное описание методов и классов вы можете найти в документации к проекту - <a href="https://mvngr.github.io/logic_calculator_doc/html/index.html">https://mvngr.github.io/logic_calculator_doc/html/index.html</a></p>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Условные обозначения</h1>
+<p>Для корректной работы программы после каждого значащего значения нужно ставить пробел. Возможно, это будет поправлено в будущих версиях программы</p>
+<p>Так же вы можете пользоваться скобками в своих задачах <code>( )</code></p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Операции</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Условное обозначение </th><th class="markdownTableHeadNone">Название операции  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">&amp;#42; </td><td class="markdownTableBodyNone">Конъюнкция  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&amp;#43; </td><td class="markdownTableBodyNone">Дизъюнкция  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">-&gt; </td><td class="markdownTableBodyNone">Импликация  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">&lt;- </td><td class="markdownTableBodyNone">Обратная импликация  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">&amp;#448; </td><td class="markdownTableBodyNone">Штрих Шеффера  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone" rowspan="2">&amp;#35; </td><td class="markdownTableBodyNone">Стрелка Пирса  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Исключающее ИЛИ  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">~ </td><td class="markdownTableBodyNone">Эквиваленция  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">! </td><td class="markdownTableBodyNone">Отрицание самой переменной  </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md12"></a>
+Переменные</h1>
+<p>Для логических переменных была выделена только часть алфавита. Все возможные переменные:</p>
+<p><code>A B C D E F G X Y Z</code></p>
+<p><code>a b c d e f g x y z</code></p>
+<p>Стоит помнить, что регистр учитывается</p>
+<h1><a class="anchor" id="autotoc_md13"></a>
+Скриншоты</h1>
+<p><img src="https://imgur.com/TKjtObO.png" alt="A * B + C -> A" class="inline"/> <img src="https://imgur.com/geE2cxI.png" alt="A * B + C -> ( D | A # B <- C ) ^ ! D ~ A" class="inline"/> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

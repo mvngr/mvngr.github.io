@@ -1,0 +1,8 @@
+<map id="Logic::negation" name="Logic::negation">
+<area shape="rect" id="node1" title="Logic::negation Используется для выполнения отрицания у всей входной строки" alt="" coords="5,58,127,85"/>
+<area shape="rect" id="node2" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название" alt="" coords="405,84,548,110"/>
+<area shape="rect" id="node3" href="$class_logic.html#a1f774dadfd694a5ae9f7848f90a5de4a" title=" " alt="" coords="197,33,335,60"/>
+<area shape="rect" id="node4" href="$class_logic.html#a77986ea98f8417489c60948d5ba0a37d" title="Logic::insertWithReplace Выполняет внедрение логической операции в внутренние массивы взамен переменн..." alt="" coords="175,84,357,110"/>
+<area shape="rect" id="node5" href="$class_variable.html#a7f2a3b1b8540781703f5435253171978" title="Variable::negation Отрицание самой переменной" alt="" coords="196,134,336,161"/>
+<area shape="rect" id="node6" href="$class_variable.html#ab58f8291d67e633fd1ad76148fad9e1a" title="Variable::setName Задает имя" alt="" coords="405,134,548,161"/>
+</map>

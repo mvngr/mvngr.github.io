@@ -1,8 +1,8 @@
-\hypertarget{class_main_window}{}\section{Класс Main\+Window}
-\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+\hypertarget{class_main_window}{}\doxysection{Класс Main\+Window}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
 
 
-\hyperlink{class_main_window}{Main\+Window} -\/ Класс отвечает за взаимодействие с пользовательским интерфейсом  
+\mbox{\hyperlink{class_main_window}{Main\+Window}} -\/ Класс отвечает за взаимодействие с пользовательским интерфейсом  
 
 
 
@@ -15,7 +15,7 @@
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=174pt]{class_main_window__inherit__graph}
+\includegraphics[width=167pt]{class_main_window__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -24,58 +24,251 @@
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=174pt]{class_main_window__coll__graph}
+\includegraphics[width=336pt]{class_main_window__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Открытые члены}
+\doxysubsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window} (Q\+Widget $\ast$parent=nullptr)
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (Q\+Widget $\ast$parent=nullptr)
 \item 
-\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
 \end{DoxyCompactItemize}
-\subsection*{Открытые атрибуты}
+\doxysubsection*{Открытые атрибуты}
 \begin{DoxyCompactItemize}
 \item 
-Ui\+::\+Main\+Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+Ui\+::\+Main\+Window $\ast$ \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_ad2b196b4c7680e1995c870863ee3cabe}{input\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_ad2b196b4c7680e1995c870863ee3cabe}{Main\+Window\+::input\+Pressed}} Обработчик для поля ввода данных, вызывается при нажатии на enter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a35937dfc64e91849432cf75714cafcc7}{on\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a35937dfc64e91849432cf75714cafcc7}{Main\+Window\+::on\+Clicked}} Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответствующий символ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_afc3c47ba36b6793f5f86af1f8cf71f3b}{bind\+Connect}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_afc3c47ba36b6793f5f86af1f8cf71f3b}{Main\+Window\+::bind\+Connect}} Создаёт связи между обработчиком события on\+Clicked и нажатой кнопкой \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a41bad26e9dbaae6c92d2a076797ef33c}{on\+\_\+compute\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a41bad26e9dbaae6c92d2a076797ef33c}{Main\+Window\+::on\+\_\+compute\+\_\+clicked}} Обработчик нажатия на кнопку Вычислить \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9823fb93ccc1255eb7c4a749478a74a6}{on\+\_\+f5\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a9823fb93ccc1255eb7c4a749478a74a6}{Main\+Window\+::on\+\_\+f5\+\_\+clicked}} Обработчик для кнопки СКНФ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af483459fc458b993949c504e1e0d24af}{on\+\_\+f4\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_af483459fc458b993949c504e1e0d24af}{Main\+Window\+::on\+\_\+f4\+\_\+clicked}} Обработчик для кнопки СДНФ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a68da4ad6e2da6aad0b627612161a86dc}{connect\+Qss}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a68da4ad6e2da6aad0b627612161a86dc}{Main\+Window\+::connect\+Qss}} Отвечает за подключение стилей \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_editor}{Input\+Editor}} $\ast$ \mbox{\hyperlink{class_main_window_a44dcd3d3c75c90b005c644b26c58ac21}{ie\+\_\+}}
+\item 
+\mbox{\hyperlink{class_logic}{Logic}} $\ast$ \mbox{\hyperlink{class_main_window_a2362702e2f4888ead84da68a75c595d7}{logic\+\_\+}}
+\begin{DoxyCompactList}\small\item\em отвечает за обработку данных, вводимых в поле ввода данных \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Подробное описание}
-\hyperlink{class_main_window}{Main\+Window} -\/ Класс отвечает за взаимодействие с пользовательским интерфейсом 
+\doxysubsection{Подробное описание}
+\mbox{\hyperlink{class_main_window}{Main\+Window}} -\/ Класс отвечает за взаимодействие с пользовательским интерфейсом 
 
-\subsection{Конструктор(ы)}
+\doxysubsection{Конструктор(ы)}
 \mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
-\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
-\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
 {\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
-
-\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
-\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
-\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{$\sim$\+Main\+Window()}{~MainWindow()}}
-{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Граф вызовов\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7_cgraph}
+\includegraphics[width=350pt]{class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_main_window_afc3c47ba36b6793f5f86af1f8cf71f3b}\label{class_main_window_afc3c47ba36b6793f5f86af1f8cf71f3b}} 
+\index{MainWindow@{MainWindow}!bindConnect@{bindConnect}}
+\index{bindConnect@{bindConnect}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{bindConnect}{bindConnect}}
+{\footnotesize\ttfamily void Main\+Window\+::bind\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_afc3c47ba36b6793f5f86af1f8cf71f3b}{Main\+Window\+::bind\+Connect}} Создаёт связи между обработчиком события on\+Clicked и нажатой кнопкой 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_afc3c47ba36b6793f5f86af1f8cf71f3b_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_afc3c47ba36b6793f5f86af1f8cf71f3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a68da4ad6e2da6aad0b627612161a86dc}\label{class_main_window_a68da4ad6e2da6aad0b627612161a86dc}} 
+\index{MainWindow@{MainWindow}!connectQss@{connectQss}}
+\index{connectQss@{connectQss}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{connectQss()}{connectQss()}}
+{\footnotesize\ttfamily void Main\+Window\+::connect\+Qss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a68da4ad6e2da6aad0b627612161a86dc}{Main\+Window\+::connect\+Qss}} Отвечает за подключение стилей 
+
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a68da4ad6e2da6aad0b627612161a86dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ad2b196b4c7680e1995c870863ee3cabe}\label{class_main_window_ad2b196b4c7680e1995c870863ee3cabe}} 
+\index{MainWindow@{MainWindow}!inputPressed@{inputPressed}}
+\index{inputPressed@{inputPressed}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{inputPressed}{inputPressed}}
+{\footnotesize\ttfamily void Main\+Window\+::input\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_ad2b196b4c7680e1995c870863ee3cabe}{Main\+Window\+::input\+Pressed}} Обработчик для поля ввода данных, вызывается при нажатии на enter. 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_ad2b196b4c7680e1995c870863ee3cabe_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_ad2b196b4c7680e1995c870863ee3cabe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a41bad26e9dbaae6c92d2a076797ef33c}\label{class_main_window_a41bad26e9dbaae6c92d2a076797ef33c}} 
+\index{MainWindow@{MainWindow}!on\_compute\_clicked@{on\_compute\_clicked}}
+\index{on\_compute\_clicked@{on\_compute\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_compute\_clicked}{on\_compute\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+compute\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a41bad26e9dbaae6c92d2a076797ef33c}{Main\+Window\+::on\+\_\+compute\+\_\+clicked}} Обработчик нажатия на кнопку Вычислить 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a41bad26e9dbaae6c92d2a076797ef33c_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a41bad26e9dbaae6c92d2a076797ef33c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_af483459fc458b993949c504e1e0d24af}\label{class_main_window_af483459fc458b993949c504e1e0d24af}} 
+\index{MainWindow@{MainWindow}!on\_f4\_clicked@{on\_f4\_clicked}}
+\index{on\_f4\_clicked@{on\_f4\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_f4\_clicked}{on\_f4\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+f4\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_af483459fc458b993949c504e1e0d24af}{Main\+Window\+::on\+\_\+f4\+\_\+clicked}} Обработчик для кнопки СДНФ 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_af483459fc458b993949c504e1e0d24af_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a9823fb93ccc1255eb7c4a749478a74a6}\label{class_main_window_a9823fb93ccc1255eb7c4a749478a74a6}} 
+\index{MainWindow@{MainWindow}!on\_f5\_clicked@{on\_f5\_clicked}}
+\index{on\_f5\_clicked@{on\_f5\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_f5\_clicked}{on\_f5\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+f5\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a9823fb93ccc1255eb7c4a749478a74a6}{Main\+Window\+::on\+\_\+f5\+\_\+clicked}} Обработчик для кнопки СКНФ 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a9823fb93ccc1255eb7c4a749478a74a6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a35937dfc64e91849432cf75714cafcc7}\label{class_main_window_a35937dfc64e91849432cf75714cafcc7}} 
+\index{MainWindow@{MainWindow}!onClicked@{onClicked}}
+\index{onClicked@{onClicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{onClicked}{onClicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a35937dfc64e91849432cf75714cafcc7}{Main\+Window\+::on\+Clicked}} Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответствующий символ 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a35937dfc64e91849432cf75714cafcc7_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a35937dfc64e91849432cf75714cafcc7_icgraph}
 \end{center}
 \end{figure}
 
 
-\subsection{Данные класса}
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_main_window_a44dcd3d3c75c90b005c644b26c58ac21}\label{class_main_window_a44dcd3d3c75c90b005c644b26c58ac21}} 
+\index{MainWindow@{MainWindow}!ie\_@{ie\_}}
+\index{ie\_@{ie\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ie\_}{ie\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_input_editor}{Input\+Editor}}$\ast$ Main\+Window\+::ie\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a2362702e2f4888ead84da68a75c595d7}\label{class_main_window_a2362702e2f4888ead84da68a75c595d7}} 
+\index{MainWindow@{MainWindow}!logic\_@{logic\_}}
+\index{logic\_@{logic\_}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{logic\_}{logic\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logic}{Logic}}$\ast$ Main\+Window\+::logic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+отвечает за обработку данных, вводимых в поле ввода данных 
+
 \mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
-\index{Main\+Window@{Main\+Window}!ui@{ui}}
-\index{ui@{ui}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{ui}{ui}}
+\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
 {\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui}
 
 
 
 Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
 \item 
-/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
-/home/itain/\+Qt\+Projects/logic\+\_\+calculator/\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
+/home/mike/projects/logic\+\_\+calculator/\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+/home/mike/projects/logic\+\_\+calculator/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

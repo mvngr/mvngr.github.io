@@ -1,4 +1,6 @@
 <map id="Variable::converse" name="Variable::converse">
-<area shape="rect" id="node2" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название " alt="" coords="184,5,315,32"/>
-<area shape="rect" id="node3" href="$class_variable.html#ae6ac554c0382b43f9a3e37c6382d4471" title="Variable::setVars Задает принимаемые значения " alt="" coords="188,56,311,83"/>
+<area shape="rect" id="node1" title="Variable::converse Обратная импликация" alt="" coords="5,56,148,83"/>
+<area shape="rect" id="node2" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название" alt="" coords="204,5,347,32"/>
+<area shape="rect" id="node3" href="$class_variable.html#a3bd6766c017a7ec86ecd18ed12780da6" title="Variable::makeName Создает строку из двух названий переменных и операции между ними" alt="" coords="196,56,355,83"/>
+<area shape="rect" id="node4" href="$class_variable.html#ae6ac554c0382b43f9a3e37c6382d4471" title="Variable::setVars Задает принимаемые значения" alt="" coords="210,107,341,133"/>
 </map>

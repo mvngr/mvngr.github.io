@@ -1,0 +1,7 @@
+<map id="InputEditor::updateInput" name="InputEditor::updateInput">
+<area shape="rect" id="node1" title="Внутренний массив для хранения данных из поля ввода данных" alt="" coords="929,5,1108,32"/>
+<area shape="rect" id="node2" href="$class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190" title="словарь доступных действий" alt="" coords="717,5,881,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a35937dfc64e91849432cf75714cafcc7" title="MainWindow::onClicked Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответ..." alt="" coords="493,5,669,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b" title="MainWindow::bindConnect Создаёт связи между обработчиком события onClicked и нажатой кнопкой" alt="" coords="251,5,445,32"/>
+<area shape="rect" id="node5" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,203,32"/>
+</map>

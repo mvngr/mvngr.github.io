@@ -1,0 +1,5 @@
+<map id="ContentEditor::makeData" name="ContentEditor::makeData">
+<area shape="rect" id="node1" title="ContentEditor::makeData Создает двумерный массив данных &lt;0/1&gt;" alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node2" href="$class_content_editor.html#a3c74a024b03eed69ea69ea93d613ffae" title="ContentEditor::centerAlign выравнивает все элементы по центру своей ячейки" alt="" coords="240,5,433,32"/>
+<area shape="rect" id="node3" href="$class_content_editor.html#ab5380863084f8631762f7bb02b7feb72" title="ContentEditor::makeString Создает строку из повторяющихся amount раз символов segment." alt="" coords="481,5,675,32"/>
+</map>

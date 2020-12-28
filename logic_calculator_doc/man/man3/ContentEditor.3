@@ -1,0 +1,232 @@
+.TH "ContentEditor" 3 "Пн 28 Дек 2020" "Version 1.4" "Логический калькулятор" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContentEditor \- \fBContentEditor\fP - Класс отвечает за корректный и удобный вывод чего-либо в поле для вывода  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <contenteditor\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBContentEditor\fP (QPlainTextEdit *plainTextEdit)"
+.br
+.ti -1c
+.RI "void \fBprintTruthTable\fP (const QList< QString > &title, const QList< QList< bool >> &data)"
+.br
+.RI "\fBContentEditor::printTruthTable\fP Инициирует вывод таблицы истинности "
+.ti -1c
+.RI "void \fBprintSKNF\fP (const QString &sknf) const"
+.br
+.RI "\fBContentEditor::printSKNF\fP выводит Совершенную Конъюнктивную Нормальную Форму "
+.ti -1c
+.RI "void \fBprintSDNF\fP (const QString &sdnf) const"
+.br
+.RI "\fBContentEditor::printSDNF\fP выводит Совершенную Дизъюнктивную Нормальную Форму "
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "const int \fBminimumColumnCharSize\fP = 5"
+.br
+.in -1c
+.SS "Закрытые члены"
+
+.in +1c
+.ti -1c
+.RI "QList< int > \fBgetSize\fP (const QList< QString > &title) const"
+.br
+.RI "Размеры ячеек в таблице истинности "
+.ti -1c
+.RI "QString \fBmakeString\fP (char segment, int amount) const"
+.br
+.RI "\fBContentEditor::makeString\fP Создает строку из повторяющихся amount раз символов segment\&. "
+.ti -1c
+.RI "QString \fBmakeLine\fP () const"
+.br
+.RI "\fBContentEditor::makeLine\fP Создает линию под заголовком "
+.ti -1c
+.RI "QString \fBmakeTitle\fP (const QList< QString > &title) const"
+.br
+.RI "\fBContentEditor::makeTitle\fP Создает заголовок "
+.ti -1c
+.RI "QString \fBmakeData\fP (const QList< QList< bool > > &data) const"
+.br
+.RI "\fBContentEditor::makeData\fP Создает двумерный массив данных <0/1> "
+.ti -1c
+.RI "QString \fBcenterAlign\fP (const QString &text, const int cellSize) const"
+.br
+.RI "\fBContentEditor::centerAlign\fP выравнивает все элементы по центру своей ячейки "
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "QPlainTextEdit * \fBpte_\fP"
+.br
+.RI "Минимальный размер столбца в символах "
+.ti -1c
+.RI "QList< int > \fBcellSize_\fP"
+.br
+.RI "Управление полем вывода "
+.in -1c
+.SH "Подробное описание"
+.PP 
+\fBContentEditor\fP - Класс отвечает за корректный и удобный вывод чего-либо в поле для вывода 
+.SH "Конструктор(ы)"
+.PP 
+.SS "ContentEditor::ContentEditor (QPlainTextEdit * plainTextEdit)"
+
+.SH "Методы"
+.PP 
+.SS "QString ContentEditor::centerAlign (const QString & text, const int cellSize) const\fC [private]\fP"
+
+.PP
+\fBContentEditor::centerAlign\fP выравнивает все элементы по центру своей ячейки 
+.PP
+\fBАргументы\fP
+.RS 4
+\fItext\fP Текст, который необходимо выравнять по центру 
+.br
+\fIcellSize\fP размер столбца (в символах) 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+выровненный текст по центру 
+.RE
+.PP
+
+.SS "QList< int > ContentEditor::getSize (const QList< QString > & title) const\fC [private]\fP"
+
+.PP
+Размеры ячеек в таблице истинности \fBContentEditor::getSize\fP Заполняет значения размеров ячеек в таблице истинности cellSize_\&.
+.PP
+\fBАргументы\fP
+.RS 4
+\fItitle\fP список заголовков 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+размер, необходимый для каждого из столбцов 
+.RE
+.PP
+
+.SS "QString ContentEditor::makeData (const QList< QList< bool > > & data) const\fC [private]\fP"
+
+.PP
+\fBContentEditor::makeData\fP Создает двумерный массив данных <0/1> 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIdata\fP данные, которые необходимо вывести 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+итоговая строка с данными 
+.RE
+.PP
+
+.SS "QString ContentEditor::makeLine () const\fC [private]\fP"
+
+.PP
+\fBContentEditor::makeLine\fP Создает линию под заголовком 
+.PP
+\fBВозвращает\fP
+.RS 4
+получившаяся линия 
+.RE
+.PP
+
+.SS "QString ContentEditor::makeString (char segment, int amount) const\fC [private]\fP"
+
+.PP
+\fBContentEditor::makeString\fP Создает строку из повторяющихся amount раз символов segment\&. 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIsegment\fP повторяющийся символ 
+.br
+\fIamount\fP сколько раз повторять символ 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+получившаяся строка 
+.RE
+.PP
+
+.SS "QString ContentEditor::makeTitle (const QList< QString > & title) const\fC [private]\fP"
+
+.PP
+\fBContentEditor::makeTitle\fP Создает заголовок 
+.PP
+\fBАргументы\fP
+.RS 4
+\fItitle\fP текст, который нужно вставить в каждую из колонок заголовка 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+получившаяся строка 
+.RE
+.PP
+
+.SS "void ContentEditor::printSDNF (const QString & sdnf) const"
+
+.PP
+\fBContentEditor::printSDNF\fP выводит Совершенную Дизъюнктивную Нормальную Форму 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIsdnf\fP Строка СДНФ 
+.RE
+.PP
+
+.SS "void ContentEditor::printSKNF (const QString & sknf) const"
+
+.PP
+\fBContentEditor::printSKNF\fP выводит Совершенную Конъюнктивную Нормальную Форму 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIsknf\fP Строка СКНФ 
+.RE
+.PP
+
+.SS "void ContentEditor::printTruthTable (const QList< QString > & title, const QList< QList< bool >> & data)"
+
+.PP
+\fBContentEditor::printTruthTable\fP Инициирует вывод таблицы истинности 
+.PP
+\fBАргументы\fP
+.RS 4
+\fItitle\fP заголовок таблицы истинности 
+.br
+\fIdata\fP данные таблицы истинности 
+.RE
+.PP
+
+.SH "Данные класса"
+.PP 
+.SS "QList<int> ContentEditor::cellSize_\fC [private]\fP"
+
+.PP
+Управление полем вывода 
+.SS "const int ContentEditor::minimumColumnCharSize = 5"
+
+.SS "QPlainTextEdit* ContentEditor::pte_\fC [private]\fP"
+
+.PP
+Минимальный размер столбца в символах 
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Логический калькулятор из исходного текста\&.

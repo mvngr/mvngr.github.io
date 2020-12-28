@@ -1,0 +1,229 @@
+.TH "InputEditor" 3 "Пн 28 Дек 2020" "Version 1.4" "Логический калькулятор" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InputEditor \- \fBInputEditor\fP - Класс отвечает за обработку данных, вводимых в поле ввода данных  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <inputeditor\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBInputEditor\fP (QLineEdit *input)"
+.br
+.ti -1c
+.RI "\fB~InputEditor\fP ()"
+.br
+.ti -1c
+.RI "void \fBpushBack\fP (const QString &str)"
+.br
+.RI "словарь доступных действий "
+.ti -1c
+.RI "QString \fBtoString\fP () const"
+.br
+.RI "\fBInputEditor::toString\fP Преобразует внутренний массив в строку "
+.ti -1c
+.RI "bool \fBparse\fP (const QString &str)"
+.br
+.RI "\fBInputEditor::parse\fP Парсит введенную строку "
+.ti -1c
+.RI "QList< QString > * \fBgetVars\fP ()"
+.br
+.RI "\fBInputEditor::getVars\fP Выдает указатель на внутренний массив данных "
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "const QList< QString > \fBAVIABLE_WORDS\fP"
+.br
+.ti -1c
+.RI "const QMap< QString, QString > \fBAVIABLE_TRANSFORMATIONS\fP"
+.br
+.RI "Словарь доступных символов "
+.in -1c
+.SS "Закрытые члены"
+
+.in +1c
+.ti -1c
+.RI "void \fBupdateInput\fP ()"
+.br
+.RI "Внутренний массив для хранения данных из поля ввода данных "
+.ti -1c
+.RI "bool \fBisValidity\fP () const"
+.br
+.ti -1c
+.RI "QString \fBnormalizeString\fP (const QString &input) const"
+.br
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "QLineEdit * \fBinput_\fP"
+.br
+.ti -1c
+.RI "QList< QString > * \fBv_\fP"
+.br
+.RI "Используется для управления полем ввода данных "
+.in -1c
+.SH "Подробное описание"
+.PP 
+\fBInputEditor\fP - Класс отвечает за обработку данных, вводимых в поле ввода данных 
+.SH "Конструктор(ы)"
+.PP 
+.SS "InputEditor::InputEditor (QLineEdit * input)"
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "InputEditor::~InputEditor ()"
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SH "Методы"
+.PP 
+.SS "QList< QString > * InputEditor::getVars ()"
+
+.PP
+\fBInputEditor::getVars\fP Выдает указатель на внутренний массив данных 
+.PP
+\fBВозвращает\fP
+.RS 4
+Указатель на внутренний массив данных 
+.RE
+.PP
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "bool InputEditor::isValidity () const\fC [private]\fP"
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "QString InputEditor::normalizeString (const QString & input) const\fC [private]\fP"
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "bool InputEditor::parse (const QString & str)"
+
+.PP
+\fBInputEditor::parse\fP Парсит введенную строку 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIstr\fP строка для парсинга 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+смогло ли произойти чтение 
+.RE
+.PP
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "void InputEditor::pushBack (const QString & str)"
+
+.PP
+словарь доступных действий \fBInputEditor::pushBack\fP Добавляет определенные данные в конец внутреннего массива
+.PP
+\fBАргументы\fP
+.RS 4
+\fIstr\fP данные 
+.RE
+.PP
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "QString InputEditor::toString () const"
+
+.PP
+\fBInputEditor::toString\fP Преобразует внутренний массив в строку 
+.PP
+\fBВозвращает\fP
+.RS 4
+сгенерированная строка 
+.RE
+.PP
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "void InputEditor::updateInput ()\fC [private]\fP"
+
+.PP
+Внутренний массив для хранения данных из поля ввода данных \fBInputEditor::updateInput\fP Обновляет поле для ввода данных 
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SH "Данные класса"
+.PP 
+.SS "const QMap<QString,QString> InputEditor::AVIABLE_TRANSFORMATIONS"
+\fBИнициализатор\fP
+.PP
+.nf
+{
+        {"conjunction", "*"},
+        {"disjunction", "+"},
+        {"exclusive_disjunction", "^"},
+        {"not_and", "|"},
+        {"not_or", "#"},
+        {"implication", "->"},
+        {"converse", "<-"},
+        {"equivalent", "~"},
+        {"negation", "!"}
+    }
+.fi
+.PP
+Словарь доступных символов 
+.SS "const QList<QString> InputEditor::AVIABLE_WORDS"
+\fBИнициализатор\fP
+.PP
+.nf
+{
+        "*" , "+" , "!" , "^" , "->" , "<-" , "~" , "|" , "#",
+        "A" , "B" , "C" , "D" , "E" , "F" , "G" , "X" , "Y" , "Z",
+        "a" , "b" , "c" , "d" , "e" , "f" , "g" , "x" , "y" , "z",
+        "(" , ")"
+    }
+.fi
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "QLineEdit* InputEditor::input_\fC [private]\fP"
+
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+.SS "QList<QString>* InputEditor::v_\fC [private]\fP"
+
+.PP
+Используется для управления полем ввода данных 
+.PP
+\fBПримеры\fP
+.in +1c
+\fB/home/mike/projects/logic_calculator/inputeditor\&.cpp\fP\&.
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Логический калькулятор из исходного текста\&.

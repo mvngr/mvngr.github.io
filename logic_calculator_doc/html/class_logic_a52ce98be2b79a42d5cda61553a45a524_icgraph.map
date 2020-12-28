@@ -1,0 +1,11 @@
+<map id="Logic::fillVars" name="Logic::fillVars">
+<area shape="rect" id="node1" title="Logic::fillVars Добавляет логические переменные в vars_ из строк v_." alt="" coords="1148,64,1256,91"/>
+<area shape="rect" id="node2" href="$class_logic.html#af592736369fd989be41c59b4e7315ab5" title="Logic::setVars Добавляет массив логических переменных в внутренний массив" alt="" coords="988,64,1100,91"/>
+<area shape="rect" id="node3" href="$class_logic.html#a7eff6d81b1fe96211b96a58213b48a4a" title="Logic::makeBoolArrays Создает массив начальных данных у переменных" alt="" coords="754,5,925,32"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a41bad26e9dbaae6c92d2a076797ef33c" title="MainWindow::on_compute_clicked Обработчик нажатия на кнопку Вычислить" alt="" coords="743,57,936,98"/>
+<area shape="rect" id="node8" href="$class_main_window.html#af483459fc458b993949c504e1e0d24af" title="MainWindow::on_f4_clicked Обработчик для кнопки СДНФ" alt="" coords="739,123,940,149"/>
+<area shape="rect" id="node9" href="$class_main_window.html#a9823fb93ccc1255eb7c4a749478a74a6" title="MainWindow::on_f5_clicked Обработчик для кнопки СКНФ" alt="" coords="739,173,940,200"/>
+<area shape="rect" id="node5" href="$class_main_window.html#ad2b196b4c7680e1995c870863ee3cabe" title="MainWindow::inputPressed Обработчик для поля ввода данных, вызывается при нажатии на enter." alt="" coords="493,64,691,91"/>
+<area shape="rect" id="node6" href="$class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b" title="MainWindow::bindConnect Создаёт связи между обработчиком события onClicked и нажатой кнопкой" alt="" coords="251,64,445,91"/>
+<area shape="rect" id="node7" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,64,203,91"/>
+</map>

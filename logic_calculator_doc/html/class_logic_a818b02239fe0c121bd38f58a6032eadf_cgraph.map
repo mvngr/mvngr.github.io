@@ -1,0 +1,17 @@
+<map id="Logic::binaryOperation" name="Logic::binaryOperation">
+<area shape="rect" id="node1" title="Logic::binaryOperation Используется для выполнения входной операции у всей входной строки" alt="" coords="5,281,175,308"/>
+<area shape="rect" id="node2" href="$class_variable.html#a3072441748b17a105aea1485911bb489" title="Variable::conjunction Конъюнкция" alt="" coords="253,205,411,232"/>
+<area shape="rect" id="node3" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название" alt="" coords="497,205,640,232"/>
+<area shape="rect" id="node6" href="$class_variable.html#adb62912a5e9433289191879e6bb7d580" title="Variable::converse Обратная импликация" alt="" coords="261,256,403,283"/>
+<area shape="rect" id="node7" href="$class_variable.html#a2e4849eea01ce6e2ec9ba143164e7d57" title="Variable::disjunction Дизъюнкция" alt="" coords="255,307,409,333"/>
+<area shape="rect" id="node8" href="$class_variable.html#a104b427ab0f43e9eb24f049ec6b524b0" title="Variable::equivalent Эквиваленция" alt="" coords="256,357,408,384"/>
+<area shape="rect" id="node9" href="$class_variable.html#a768fb534653ecc15e72f5d1201963705" title="Variable::exclusiveDisjunction Исключающее ИЛИ" alt="" coords="223,408,441,435"/>
+<area shape="rect" id="node10" href="$class_logic.html#a1f774dadfd694a5ae9f7848f90a5de4a" title=" " alt="" coords="263,509,401,536"/>
+<area shape="rect" id="node11" href="$class_variable.html#a82a20d70ad58a132b487a7bc822b47d1" title="Variable::implication Импликация" alt="" coords="254,459,410,485"/>
+<area shape="rect" id="node12" href="$class_logic.html#a77986ea98f8417489c60948d5ba0a37d" title="Logic::insertWithReplace Выполняет внедрение логической операции в внутренние массивы взамен переменн..." alt="" coords="241,53,423,80"/>
+<area shape="rect" id="node13" href="$class_variable.html#a5b1b5220dae873cc4bf6d0700eba703e" title="Variable::notAnd Штрих Шеффера" alt="" coords="267,104,397,131"/>
+<area shape="rect" id="node14" href="$class_variable.html#aa71e11142a257fa6676257843879148c" title="Variable::notOr Стрелка Пирса" alt="" coords="273,155,391,181"/>
+<area shape="rect" id="node15" href="$class_logic.html#a4952830fe632ae6ab23547e3d212fcfc" title="Logic::showError Выводит в пользовательский интерфейс сообщения с ошибками" alt="" coords="267,560,397,587"/>
+<area shape="rect" id="node4" href="$class_variable.html#a3bd6766c017a7ec86ecd18ed12780da6" title="Variable::makeName Создает строку из двух названий переменных и операции между ними" alt="" coords="489,307,648,333"/>
+<area shape="rect" id="node5" href="$class_variable.html#ae6ac554c0382b43f9a3e37c6382d4471" title="Variable::setVars Задает принимаемые значения" alt="" coords="503,256,634,283"/>
+</map>

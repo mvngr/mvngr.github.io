@@ -1,6 +1,13 @@
 <map id="Logic::computeLogicalAction" name="Logic::computeLogicalAction">
-<area shape="rect" id="node2" href="$class_logic.html#a17bd98c66121d7739f11af12affdb64b" title="Logic::compute Инициирует вычисления " alt="" coords="243,56,353,83"/>
-<area shape="rect" id="node5" href="$class_logic.html#a1494325c8d91b7fe5728b7dbdf82fca3" title="Logic::makeSDNF создает Совершенную Дизъюнктивную Нормальную Форму " alt="" coords="401,107,532,133"/>
-<area shape="rect" id="node3" href="$class_logic.html#a008dd758dde00f1f5940558f275ec216" title="Logic::makeSKNF создает Совершенную Конъюнктивную Нормальную Форму " alt="" coords="402,5,531,32"/>
-<area shape="rect" id="node4" href="$class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7" title="MainWindow::~MainWindow" alt="" coords="580,56,768,83"/>
+<area shape="rect" id="node1" title="Logic::computeLogicalAction Инициирует вычисление таблицы истинности" alt="" coords="1176,107,1384,133"/>
+<area shape="rect" id="node2" href="$class_logic.html#a17bd98c66121d7739f11af12affdb64b" title="Logic::compute Инициирует вычисления" alt="" coords="995,56,1117,83"/>
+<area shape="rect" id="node11" href="$class_logic.html#a87b4837c6d5042d31781982997cb9141" title="Logic::findBrackets Находит выражения в скобках и высчитывает их" alt="" coords="984,107,1128,133"/>
+<area shape="rect" id="node3" href="$class_logic.html#a1494325c8d91b7fe5728b7dbdf82fca3" title="Logic::makeSDNF создает Совершенную Дизъюнктивную Нормальную Форму" alt="" coords="771,5,907,32"/>
+<area shape="rect" id="node5" href="$class_logic.html#a008dd758dde00f1f5940558f275ec216" title="Logic::makeSKNF создает Совершенную Конъюнктивную Нормальную Форму" alt="" coords="772,56,907,83"/>
+<area shape="rect" id="node7" href="$class_main_window.html#a41bad26e9dbaae6c92d2a076797ef33c" title="MainWindow::on_compute_clicked Обработчик нажатия на кнопку Вычислить" alt="" coords="743,107,936,149"/>
+<area shape="rect" id="node4" href="$class_main_window.html#af483459fc458b993949c504e1e0d24af" title="MainWindow::on_f4_clicked Обработчик для кнопки СДНФ" alt="" coords="493,5,695,32"/>
+<area shape="rect" id="node6" href="$class_main_window.html#a9823fb93ccc1255eb7c4a749478a74a6" title="MainWindow::on_f5_clicked Обработчик для кнопки СКНФ" alt="" coords="493,56,695,83"/>
+<area shape="rect" id="node8" href="$class_main_window.html#ad2b196b4c7680e1995c870863ee3cabe" title="MainWindow::inputPressed Обработчик для поля ввода данных, вызывается при нажатии на enter." alt="" coords="495,115,693,141"/>
+<area shape="rect" id="node9" href="$class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b" title="MainWindow::bindConnect Создаёт связи между обработчиком события onClicked и нажатой кнопкой" alt="" coords="251,115,445,141"/>
+<area shape="rect" id="node10" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,115,203,141"/>
 </map>

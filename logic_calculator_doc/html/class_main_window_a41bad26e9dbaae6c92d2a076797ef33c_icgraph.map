@@ -1,0 +1,6 @@
+<map id="MainWindow::on_compute_clicked" name="MainWindow::on_compute_clicked">
+<area shape="rect" id="node1" title="MainWindow::on_compute_clicked Обработчик нажатия на кнопку Вычислить" alt="" coords="739,5,932,47"/>
+<area shape="rect" id="node2" href="$class_main_window.html#ad2b196b4c7680e1995c870863ee3cabe" title="MainWindow::inputPressed Обработчик для поля ввода данных, вызывается при нажатии на enter." alt="" coords="493,13,691,39"/>
+<area shape="rect" id="node3" href="$class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b" title="MainWindow::bindConnect Создаёт связи между обработчиком события onClicked и нажатой кнопкой" alt="" coords="251,13,445,39"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,13,203,39"/>
+</map>

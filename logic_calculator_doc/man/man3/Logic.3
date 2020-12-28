@@ -1,0 +1,386 @@
+.TH "Logic" 3 "Пн 28 Дек 2020" "Version 1.4" "Логический калькулятор" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Logic \- \fBLogic\fP - Класс отвечает за логику выполнения действий  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <logic\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBLogic\fP (QPlainTextEdit *output)"
+.br
+.ti -1c
+.RI "\fB~Logic\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetVars\fP (QList< QString > *v)"
+.br
+.RI "\fBLogic::setVars\fP Добавляет массив логических переменных в внутренний массив "
+.ti -1c
+.RI "void \fBcompute\fP ()"
+.br
+.RI "\fBLogic::compute\fP Инициирует вычисления "
+.ti -1c
+.RI "void \fBcomputeLogicalAction\fP (QList< QString > *v)"
+.br
+.RI "\fBLogic::computeLogicalAction\fP Инициирует вычисление таблицы истинности "
+.ti -1c
+.RI "QList< QString > \fBgetVarsTitle\fP () const"
+.br
+.RI "\fBLogic::getVarsTitle\fP Отдает массив имен логических переменных "
+.ti -1c
+.RI "QList< QList< bool > > \fBgetVarsData\fP () const"
+.br
+.RI "\fBLogic::getVarsData\fP Отдает массив всех данных из логических переменных "
+.ti -1c
+.RI "void \fBmakeSKNF\fP ()"
+.br
+.RI "\fBLogic::makeSKNF\fP создает Совершенную Конъюнктивную Нормальную Форму "
+.ti -1c
+.RI "void \fBmakeSDNF\fP ()"
+.br
+.RI "\fBLogic::makeSDNF\fP создает Совершенную Дизъюнктивную Нормальную Форму "
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "const QMap< QString, QString > \fBBINARY_OPERATIONS_\fP"
+.br
+.RI "Используется для управление полем вывода "
+.ti -1c
+.RI "const QMap< QString, int > \fBBINARY_OPERATIONS_TO_NUM_\fP"
+.br
+.RI "Словарь бинарных операций "
+.ti -1c
+.RI "const QList< QString > \fBAVIABLE_NAME_OF_VARS_\fP"
+.br
+.RI "Сопоставление бинарной операции с её внутренним номером (нужно для удобства) "
+.in -1c
+.SS "Закрытые члены"
+
+.in +1c
+.ti -1c
+.RI "void \fBnegation\fP (QList< QString > *v)"
+.br
+.RI "\fBLogic::negation\fP Используется для выполнения отрицания у всей входной строки "
+.ti -1c
+.RI "void \fBfindBrackets\fP (QList< QString > *v)"
+.br
+.RI "\fBLogic::findBrackets\fP Находит выражения в скобках и высчитывает их "
+.ti -1c
+.RI "QList< QString > * \fBsubString\fP (QList< QString > *v, int begin, const int end)"
+.br
+.RI "\fBLogic::subString\fP Возвращает подстроку из строки "
+.ti -1c
+.RI "void \fBbinaryOperation\fP (QList< QString > *v, const QString &operation)"
+.br
+.RI "\fBLogic::binaryOperation\fP Используется для выполнения входной операции у всей входной строки "
+.ti -1c
+.RI "void \fBshowError\fP (const QString &logicOperation, const QString &error) const"
+.br
+.RI "\fBLogic::showError\fP Выводит в пользовательский интерфейс сообщения с ошибками "
+.ti -1c
+.RI "void \fBinsertWithReplace\fP (QList< QString > *v, const \fBVariable\fP &variable, const int begin, const int end)"
+.br
+.RI "\fBLogic::insertWithReplace\fP Выполняет внедрение логической операции в внутренние массивы взамен переменным(ой) и оператора "
+.ti -1c
+.RI "\fBVariable\fP \fBgetVariable\fP (const QString &name) const"
+.br
+.ti -1c
+.RI "void \fBfillVars\fP ()"
+.br
+.RI "\fBLogic::fillVars\fP Добавляет логические переменные в vars_ из строк v_\&. "
+.ti -1c
+.RI "void \fBfillMap\fP ()"
+.br
+.RI "\fBLogic::fillMap\fP Заполняет карту map_\&. "
+.ti -1c
+.RI "bool \fBisRepeat\fP (const QChar c) const"
+.br
+.RI "\fBLogic::isRepeat\fP Проверяет на повторение названия имен в vars_\&. "
+.ti -1c
+.RI "void \fBsortVars\fP ()"
+.br
+.RI "\fBLogic::sortVars\fP Сортирует массив vars_ по названиям "
+.ti -1c
+.RI "void \fBmakeBoolArrays\fP ()"
+.br
+.RI "\fBLogic::makeBoolArrays\fP Создает массив начальных данных у переменных "
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "QList< \fBVariable\fP > \fBvars_\fP"
+.br
+.ti -1c
+.RI "QList< QString > * \fBv_\fP"
+.br
+.RI "Массив логических переменных "
+.ti -1c
+.RI "QMap< QString, int > \fBmap_\fP"
+.br
+.RI "Массив строк, разделенных при помощи пробела\&. Пример: {'A', '*', 'B', '+', '!', 'C'}\&. "
+.ti -1c
+.RI "\fBContentEditor\fP * \fBce_\fP"
+.br
+.RI "Используется для сопоставления строковых переменных и их аналогов из vars_\&. <Название переменной> => <Индекс в массиве объекта> "
+.in -1c
+.SH "Подробное описание"
+.PP 
+\fBLogic\fP - Класс отвечает за логику выполнения действий 
+.SH "Конструктор(ы)"
+.PP 
+.SS "Logic::Logic (QPlainTextEdit * output)"
+
+.SS "Logic::~Logic ()"
+
+.SH "Методы"
+.PP 
+.SS "void Logic::binaryOperation (QList< QString > * v, const QString & operation)\fC [private]\fP"
+
+.PP
+\fBLogic::binaryOperation\fP Используется для выполнения входной операции у всей входной строки 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIv\fP указатель на строки с логическими действиями 
+.br
+\fIoperation\fP необходимая операция в виде строки 
+.RE
+.PP
+
+.SS "void Logic::compute ()"
+
+.PP
+\fBLogic::compute\fP Инициирует вычисления 
+.SS "void Logic::computeLogicalAction (QList< QString > * v)"
+
+.PP
+\fBLogic::computeLogicalAction\fP Инициирует вычисление таблицы истинности 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIv\fP указатель на строки с логическими действиями 
+.RE
+.PP
+
+.SS "void Logic::fillMap ()\fC [private]\fP"
+
+.PP
+\fBLogic::fillMap\fP Заполняет карту map_\&. 
+.SS "void Logic::fillVars ()\fC [private]\fP"
+
+.PP
+\fBLogic::fillVars\fP Добавляет логические переменные в vars_ из строк v_\&. 
+.SS "void Logic::findBrackets (QList< QString > * v)\fC [private]\fP"
+
+.PP
+\fBLogic::findBrackets\fP Находит выражения в скобках и высчитывает их 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIv\fP указатель на строки с логическими действиями 
+.RE
+.PP
+
+.SS "\fBVariable\fP Logic::getVariable (const QString & name) const\fC [private]\fP"
+
+.SS "QList< QList< bool > > Logic::getVarsData () const"
+
+.PP
+\fBLogic::getVarsData\fP Отдает массив всех данных из логических переменных 
+.PP
+\fBВозвращает\fP
+.RS 4
+все данные из логических переменных 
+.RE
+.PP
+
+.SS "QList< QString > Logic::getVarsTitle () const"
+
+.PP
+\fBLogic::getVarsTitle\fP Отдает массив имен логических переменных 
+.PP
+\fBВозвращает\fP
+.RS 4
+массив имен логических переменных 
+.RE
+.PP
+
+.SS "void Logic::insertWithReplace (QList< QString > * v, const \fBVariable\fP & variable, const int begin, const int end)\fC [private]\fP"
+
+.PP
+\fBLogic::insertWithReplace\fP Выполняет внедрение логической операции в внутренние массивы взамен переменным(ой) и оператора 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIv\fP указатель на строки с логическими действиями 
+.br
+\fIvariable\fP переменная, у котороый выполняется внедрение логической операции 
+.br
+\fIbegin\fP индекс начала 
+.br
+\fIend\fP индекс конца 
+.RE
+.PP
+
+.SS "bool Logic::isRepeat (const QChar c) const\fC [private]\fP"
+
+.PP
+\fBLogic::isRepeat\fP Проверяет на повторение названия имен в vars_\&. 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIc\fP символ, который нужно проверить 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+повторяется ли символ 
+.RE
+.PP
+
+.SS "void Logic::makeBoolArrays ()\fC [private]\fP"
+
+.PP
+\fBLogic::makeBoolArrays\fP Создает массив начальных данных у переменных 
+.SS "void Logic::makeSDNF ()"
+
+.PP
+\fBLogic::makeSDNF\fP создает Совершенную Дизъюнктивную Нормальную Форму 
+.SS "void Logic::makeSKNF ()"
+
+.PP
+\fBLogic::makeSKNF\fP создает Совершенную Конъюнктивную Нормальную Форму 
+.SS "void Logic::negation (QList< QString > * v)\fC [private]\fP"
+
+.PP
+\fBLogic::negation\fP Используется для выполнения отрицания у всей входной строки 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIv\fP указатель на строки с логическими действиями 
+.RE
+.PP
+
+.SS "void Logic::setVars (QList< QString > * v)"
+
+.PP
+\fBLogic::setVars\fP Добавляет массив логических переменных в внутренний массив 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIv\fP массив логических переменных 
+.RE
+.PP
+
+.SS "void Logic::showError (const QString & logicOperation, const QString & error) const\fC [private]\fP"
+
+.PP
+\fBLogic::showError\fP Выводит в пользовательский интерфейс сообщения с ошибками 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIlogicOperation\fP логическая операция, при которой произошла ошибка 
+.br
+\fIerror\fP текст ошибки 
+.RE
+.PP
+
+.SS "void Logic::sortVars ()\fC [private]\fP"
+
+.PP
+\fBLogic::sortVars\fP Сортирует массив vars_ по названиям 
+.SS "QList< QString > * Logic::subString (QList< QString > * v, int begin, const int end)\fC [private]\fP"
+
+.PP
+\fBLogic::subString\fP Возвращает подстроку из строки 
+.PP
+\fBАргументы\fP
+.RS 4
+\fIv\fP указатель на строки с логическими действиями 
+.br
+\fIbegin\fP индекс начала 
+.br
+\fIend\fP индекс конца 
+.RE
+.PP
+\fBВозвращает\fP
+.RS 4
+новые строки с логическими действиями 
+.RE
+.PP
+
+.SH "Данные класса"
+.PP 
+.SS "const QList<QString> Logic::AVIABLE_NAME_OF_VARS_"
+\fBИнициализатор\fP
+.PP
+.nf
+{
+        "A", "B", "C", "D", "E", "F", "G", "X", "Y", "Z",
+        "a", "b", "c", "d", "e", "f", "g", "x", "y", "z"
+    }
+.fi
+.PP
+Сопоставление бинарной операции с её внутренним номером (нужно для удобства) 
+.SS "const QMap<QString, QString> Logic::BINARY_OPERATIONS_"
+\fBИнициализатор\fP
+.PP
+.nf
+{
+        {"*", "conjunction"},
+        {"+", "disjunction"},
+        {"^", "exclusiveDisjunction"},
+        {"|", "notAnd"},
+        {"#", "notOr"},
+        {"->", "implication"},
+        {"<-", "converse"},
+        {"~", "equivalent"}
+    }
+.fi
+.PP
+Используется для управление полем вывода 
+.SS "const QMap<QString, int> Logic::BINARY_OPERATIONS_TO_NUM_"
+\fBИнициализатор\fP
+.PP
+.nf
+{
+        {"conjunction", 1},
+        {"disjunction", 2},
+        {"implication", 3},
+        {"converse", 4},
+        {"equivalent", 5},
+        {"exclusiveDisjunction", 6},
+        {"notAnd", 7},
+        {"notOr", 8}
+    }
+.fi
+.PP
+Словарь бинарных операций 
+.SS "\fBContentEditor\fP* Logic::ce_\fC [private]\fP"
+
+.PP
+Используется для сопоставления строковых переменных и их аналогов из vars_\&. <Название переменной> => <Индекс в массиве объекта> 
+.SS "QMap<QString, int> Logic::map_\fC [private]\fP"
+
+.PP
+Массив строк, разделенных при помощи пробела\&. Пример: {'A', '*', 'B', '+', '!', 'C'}\&. 
+.SS "QList<QString>* Logic::v_\fC [private]\fP"
+
+.PP
+Массив логических переменных 
+.SS "QList<\fBVariable\fP> Logic::vars_\fC [private]\fP"
+
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Логический калькулятор из исходного текста\&.

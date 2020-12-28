@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Logic Calculator: Исходный файл /home/itain/QtProjects/logic_calculator/mainwindow.h</title>
+<title>Логический калькулятор: Исходный файл /home/mike/projects/logic_calculator/mainwindow.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,8 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Logic Calculator
+   <div id="projectname">Логический калькулятор
+   &#160;<span id="projectnumber">1.4</span>
    </div>
   </td>
  </tr>
@@ -29,18 +31,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.17 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -66,20 +71,81 @@ $(function() {
 <div class="title">mainwindow.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mainwindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAINWINDOW_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="inputeditor_8h.html">inputeditor.h</a>&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="variable_8h.html">variable.h</a>&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logic_8h.html">logic.h</a>&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespace_ui.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_input_editor.html">InputEditor</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_main_window.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_main_window.html">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="class_main_window.html">MainWindow</a>();</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">   25</a></span>&#160;    Ui::MainWindow *<a class="code" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> inputPressed(); <span class="comment">//Обработчик для поля ввода данных, вызывается при нажатии на enter</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> onClicked(); <span class="comment">//Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответствующий символ</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> bindConnect() <span class="keyword">const</span>; <span class="comment">//Создаёт связи между обработчиком события onClicked и нажатой кнопкой</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> on_compute_clicked(); <span class="comment">//Обработчик нажатия на кнопку Вычислить</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> on_f5_clicked(); <span class="comment">//Обработчик для кнопки СКНФ</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> on_f4_clicked(); <span class="comment">//Обработчик для кнопки СДНФ</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> connectQss(); <span class="comment">//Отвечает за подключение стилей</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_input_editor.html">InputEditor</a> *ie_; </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_logic.html">Logic</a> *logic_; </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div><div class="ttc" id="inputeditor_8h_html"><div class="ttname"><a href="inputeditor_8h.html">inputeditor.h</a></div></div>
-<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:10</div></div>
-<div class="ttc" id="class_input_editor_html"><div class="ttname"><a href="class_input_editor.html">InputEditor</a></div><div class="ttdoc">InputEditor - Класс отвечает за обработку данных, вводимых в поле ввода данных </div><div class="ttdef"><b>Definition:</b> inputeditor.h:12</div></div>
-<div class="ttc" id="class_main_window_html_a35466a70ed47252a0191168126a352a5"><div class="ttname"><a href="class_main_window.html#a35466a70ed47252a0191168126a352a5">MainWindow::ui</a></div><div class="ttdeci">Ui::MainWindow * ui</div><div class="ttdef"><b>Definition:</b> mainwindow.h:25</div></div>
-<div class="ttc" id="variable_8h_html"><div class="ttname"><a href="variable_8h.html">variable.h</a></div></div>
-<div class="ttc" id="class_logic_html"><div class="ttname"><a href="class_logic.html">Logic</a></div><div class="ttdoc">Logic - Класс отвечает за логику выполнения действий </div><div class="ttdef"><b>Definition:</b> logic.h:16</div></div>
-<div class="ttc" id="logic_8h_html"><div class="ttname"><a href="logic_8h.html">logic.h</a></div></div>
-<div class="ttc" id="class_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">MainWindow - Класс отвечает за взаимодействие с пользовательским интерфейсом </div><div class="ttdef"><b>Definition:</b> mainwindow.h:18</div></div>
+<a href="mainwindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAINWINDOW_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="inputeditor_8h.html">inputeditor.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="variable_8h.html">variable.h</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logic_8h.html">logic.h</a>&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespace_ui.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_input_editor.html">InputEditor</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_main_window.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">   25</a></span>&#160;    Ui::MainWindow *<a class="code" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad2b196b4c7680e1995c870863ee3cabe">inputPressed</a>(); <span class="comment">//Обработчик для поля ввода данных, вызывается при нажатии на enter</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a35937dfc64e91849432cf75714cafcc7">onClicked</a>(); <span class="comment">//Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответствующий символ</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b">bindConnect</a>() <span class="keyword">const</span>; <span class="comment">//Создаёт связи между обработчиком события onClicked и нажатой кнопкой</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a41bad26e9dbaae6c92d2a076797ef33c">on_compute_clicked</a>(); <span class="comment">//Обработчик нажатия на кнопку Вычислить</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a9823fb93ccc1255eb7c4a749478a74a6">on_f5_clicked</a>(); <span class="comment">//Обработчик для кнопки СКНФ</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#af483459fc458b993949c504e1e0d24af">on_f4_clicked</a>(); <span class="comment">//Обработчик для кнопки СДНФ</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a68da4ad6e2da6aad0b627612161a86dc">connectQss</a>(); <span class="comment">//Отвечает за подключение стилей</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_main_window.html#a44dcd3d3c75c90b005c644b26c58ac21">   39</a></span>&#160;    <a class="code" href="class_input_editor.html">InputEditor</a> *<a class="code" href="class_main_window.html#a44dcd3d3c75c90b005c644b26c58ac21">ie_</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_main_window.html#a2362702e2f4888ead84da68a75c595d7">   40</a></span>&#160;    <a class="code" href="class_logic.html">Logic</a> *<a class="code" href="class_main_window.html#a2362702e2f4888ead84da68a75c595d7">logic_</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ainputeditor_8h_html"><div class="ttname"><a href="inputeditor_8h.html">inputeditor.h</a></div></div>
+<div class="ttc" id="aclass_logic_html"><div class="ttname"><a href="class_logic.html">Logic</a></div><div class="ttdoc">Logic - Класс отвечает за логику выполнения действий</div><div class="ttdef"><b>Definition:</b> logic.h:16</div></div>
+<div class="ttc" id="aclass_main_window_html_a41bad26e9dbaae6c92d2a076797ef33c"><div class="ttname"><a href="class_main_window.html#a41bad26e9dbaae6c92d2a076797ef33c">MainWindow::on_compute_clicked</a></div><div class="ttdeci">void on_compute_clicked()</div><div class="ttdoc">MainWindow::on_compute_clicked Обработчик нажатия на кнопку Вычислить</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:70</div></div>
+<div class="ttc" id="aclass_main_window_html_a44dcd3d3c75c90b005c644b26c58ac21"><div class="ttname"><a href="class_main_window.html#a44dcd3d3c75c90b005c644b26c58ac21">MainWindow::ie_</a></div><div class="ttdeci">InputEditor * ie_</div><div class="ttdef"><b>Definition:</b> mainwindow.h:39</div></div>
+<div class="ttc" id="aclass_main_window_html_a9823fb93ccc1255eb7c4a749478a74a6"><div class="ttname"><a href="class_main_window.html#a9823fb93ccc1255eb7c4a749478a74a6">MainWindow::on_f5_clicked</a></div><div class="ttdeci">void on_f5_clicked()</div><div class="ttdoc">MainWindow::on_f5_clicked Обработчик для кнопки СКНФ</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:82</div></div>
+<div class="ttc" id="aclass_main_window_html_a68da4ad6e2da6aad0b627612161a86dc"><div class="ttname"><a href="class_main_window.html#a68da4ad6e2da6aad0b627612161a86dc">MainWindow::connectQss</a></div><div class="ttdeci">void connectQss()</div><div class="ttdoc">MainWindow::connectQss Отвечает за подключение стилей</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:34</div></div>
+<div class="ttc" id="aclass_input_editor_html"><div class="ttname"><a href="class_input_editor.html">InputEditor</a></div><div class="ttdoc">InputEditor - Класс отвечает за обработку данных, вводимых в поле ввода данных</div><div class="ttdef"><b>Definition:</b> inputeditor.h:12</div></div>
+<div class="ttc" id="aclass_logic_html_a17bd98c66121d7739f11af12affdb64b"><div class="ttname"><a href="class_logic.html#a17bd98c66121d7739f11af12affdb64b">Logic::compute</a></div><div class="ttdeci">void compute()</div><div class="ttdoc">Logic::compute Инициирует вычисления</div><div class="ttdef"><b>Definition:</b> logic.cpp:26</div></div>
+<div class="ttc" id="aclass_logic_html_af592736369fd989be41c59b4e7315ab5"><div class="ttname"><a href="class_logic.html#af592736369fd989be41c59b4e7315ab5">Logic::setVars</a></div><div class="ttdeci">void setVars(QList&lt; QString &gt; *v)</div><div class="ttdoc">Logic::setVars Добавляет массив логических переменных в внутренний массив</div><div class="ttdef"><b>Definition:</b> logic.cpp:15</div></div>
+<div class="ttc" id="aclass_main_window_html_ad2b196b4c7680e1995c870863ee3cabe"><div class="ttname"><a href="class_main_window.html#ad2b196b4c7680e1995c870863ee3cabe">MainWindow::inputPressed</a></div><div class="ttdeci">void inputPressed()</div><div class="ttdoc">MainWindow::inputPressed Обработчик для поля ввода данных, вызывается при нажатии на enter.</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:27</div></div>
+<div class="ttc" id="aclass_main_window_html_af483459fc458b993949c504e1e0d24af"><div class="ttname"><a href="class_main_window.html#af483459fc458b993949c504e1e0d24af">MainWindow::on_f4_clicked</a></div><div class="ttdeci">void on_f4_clicked()</div><div class="ttdoc">MainWindow::on_f4_clicked Обработчик для кнопки СДНФ</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:94</div></div>
+<div class="ttc" id="aclass_input_editor_html_a328642e3ae078e059dc95bb4f945451c"><div class="ttname"><a href="class_input_editor.html#a328642e3ae078e059dc95bb4f945451c">InputEditor::AVIABLE_TRANSFORMATIONS</a></div><div class="ttdeci">const QMap&lt; QString, QString &gt; AVIABLE_TRANSFORMATIONS</div><div class="ttdoc">Словарь доступных символов</div><div class="ttdef"><b>Definition:</b> inputeditor.h:24</div></div>
+<div class="ttc" id="aclass_logic_html_a008dd758dde00f1f5940558f275ec216"><div class="ttname"><a href="class_logic.html#a008dd758dde00f1f5940558f275ec216">Logic::makeSKNF</a></div><div class="ttdeci">void makeSKNF()</div><div class="ttdoc">Logic::makeSKNF создает Совершенную Конъюнктивную Нормальную Форму</div><div class="ttdef"><b>Definition:</b> logic.cpp:95</div></div>
+<div class="ttc" id="aclass_main_window_html_a35466a70ed47252a0191168126a352a5"><div class="ttname"><a href="class_main_window.html#a35466a70ed47252a0191168126a352a5">MainWindow::ui</a></div><div class="ttdeci">Ui::MainWindow * ui</div><div class="ttdef"><b>Definition:</b> mainwindow.h:25</div></div>
+<div class="ttc" id="aclass_input_editor_html_ad9a9e03d439e909c6d72775ef78d9814"><div class="ttname"><a href="class_input_editor.html#ad9a9e03d439e909c6d72775ef78d9814">InputEditor::parse</a></div><div class="ttdeci">bool parse(const QString &amp;str)</div><div class="ttdoc">InputEditor::parse Парсит введенную строку</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:52</div></div>
+<div class="ttc" id="aclass_logic_html_a1494325c8d91b7fe5728b7dbdf82fca3"><div class="ttname"><a href="class_logic.html#a1494325c8d91b7fe5728b7dbdf82fca3">Logic::makeSDNF</a></div><div class="ttdeci">void makeSDNF()</div><div class="ttdoc">Logic::makeSDNF создает Совершенную Дизъюнктивную Нормальную Форму</div><div class="ttdef"><b>Definition:</b> logic.cpp:125</div></div>
+<div class="ttc" id="aclass_input_editor_html_a4b357e281c2d9cf669ed4a03c8de5190"><div class="ttname"><a href="class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190">InputEditor::pushBack</a></div><div class="ttdeci">void pushBack(const QString &amp;str)</div><div class="ttdoc">словарь доступных действий</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:14</div></div>
+<div class="ttc" id="avariable_8h_html"><div class="ttname"><a href="variable_8h.html">variable.h</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:10</div></div>
+<div class="ttc" id="aclass_main_window_html_afc3c47ba36b6793f5f86af1f8cf71f3b"><div class="ttname"><a href="class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b">MainWindow::bindConnect</a></div><div class="ttdeci">void bindConnect() const</div><div class="ttdoc">MainWindow::bindConnect Создаёт связи между обработчиком события onClicked и нажатой кнопкой</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:54</div></div>
+<div class="ttc" id="alogic_8h_html"><div class="ttname"><a href="logic_8h.html">logic.h</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a35937dfc64e91849432cf75714cafcc7"><div class="ttname"><a href="class_main_window.html#a35937dfc64e91849432cf75714cafcc7">MainWindow::onClicked</a></div><div class="ttdeci">void onClicked()</div><div class="ttdoc">MainWindow::onClicked Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответ...</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:44</div></div>
+<div class="ttc" id="aclass_input_editor_html_a3f69e5b7fe43e31f2a4f783fbdc8072e"><div class="ttname"><a href="class_input_editor.html#a3f69e5b7fe43e31f2a4f783fbdc8072e">InputEditor::getVars</a></div><div class="ttdeci">QList&lt; QString &gt; * getVars()</div><div class="ttdoc">InputEditor::getVars Выдает указатель на внутренний массив данных</div><div class="ttdef"><b>Definition:</b> inputeditor.cpp:25</div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">MainWindow - Класс отвечает за взаимодействие с пользовательским интерфейсом</div><div class="ttdef"><b>Definition:</b> mainwindow.h:18</div></div>
+<div class="ttc" id="aclass_main_window_html_a996c5a2b6f77944776856f08ec30858d"><div class="ttname"><a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:4</div></div>
+<div class="ttc" id="amainwindow_8h_html"><div class="ttname"><a href="mainwindow_8h.html">mainwindow.h</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:17</div></div>
+<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> main.cpp:5</div></div>
+<div class="ttc" id="aclass_main_window_html_a2362702e2f4888ead84da68a75c595d7"><div class="ttname"><a href="class_main_window.html#a2362702e2f4888ead84da68a75c595d7">MainWindow::logic_</a></div><div class="ttdeci">Logic * logic_</div><div class="ttdoc">отвечает за обработку данных, вводимых в поле ввода данных</div><div class="ttdef"><b>Definition:</b> mainwindow.h:40</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
+</a> 1.8.17
 </small></address>
 </body>
 </html>

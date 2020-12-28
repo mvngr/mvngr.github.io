@@ -1,0 +1,194 @@
+Классы, методы и переменные, которые использует калькулятор\hypertarget{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md1}{}\doxysubsection{Main\+Window}\label{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md1}
+Класс отвечает за взаимодействие с пользовательским интерфейсом
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+input\+Pressed &Обработчик для поля ввода данных, вызывается при нажатии на {\ttfamily enter}  \\\cline{1-2}
+on\+Clicked &Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответствующий символ  \\\cline{1-2}
+bind\+Connect &Создаёт связи между обработчиком события {\ttfamily on\+Clicked} и нажатой кнопкой  \\\cline{1-2}
+on\+\_\+compute\+\_\+clicked &Обработчик нажатия на кнопку {\ttfamily Вычислить}  \\\cline{1-2}
+connect\+Qss &Отвечает за подключение стилей  \\\cline{1-2}
+on\+\_\+f4\+\_\+clicked &Обработчик для кнопки {\ttfamily СДНФ}  \\\cline{1-2}
+on\+\_\+f5\+\_\+clicked &Обработчик для кнопки {\ttfamily СКНФ}  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md2}{}\doxysubsection{Input\+Editor}\label{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md2}
+Класс отвечает за обработку данных, вводимых в поле ввода данных
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+input\+\_\+ &Используется для управления полем ввода данных  \\\cline{1-2}
+v\+\_\+ &Внутренний массив для хранения данных из поля ввода данных  \\\cline{1-2}
+\end{longtabu}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+Push\+Back &Добавляет определенные данные в конец внутреннего массива  \\\cline{1-2}
+to\+String &Преобразует внутренний массив в строку  \\\cline{1-2}
+parse &Парсит введенную строку, возвращает в виде переменной ответ, смогло ли произойти чтение  \\\cline{1-2}
+get\+Vars &Добавление в внутренний массив внешние данные  \\\cline{1-2}
+update\+Input &Обновляет поле для ввода данных  \\\cline{1-2}
+fill\+Consts &Заполняет словари заранее подготовленными данными  \\\cline{1-2}
+is\+Validity &Определяет корректность данных в внутреннем массиве относительно поля ввода данных  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md3}{}\doxysubsection{Logic}\label{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md3}
+Класс отвечает за логику выполнения действий
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+ &Словарь бинарных операций  \\\cline{1-2}
+B\+I\+N\+A\+R\+Y\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+S\+\_\+\+T\+O\+\_\+\+N\+U\+M\+\_\+ &Сопоставление бинарной операции с её внутренним номером (нужно для удобства)  \\\cline{1-2}
+A\+V\+I\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+O\+F\+\_\+\+V\+A\+R\+S\+\_\+ &Словарь разрешенных имен для логических переменных  \\\cline{1-2}
+vars\+\_\+ &Массив логических переменных  \\\cline{1-2}
+v\+\_\+ &Массив строк, разделенных при помощи пробела. Пример\+: {\ttfamily \{\char`\"{}\+A\char`\"{}, \char`\"{}$\ast$\char`\"{}, \char`\"{}\+B\char`\"{}, \char`\"{}+\char`\"{}, \char`\"{}!\char`\"{}, \char`\"{}\+C\char`\"{}\}}  \\\cline{1-2}
+map\+\_\+ &Используется для сопоставления строковых переменных и их аналогов из vars\+\_\+. {\ttfamily $<$Название переменной$>$ =$>$ $<$Индекс в массиве объекта$>$}  \\\cline{1-2}
+ce\+\_\+ &Используется для управление полем вывода  \\\cline{1-2}
+\end{longtabu}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+set\+Vars &Добавляет массив логических переменных в внутренний массив  \\\cline{1-2}
+compute &Инициирует вычисления  \\\cline{1-2}
+compute\+Logical\+Action &Инициирует вычисление таблицы истинности  \\\cline{1-2}
+get\+Vars\+Title &Отдает массив имен логических переменных  \\\cline{1-2}
+get\+Vars\+Data &Отдает массив всех данных из логических переменных  \\\cline{1-2}
+negation &Используется для выполнения отрицания у всей входной строки  \\\cline{1-2}
+negation\+Func &Используется для выполнения отрицания у выражений со скобками во входной строке  \\\cline{1-2}
+binary\+Operation &Используется для выполнения входной операции у всей входной строки  \\\cline{1-2}
+fill\+Operations &Используется для заполнения словарей  \\\cline{1-2}
+show\+Error &Выводит в пользовательский интерфейс сообщения с ошибками  \\\cline{1-2}
+insert\+With\+Replace &Выполняет внедрение логической операции в внутренние массивы взамен переменным(ой) и оператора  \\\cline{1-2}
+fill\+Vars &Добавляет логические переменные в vars\+\_\+ из строк {\ttfamily v\+\_\+}  \\\cline{1-2}
+fill\+Map &Заполняет карту {\ttfamily map\+\_\+}  \\\cline{1-2}
+is\+Repeat &Проверяет на повторение названия имен в {\ttfamily vars\+\_\+}  \\\cline{1-2}
+sort\+Vars &Сортирует массив {\ttfamily vars\+\_\+} по названиям  \\\cline{1-2}
+make\+Bool\+Arrays &Создает массив начальных данных у переменных  \\\cline{1-2}
+find\+Brackets &Находит выражения в скобках и высчитывает их  \\\cline{1-2}
+sub\+String &Возвращает подстроку из строки  \\\cline{1-2}
+make\+S\+K\+NF &создает Совершенную Конъюнктивную Нормальную Форму  \\\cline{1-2}
+make\+S\+D\+NF &создает Совершенную Дизъюнктивную Нормальную Форму  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md4}{}\doxysubsection{Content\+Editor}\label{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md4}
+Класс отвечает за корректный и удобный вывод чего-\/либо в поле для вывода
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+pte\+\_\+ &Управление полем вывода  \\\cline{1-2}
+cell\+Size\+\_\+ &Размеры ячеек в таблице истинности  \\\cline{1-2}
+\end{longtabu}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+print\+Truth\+Table &Инициирует вывод таблицы истинности  \\\cline{1-2}
+get\+Size &Заполняет значения размеров ячеек в таблице истинности {\ttfamily cell\+Size\+\_\+}  \\\cline{1-2}
+make\+String &Создает строку из повторяющихся amount раз символов segment  \\\cline{1-2}
+make\+Line &Создает линию под заголовком  \\\cline{1-2}
+make\+Title &Создает заголовок  \\\cline{1-2}
+make\+Data &Создает двумерный массив данных {\ttfamily $<$0/1$>$}  \\\cline{1-2}
+center\+Align &выравнивает все элементы по центру своей ячейки  \\\cline{1-2}
+print\+S\+K\+NF &выводит Совершенную Конъюнктивную Нормальную Форму  \\\cline{1-2}
+print\+S\+D\+NF &выводит Совершенную Дизъюнктивную Нормальную Форму  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md5}{}\doxysubsection{Variable}\label{md__home_mike_projects_logic_calculator_old_documentation_autotoc_md5}
+Класс логических переменных
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Переменная }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+name\+\_\+ &Имя логической переменной  \\\cline{1-2}
+vars\+\_\+ &Принимаемые значения  \\\cline{1-2}
+\end{longtabu}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Метод }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Описание  }\\\cline{1-2}
+\endhead
+conjunction &Конъюнкция с переменной {\ttfamily other}  \\\cline{1-2}
+disjunction &Дизъюнкция с переменной {\ttfamily other}  \\\cline{1-2}
+implication &Импликация с переменной {\ttfamily other}  \\\cline{1-2}
+converse &Обратная импликация с переменной {\ttfamily other}  \\\cline{1-2}
+not\+And &Штрих Шеффера с переменной {\ttfamily other}  \\\cline{1-2}
+not\+Or &Стрелка Пирса с переменной {\ttfamily other}  \\\cline{1-2}
+exclusive\+Disjunction &Исключающее ИЛИ с переменной {\ttfamily other}  \\\cline{1-2}
+equivalent &Эквиваленция с переменной {\ttfamily other}  \\\cline{1-2}
+negation &Отрицание самой переменной  \\\cline{1-2}
+set\+Name &Задает имя {\ttfamily name\+\_\+} как у переменной {\ttfamily name}  \\\cline{1-2}
+set\+Vars &Задает принимаемые значения {\ttfamily vars\+\_\+} как у массива {\ttfamily vars}, либо генерирует их, основываясь на индексе элемента и количестве элементов  \\\cline{1-2}
+get\+Name &Отдает значение {\ttfamily name\+\_\+}  \\\cline{1-2}
+get\+Vars &Отдает значение {\ttfamily vars\+\_\+}  \\\cline{1-2}
+debug\+Vars &Выводит значения {\ttfamily vars\+\_\+} в консоль (Не используется)  \\\cline{1-2}
+pow2 &Возвращает степень числа два  \\\cline{1-2}
+make\+Name &Создает строку из двух названий переменных и операции между ними  \\\cline{1-2}
+\end{longtabu}

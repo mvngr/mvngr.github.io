@@ -1,3 +1,4 @@
 <map id="Logic::makeSDNF" name="Logic::makeSDNF">
-<area shape="rect" id="node2" href="$class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7" title="MainWindow::~MainWindow" alt="" coords="184,5,372,32"/>
+<area shape="rect" id="node1" title="Logic::makeSDNF создает Совершенную Дизъюнктивную Нормальную Форму" alt="" coords="255,5,391,32"/>
+<area shape="rect" id="node2" href="$class_main_window.html#af483459fc458b993949c504e1e0d24af" title="MainWindow::on_f4_clicked Обработчик для кнопки СДНФ" alt="" coords="5,5,207,32"/>
 </map>

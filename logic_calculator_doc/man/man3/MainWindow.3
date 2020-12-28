@@ -1,0 +1,130 @@
+.TH "MainWindow" 3 "Пн 28 Дек 2020" "Version 1.4" "Логический калькулятор" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainWindow \- \fBMainWindow\fP - Класс отвечает за взаимодействие с пользовательским интерфейсом  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <mainwindow\&.h>\fP
+.PP
+Базовые классы:QMainWindow\&.
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBMainWindow\fP (QWidget *parent=nullptr)"
+.br
+.ti -1c
+.RI "\fB~MainWindow\fP ()"
+.br
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "Ui::MainWindow * \fBui\fP"
+.br
+.in -1c
+.SS "Закрытые слоты"
+
+.in +1c
+.ti -1c
+.RI "void \fBinputPressed\fP ()"
+.br
+.RI "\fBMainWindow::inputPressed\fP Обработчик для поля ввода данных, вызывается при нажатии на enter\&. "
+.ti -1c
+.RI "void \fBonClicked\fP ()"
+.br
+.RI "\fBMainWindow::onClicked\fP Обработчик на кнопки логических операций\&. Добавляет в поле ввода данных соответствующий символ "
+.ti -1c
+.RI "void \fBbindConnect\fP () const"
+.br
+.RI "\fBMainWindow::bindConnect\fP Создаёт связи между обработчиком события onClicked и нажатой кнопкой "
+.ti -1c
+.RI "void \fBon_compute_clicked\fP ()"
+.br
+.RI "\fBMainWindow::on_compute_clicked\fP Обработчик нажатия на кнопку Вычислить "
+.ti -1c
+.RI "void \fBon_f5_clicked\fP ()"
+.br
+.RI "\fBMainWindow::on_f5_clicked\fP Обработчик для кнопки СКНФ "
+.ti -1c
+.RI "void \fBon_f4_clicked\fP ()"
+.br
+.RI "\fBMainWindow::on_f4_clicked\fP Обработчик для кнопки СДНФ "
+.in -1c
+.SS "Закрытые члены"
+
+.in +1c
+.ti -1c
+.RI "void \fBconnectQss\fP ()"
+.br
+.RI "\fBMainWindow::connectQss\fP Отвечает за подключение стилей "
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "\fBInputEditor\fP * \fBie_\fP"
+.br
+.ti -1c
+.RI "\fBLogic\fP * \fBlogic_\fP"
+.br
+.RI "отвечает за обработку данных, вводимых в поле ввода данных "
+.in -1c
+.SH "Подробное описание"
+.PP 
+\fBMainWindow\fP - Класс отвечает за взаимодействие с пользовательским интерфейсом 
+.SH "Конструктор(ы)"
+.PP 
+.SS "MainWindow::MainWindow (QWidget * parent = \fCnullptr\fP)\fC [explicit]\fP"
+
+.SS "MainWindow::~MainWindow ()"
+
+.SH "Методы"
+.PP 
+.SS "void MainWindow::bindConnect () const\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBMainWindow::bindConnect\fP Создаёт связи между обработчиком события onClicked и нажатой кнопкой 
+.SS "void MainWindow::connectQss ()\fC [private]\fP"
+
+.PP
+\fBMainWindow::connectQss\fP Отвечает за подключение стилей 
+.SS "void MainWindow::inputPressed ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBMainWindow::inputPressed\fP Обработчик для поля ввода данных, вызывается при нажатии на enter\&. 
+.SS "void MainWindow::on_compute_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBMainWindow::on_compute_clicked\fP Обработчик нажатия на кнопку Вычислить 
+.SS "void MainWindow::on_f4_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBMainWindow::on_f4_clicked\fP Обработчик для кнопки СДНФ 
+.SS "void MainWindow::on_f5_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBMainWindow::on_f5_clicked\fP Обработчик для кнопки СКНФ 
+.SS "void MainWindow::onClicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+\fBMainWindow::onClicked\fP Обработчик на кнопки логических операций\&. Добавляет в поле ввода данных соответствующий символ 
+.SH "Данные класса"
+.PP 
+.SS "\fBInputEditor\fP* MainWindow::ie_\fC [private]\fP"
+
+.SS "\fBLogic\fP* MainWindow::logic_\fC [private]\fP"
+
+.PP
+отвечает за обработку данных, вводимых в поле ввода данных 
+.SS "Ui::MainWindow* MainWindow::ui"
+
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Логический калькулятор из исходного текста\&.

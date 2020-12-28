@@ -1,4 +1,9 @@
 <map id="InputEditor::toString" name="InputEditor::toString">
-<area shape="rect" id="node2" href="$class_input_editor.html#a3f69e5b7fe43e31f2a4f783fbdc8072e" title="InputEditor::getVars Выдает указатель на внутренний массив данных " alt="" coords="192,5,331,32"/>
-<area shape="rect" id="node3" href="$class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7" title="MainWindow::~MainWindow" alt="" coords="379,5,567,32"/>
+<area shape="rect" id="node1" title="InputEditor::toString Преобразует внутренний массив в строку" alt="" coords="1156,31,1308,57"/>
+<area shape="rect" id="node2" href="$class_input_editor.html#a6e53e6455f8a3948620a61e68a089520" title=" " alt="" coords="938,5,1099,32"/>
+<area shape="rect" id="node7" href="$class_input_editor.html#a592b851c7b18ab7f0cbfcf64bdff3d9d" title="Внутренний массив для хранения данных из поля ввода данных" alt="" coords="929,56,1108,83"/>
+<area shape="rect" id="node3" href="$class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190" title="словарь доступных действий" alt="" coords="717,31,881,57"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a35937dfc64e91849432cf75714cafcc7" title="MainWindow::onClicked Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответ..." alt="" coords="493,31,669,57"/>
+<area shape="rect" id="node5" href="$class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b" title="MainWindow::bindConnect Создаёт связи между обработчиком события onClicked и нажатой кнопкой" alt="" coords="251,31,445,57"/>
+<area shape="rect" id="node6" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,31,203,57"/>
 </map>

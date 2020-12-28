@@ -1,4 +1,5 @@
 <map id="ContentEditor::printSKNF" name="ContentEditor::printSKNF">
-<area shape="rect" id="node2" href="$class_logic.html#a008dd758dde00f1f5940558f275ec216" title="Logic::makeSKNF создает Совершенную Конъюнктивную Нормальную Форму " alt="" coords="224,5,353,32"/>
-<area shape="rect" id="node3" href="$class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7" title="MainWindow::~MainWindow" alt="" coords="401,5,589,32"/>
+<area shape="rect" id="node1" title="ContentEditor::printSKNF выводит Совершенную Конъюнктивную Нормальную Форму" alt="" coords="437,5,621,32"/>
+<area shape="rect" id="node2" href="$class_logic.html#a008dd758dde00f1f5940558f275ec216" title="Logic::makeSKNF создает Совершенную Конъюнктивную Нормальную Форму" alt="" coords="255,5,389,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a9823fb93ccc1255eb7c4a749478a74a6" title="MainWindow::on_f5_clicked Обработчик для кнопки СКНФ" alt="" coords="5,5,207,32"/>
 </map>

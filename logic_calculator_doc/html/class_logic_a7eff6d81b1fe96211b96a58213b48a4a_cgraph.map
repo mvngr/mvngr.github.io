@@ -1,0 +1,9 @@
+<map id="Logic::makeBoolArrays" name="Logic::makeBoolArrays">
+<area shape="rect" id="node1" title="Logic::makeBoolArrays Создает массив начальных данных у переменных" alt="" coords="5,56,176,83"/>
+<area shape="rect" id="node2" href="$class_logic.html#af592736369fd989be41c59b4e7315ab5" title="Logic::setVars Добавляет массив логических переменных в внутренний массив" alt="" coords="224,56,336,83"/>
+<area shape="rect" id="node3" href="$class_logic.html#a7d044fbd4e29063357cd37ae6fb09e8e" title="Logic::fillMap Заполняет карту map_." alt="" coords="389,5,497,32"/>
+<area shape="rect" id="node4" href="$class_logic.html#a52ce98be2b79a42d5cda61553a45a524" title="Logic::fillVars Добавляет логические переменные в vars_ из строк v_." alt="" coords="389,56,497,83"/>
+<area shape="rect" id="node7" href="$class_logic.html#a82f55157d326bb29a296745e598cccfc" title="Logic::sortVars Сортирует массив vars_ по названиям" alt="" coords="384,107,501,133"/>
+<area shape="rect" id="node5" href="$class_logic.html#ad9bdddbbb8d4cf0a863fb2995ff8db78" title="Logic::isRepeat Проверяет на повторение названия имен в vars_." alt="" coords="553,31,675,57"/>
+<area shape="rect" id="node6" href="$class_logic.html#a4952830fe632ae6ab23547e3d212fcfc" title="Logic::showError Выводит в пользовательский интерфейс сообщения с ошибками" alt="" coords="549,81,679,108"/>
+</map>

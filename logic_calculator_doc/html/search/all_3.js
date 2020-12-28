@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['disjunction',['disjunction',['../class_variable.html#a2e4849eea01ce6e2ec9ba143164e7d57',1,'Variable']]]
+  ['debugvars_18',['debugVars',['../class_variable.html#a9ab358fc363aa26fb83bc78297c3339a',1,'Variable']]],
+  ['disjunction_19',['disjunction',['../class_variable.html#a2e4849eea01ce6e2ec9ba143164e7d57',1,'Variable']]]
 ];

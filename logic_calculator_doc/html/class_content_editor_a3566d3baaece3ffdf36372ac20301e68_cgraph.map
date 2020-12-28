@@ -1,0 +1,4 @@
+<map id="ContentEditor::makeLine" name="ContentEditor::makeLine">
+<area shape="rect" id="node1" title="ContentEditor::makeLine Создает линию под заголовком" alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$class_content_editor.html#ab5380863084f8631762f7bb02b7feb72" title="ContentEditor::makeString Создает строку из повторяющихся amount раз символов segment." alt="" coords="236,5,429,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="MainWindow::onClicked" name="MainWindow::onClicked">
+<area shape="rect" id="node1" title="MainWindow::onClicked Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответ..." alt="" coords="5,56,181,83"/>
+<area shape="rect" id="node2" href="$class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190" title="словарь доступных действий" alt="" coords="229,56,393,83"/>
+<area shape="rect" id="node3" href="$class_input_editor.html#a6e53e6455f8a3948620a61e68a089520" title=" " alt="" coords="450,5,611,32"/>
+<area shape="rect" id="node5" href="$class_input_editor.html#ad9a9e03d439e909c6d72775ef78d9814" title="InputEditor::parse Парсит введенную строку" alt="" coords="462,107,599,133"/>
+<area shape="rect" id="node7" href="$class_input_editor.html#a592b851c7b18ab7f0cbfcf64bdff3d9d" title="Внутренний массив для хранения данных из поля ввода данных" alt="" coords="441,56,620,83"/>
+<area shape="rect" id="node4" href="$class_input_editor.html#ab65dc1f4a87be3abf8bfff14c1a54532" title="InputEditor::toString Преобразует внутренний массив в строку" alt="" coords="694,31,846,57"/>
+<area shape="rect" id="node6" href="$class_input_editor.html#a86f05f35fe5a16552cfd545d106d2585" title=" " alt="" coords="668,107,872,133"/>
+</map>

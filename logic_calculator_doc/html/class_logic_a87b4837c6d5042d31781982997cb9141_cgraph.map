@@ -1,0 +1,23 @@
+<map id="Logic::findBrackets" name="Logic::findBrackets">
+<area shape="rect" id="node1" title="Logic::findBrackets Находит выражения в скобках и высчитывает их" alt="" coords="5,436,149,463"/>
+<area shape="rect" id="node2" href="$class_logic.html#a7eae2f1ccdc24932e795b33906b501b7" title="Logic::computeLogicalAction Инициирует вычисление таблицы истинности" alt="" coords="197,436,405,463"/>
+<area shape="rect" id="node21" href="$class_logic.html#adf36e2f63c49494f2014d4dbfb01663a" title="Logic::subString Возвращает подстроку из строки" alt="" coords="239,487,364,513"/>
+<area shape="rect" id="node3" href="$class_logic.html#a818b02239fe0c121bd38f58a6032eadf" title="Logic::binaryOperation Используется для выполнения входной операции у всей входной строки" alt="" coords="453,309,623,336"/>
+<area shape="rect" id="node18" href="$class_logic.html#ae4b5e069d3221fa5559826246fcd720c" title="Logic::negation Используется для выполнения отрицания у всей входной строки" alt="" coords="477,563,599,589"/>
+<area shape="rect" id="node4" href="$class_variable.html#a3072441748b17a105aea1485911bb489" title="Variable::conjunction Конъюнкция" alt="" coords="701,309,859,336"/>
+<area shape="rect" id="node5" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название" alt="" coords="945,335,1088,361"/>
+<area shape="rect" id="node8" href="$class_variable.html#adb62912a5e9433289191879e6bb7d580" title="Variable::converse Обратная импликация" alt="" coords="709,360,851,387"/>
+<area shape="rect" id="node9" href="$class_variable.html#a2e4849eea01ce6e2ec9ba143164e7d57" title="Variable::disjunction Дизъюнкция" alt="" coords="703,208,857,235"/>
+<area shape="rect" id="node10" href="$class_variable.html#a104b427ab0f43e9eb24f049ec6b524b0" title="Variable::equivalent Эквиваленция" alt="" coords="704,157,856,184"/>
+<area shape="rect" id="node11" href="$class_variable.html#a768fb534653ecc15e72f5d1201963705" title="Variable::exclusiveDisjunction Исключающее ИЛИ" alt="" coords="671,259,889,285"/>
+<area shape="rect" id="node12" href="$class_logic.html#a1f774dadfd694a5ae9f7848f90a5de4a" title=" " alt="" coords="711,563,849,589"/>
+<area shape="rect" id="node13" href="$class_variable.html#a82a20d70ad58a132b487a7bc822b47d1" title="Variable::implication Импликация" alt="" coords="702,107,858,133"/>
+<area shape="rect" id="node14" href="$class_logic.html#a77986ea98f8417489c60948d5ba0a37d" title="Logic::insertWithReplace Выполняет внедрение логической операции в внутренние массивы взамен переменн..." alt="" coords="689,512,871,539"/>
+<area shape="rect" id="node15" href="$class_variable.html#a5b1b5220dae873cc4bf6d0700eba703e" title="Variable::notAnd Штрих Шеффера" alt="" coords="715,5,845,32"/>
+<area shape="rect" id="node16" href="$class_variable.html#aa71e11142a257fa6676257843879148c" title="Variable::notOr Стрелка Пирса" alt="" coords="721,411,839,437"/>
+<area shape="rect" id="node17" href="$class_logic.html#a4952830fe632ae6ab23547e3d212fcfc" title="Logic::showError Выводит в пользовательский интерфейс сообщения с ошибками" alt="" coords="715,56,845,83"/>
+<area shape="rect" id="node6" href="$class_variable.html#a3bd6766c017a7ec86ecd18ed12780da6" title="Variable::makeName Создает строку из двух названий переменных и операции между ними" alt="" coords="937,208,1096,235"/>
+<area shape="rect" id="node7" href="$class_variable.html#ae6ac554c0382b43f9a3e37c6382d4471" title="Variable::setVars Задает принимаемые значения" alt="" coords="951,259,1082,285"/>
+<area shape="rect" id="node19" href="$class_variable.html#a7f2a3b1b8540781703f5435253171978" title="Variable::negation Отрицание самой переменной" alt="" coords="710,664,850,691"/>
+<area shape="rect" id="node20" href="$class_variable.html#ab58f8291d67e633fd1ad76148fad9e1a" title="Variable::setName Задает имя" alt="" coords="945,664,1088,691"/>
+</map>

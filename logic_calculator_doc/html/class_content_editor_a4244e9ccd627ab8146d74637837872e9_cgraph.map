@@ -1,0 +1,9 @@
+<map id="ContentEditor::printTruthTable" name="ContentEditor::printTruthTable">
+<area shape="rect" id="node1" title="ContentEditor::printTruthTable Инициирует вывод таблицы истинности" alt="" coords="5,74,187,115"/>
+<area shape="rect" id="node2" href="$class_content_editor.html#a1d600c6051de4c86fd1d3cca6d90a08b" title="Размеры ячеек в таблице истинности" alt="" coords="245,5,411,32"/>
+<area shape="rect" id="node3" href="$class_content_editor.html#af0706d1c1595a8417f3a241f7719ab0a" title="ContentEditor::makeData Создает двумерный массив данных &lt;0/1&gt;" alt="" coords="235,56,421,83"/>
+<area shape="rect" id="node6" href="$class_content_editor.html#a3566d3baaece3ffdf36372ac20301e68" title="ContentEditor::makeLine Создает линию под заголовком" alt="" coords="475,157,657,184"/>
+<area shape="rect" id="node7" href="$class_content_editor.html#af3c82ca694be2af589491fd361a6b7aa" title="ContentEditor::makeTitle Создает заголовок" alt="" coords="236,107,420,133"/>
+<area shape="rect" id="node4" href="$class_content_editor.html#a3c74a024b03eed69ea69ea93d613ffae" title="ContentEditor::centerAlign выравнивает все элементы по центру своей ячейки" alt="" coords="469,107,663,133"/>
+<area shape="rect" id="node5" href="$class_content_editor.html#ab5380863084f8631762f7bb02b7feb72" title="ContentEditor::makeString Создает строку из повторяющихся amount раз символов segment." alt="" coords="711,132,904,159"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="InputEditor::normalizeString" name="InputEditor::normalizeString">
+<area shape="rect" id="node1" title=" " alt="" coords="1173,97,1377,123"/>
+<area shape="rect" id="node2" href="$class_input_editor.html#ad9a9e03d439e909c6d72775ef78d9814" title="InputEditor::parse Парсит введенную строку" alt="" coords="988,97,1125,123"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a41bad26e9dbaae6c92d2a076797ef33c" title="MainWindow::on_compute_clicked Обработчик нажатия на кнопку Вычислить" alt="" coords="743,5,936,47"/>
+<area shape="rect" id="node7" href="$class_main_window.html#af483459fc458b993949c504e1e0d24af" title="MainWindow::on_f4_clicked Обработчик для кнопки СДНФ" alt="" coords="739,71,940,98"/>
+<area shape="rect" id="node8" href="$class_main_window.html#a9823fb93ccc1255eb7c4a749478a74a6" title="MainWindow::on_f5_clicked Обработчик для кнопки СКНФ" alt="" coords="739,122,940,149"/>
+<area shape="rect" id="node9" href="$class_input_editor.html#a4b357e281c2d9cf669ed4a03c8de5190" title="словарь доступных действий" alt="" coords="757,173,921,199"/>
+<area shape="rect" id="node4" href="$class_main_window.html#ad2b196b4c7680e1995c870863ee3cabe" title="MainWindow::inputPressed Обработчик для поля ввода данных, вызывается при нажатии на enter." alt="" coords="493,41,691,67"/>
+<area shape="rect" id="node5" href="$class_main_window.html#afc3c47ba36b6793f5f86af1f8cf71f3b" title="MainWindow::bindConnect Создаёт связи между обработчиком события onClicked и нажатой кнопкой" alt="" coords="251,93,445,119"/>
+<area shape="rect" id="node6" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,93,203,119"/>
+<area shape="rect" id="node10" href="$class_main_window.html#a35937dfc64e91849432cf75714cafcc7" title="MainWindow::onClicked Обработчик на кнопки логических операций. Добавляет в поле ввода данных соответ..." alt="" coords="504,118,680,145"/>
+</map>

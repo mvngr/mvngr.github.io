@@ -1,0 +1,4 @@
+<map id="Logic::insertWithReplace" name="Logic::insertWithReplace">
+<area shape="rect" id="node1" title="Logic::insertWithReplace Выполняет внедрение логической операции в внутренние массивы взамен переменн..." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$class_variable.html#a7e2bd08aff707fb67d67ce1914e9bb48" title="Variable::getName Отдает название" alt="" coords="236,5,379,32"/>
+</map>
